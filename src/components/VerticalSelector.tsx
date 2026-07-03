@@ -139,8 +139,8 @@ const VerticalSelector = () => {
             {/* ── Content layer ──────────────────────────────────────────────────── */}
             <div className="relative z-10 h-full flex flex-col">
                 {/* Section header */}
-                <div className="px-6 md:px-12 py-4 md:py-4 border-b border-white/20">
-                    <h2 className="text-3xl tracking-tight text-white/50">
+                <div className="px-6 md:px-14 py-4 md:py-4">
+                    <h2 className="text-4xl tracking-tight text-white/50">
                         Our Verticals
                     </h2>
                 </div>
@@ -171,11 +171,11 @@ const VerticalSelector = () => {
 
                             {/* Title */}
                             <div className="translate-y-10 my-auto relative z-10">
-                                <h3 className="font-gotham-bold text-3xl md:text-4xl lg:text-5xl text-white group-hover:text-primary transition-colors duration-300">
+                                <h3 className="font-gotham-bold text-3xl md:text-4xl lg:text-5xl text-white group-hover:text-theme-secondaryText transition-colors duration-300">
                                     {vertical.title}
                                 </h3>
                                 {vertical.subtitle && (
-                                    <span className="block font-gotham-light text-lg md:text-xl text-white/70 mt-1 transition-colors duration-300">
+                                    <span className="block font-gotham-light text-lg md:text-xl text-white/70 group-hover:text-theme-secondaryText mt-1 transition-colors duration-300">
                                         {vertical.subtitle}
                                     </span>
                                 )}
@@ -186,7 +186,7 @@ const VerticalSelector = () => {
                                 <p className="font-gotham-light text-sm text-white/70 mb-6 max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     {vertical.description}
                                 </p>
-                                <div className="flex items-center gap-2 text-sm text-white group-hover:text-primary transition-colors duration-200">
+                                <div className="flex items-center gap-2 text-sm text-white transition-colors duration-200">
                                     <span className="uppercase tracking-widest text-xs">
                                         Explore
                                     </span>
@@ -195,7 +195,7 @@ const VerticalSelector = () => {
                             </div>
 
                             {/* Hover bottom line */}
-                            <span className="absolute bottom-0 left-0 w-full h-px bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left z-10" />
+                            <span className="absolute bottom-0 left-0 w-full h-px bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left z-10" />
                         </Link>
                     ))}
                 </div>

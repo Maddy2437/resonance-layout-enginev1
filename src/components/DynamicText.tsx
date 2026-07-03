@@ -39,7 +39,7 @@ const DynamicText = () => {
 
     return (
         <span className="relative inline-block">
-            <span style={{ color: "#4ab6ff" }}>{currentText}</span>
+            <span>{currentText}</span>
             <span className="animate-pulse ">|</span>
         </span>
     );

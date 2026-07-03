@@ -6,7 +6,7 @@
 @layer base {
   :root {
     /* Resonance Digital - Cinematic Dark Theme */
-    --background: 220 80% 20%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
 
     --card: 220 20% 6%;
