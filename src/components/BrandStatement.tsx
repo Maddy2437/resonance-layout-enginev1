@@ -63,11 +63,10 @@ const BrandStatement = () => {
                     scrollDeltaRef.current = 0;
                     document.body.style.overflow = "hidden";
                 } else {
-                    return; // Let normal scrolling happen
+                    return;
                 }
             }
 
-            // Lock active: consume scroll to drive animation
             e.preventDefault();
 
             scrollDeltaRef.current += delta;
@@ -117,7 +116,7 @@ const BrandStatement = () => {
             <div className="w-full max-w-[1900px] mx-auto flex flex-col items-start pl-0 md:pl-2 lg:pl-4">
                 {/* Verticals line - NEVER animates */}
                 <p className="mb-8 text-[18px] md:text-[20px] lg:text-[22px] font-medium tracking-wide text-left">
-                    <span className="text-theme-secondaryText font-bold">VFX & Animation</span>
+                    <span className="text-theme-secondaryText font-bold">VFX: Films & Ads</span>
                     <span className="text-gray-300"> | </span>
                     <span className="text-theme-secondaryText font-bold">Real Estate Mar-Tech</span>
                     <span className="text-gray-300"> | </span>

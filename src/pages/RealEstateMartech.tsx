@@ -56,7 +56,7 @@ const realEstateStatements = [
 const expertiseCategories = [
     "3D Renders",
     "3D Walkthroughs",
-    "Drone Shots",
+    "Drone Films",
     "2D & 3D Isometrics",
 ];
 
@@ -182,7 +182,7 @@ const expertiseShowcase: ExpertiseShowcaseItem[] = [
         title: "Drone Showcase",
         subtitle: "",
         image: "/assets/images/martech/Walkthroughs/DroneShot.png",
-        category: "Drone Shots",
+        category: "Drone Films",
         videoSrc: "/assets/videos/DroneShot.webm",
     },
 
@@ -584,15 +584,15 @@ const RealEstateMartech = () => {
                                             />
                                             {item.videoSrc && (
                                                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-theme-secondaryText/90 backdrop-blur-sm flex items-center justify-center shadow-[0_0_40px_rgba(74,182,255,0.5)]">
+                                                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-theme-secondaryText/90 backdrop-blur-sm flex items-center justify-center shadow-[0_0_24px_rgba(74,182,255,0.4)]">
                                                         <div
-                                                            className="ml-1"
+                                                            className="ml-0.5"
                                                             style={{
                                                                 width: 0,
                                                                 height: 0,
-                                                                borderTop: "10px solid transparent",
-                                                                borderBottom: "10px solid transparent",
-                                                                borderLeft: "16px solid white",
+                                                                borderTop: "7px solid transparent",
+                                                                borderBottom: "7px solid transparent",
+                                                                borderLeft: "11px solid white",
                                                             }}
                                                         />
                                                     </div>
