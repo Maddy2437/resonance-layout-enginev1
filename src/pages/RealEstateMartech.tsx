@@ -57,7 +57,7 @@ const expertiseCategories = [
     "3D Renders",
     "3D Walkthroughs",
     "Drone Films",
-    "2D & 3D Isometrics",
+    "2D & 3D Isometric Views",
 ];
 
 type ExpertiseShowcaseItem = {
@@ -188,22 +188,16 @@ const expertiseShowcase: ExpertiseShowcaseItem[] = [
 
     //2D & 3D Isometrics
     {
-        title: "2D Isometric 01",
-        subtitle: "",
-        image: "/assets/images/martech/2D-Isometrics/Picture1.png",
-        category: "2D & 3D Isometrics",
-    },
-    {
         title: "2D Isometric 02",
         subtitle: "",
         image: "/assets/images/martech/2D-Isometrics/Picture2.png",
-        category: "2D & 3D Isometrics",
+        category: "2D & 3D Isometric Views",
     },
     {
         title: "3D Isometric 01",
         subtitle: "",
         image: "/assets/images/martech/3D-Isometrics/Picture3.png",
-        category: "2D & 3D Isometrics",
+        category: "2D & 3D Isometric Views",
     },
 ];
 
@@ -217,7 +211,7 @@ const immersiveTabs: ImmersiveTabData[] = [
     {
         id: "interactive-sales-tour",
         label: "Interactive Sales Tour",
-        videoSrc: "https://storage.net-fs.com/hosting/6111279/12/index.htm",
+        videoSrc: "https://storage.net-fs.com/hosting/6111279/12/index.html",
     },
     {
         id: "digital-twin",

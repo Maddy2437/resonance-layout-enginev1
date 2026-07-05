@@ -359,7 +359,6 @@ const VFX = () => {
             year: "",
             category: "",
         },
-        // Append any remaining movies not in the above order (preserve their object contents)
         {
             title: "The Batman",
             image: "/assets/images/vfx/showcase/Batman.jpg",
@@ -402,15 +401,6 @@ const VFX = () => {
             year: "",
             category: "",
         },
-        // REMOVE the duplicate "The Flash" with image containing "The-Flash 8"
-        // {
-        //   title: "The Flash",
-        //   image:
-        //     "https://resonancedigital.in/assets/images/VFX/movies/The-Flash 8.jpg",
-        //   platform: "",
-        //   year: "",
-        //   category: "",
-        // },
         {
             title: "Tulsa King",
             image: "/assets/images/vfx/showcase/Tulsa-King.jpg",
@@ -432,15 +422,6 @@ const VFX = () => {
             year: "",
             category: "",
         },
-        // REMOVE the duplicate "Mission Impossible: Dead Reckoning" with image containing "Unconfirmed-520721"
-        // {
-        //   title: "Mission Impossible: Dead Reckoning",
-        //   image:
-        //     "https://resonancedigital.in/assets/images/VFX/movies/Unconfirmed-520721.JPG",
-        //   platform: "",
-        //   year: "",
-        //   category: "",
-        // },
         {
             title: "Winning Time",
             image: "/assets/images/vfx/showcase/Winning-Time.jpg",
@@ -448,15 +429,6 @@ const VFX = () => {
             year: "",
             category: "",
         },
-        // REMOVE the duplicate "Senna" with image containing "Unconfirmed-977985"
-        // {
-        //   title: "Senna",
-        //   image:
-        //     "https://resonancedigital.in/assets/images/VFX/movies/Unconfirmed-977985.JPG",
-        //   platform: "",
-        //   year: "",
-        //   category: "",
-        // },
         {
             title: "Senna",
             image: "/assets/images/vfx/showcase/Senna.jpeg",
@@ -559,13 +531,6 @@ const VFX = () => {
         "/assets/images/CGI-Stills/CGI18.jpeg",
     ];
 
-    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    // ADS VIDEO FEED — ADD / EDIT VIDEOS HERE
-    // Each entry needs `src` (path to the video file) and `label` (client name).
-    //
-    // ► To add a new video: push a new { src, label } object to this array.
-    // ► The layout pattern cycles automatically — no other code changes needed.
-    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     const adsVideoFeed = [
         {
             src: "/assets/videos/OPPO.webm",
@@ -589,28 +554,28 @@ const VFX = () => {
             src: "/assets/videos/Ecolink.webm",
             label: "Ecolink BLDC Fans",
         },
-        {
-            src: "/assets/videos/Apollo_Tyres.webm",
-            label: "Apollo Apterra Tyres",
-        },
+        { src: "/assets/videos/KitKat.webm", label: "Kit Kat" },
         { src: "/assets/videos/JK_Cement.webm", label: "JK Cement" },
         {
             src: "/assets/videos/Director_Special.webm",
             label: "Director Special Elaichi",
         },
-        { src: "/assets/videos/KitKat.webm", label: "Kit Kat" },
+        {
+            src: "/assets/videos/Apollo_Tyres.webm",
+            label: "Apollo Apterra Tyres",
+        },
         { src: "/assets/videos/Max_Fashion.webm", label: "Max Fashion" },
         {
             src: "/assets/videos/Mahindra.webm",
             label: "The Plush New XUV500",
         },
         {
-            src: "/assets/videos/Savsol.webm",
-            label: "Savsol Lubricants",
-        },
-        {
             src: "/assets/videos/Flipkart.webm",
             label: "Flipkart Big Bang Diwali",
+        },
+        {
+            src: "/assets/videos/Savsol.webm",
+            label: "Savsol Lubricants",
         },
         {
             src: "/assets/videos/Acko.webm",
@@ -630,14 +595,6 @@ const VFX = () => {
         },
     ];
 
-    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    // LAYOUT PATTERN — controls the visual rhythm. Modify the order to taste.
-    //   "full"       → 1 video  (single 16:9 card)
-    //   "split"      → 2 videos (two 16:9 cards side by side)
-    //   "T"          → 3 videos (one 16:9 row + two 16:9 cards)
-    //   "grid2x2"    → 4 videos (2×2 grid of 16:9 cards)
-    //   "invertedT"  → 3 videos (two 16:9 cards + one 16:9 row)
-    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     const LAYOUT_PATTERN = [
         "full",
         "split",
@@ -662,9 +619,6 @@ const VFX = () => {
         grid2x2: 4,
     };
 
-    // Slice videos into blocks — walks through LAYOUT_PATTERN first, then
-    // appends any leftover videos as individual single-card blocks so every
-    // video in adsVideoFeed is always shown, no matter how many there are.
     const adBlocks: AdBlock[] = [];
     let _adCursor = 0;
     for (const type of LAYOUT_PATTERN) {
@@ -676,7 +630,6 @@ const VFX = () => {
         _adCursor += count;
         adBlocks.push({ type, videos } as AdBlock);
     }
-    // Any remaining videos get their own single 16:9 block
     while (_adCursor < adsVideoFeed.length) {
         adBlocks.push({
             type: "full",
@@ -685,7 +638,6 @@ const VFX = () => {
         _adCursor++;
     }
 
-    // Reusable floating video card
     const AdCard = ({
         src,
         label,
@@ -729,7 +681,6 @@ const VFX = () => {
 
     useEffect(() => {
         if (expandedSection && expandedContentRef.current) {
-            // Animate expansion
             gsap.fromTo(
                 expandedContentRef.current,
                 {
@@ -781,7 +732,6 @@ const VFX = () => {
 
     const handleExpand = (section: string) => {
         if (splitSectionRef.current) {
-            // Animate out the split section
             gsap.to(splitSectionRef.current, {
                 opacity: 0,
                 scale: 1.05,
@@ -806,7 +756,6 @@ const VFX = () => {
 
     const handleCollapse = () => {
         if (expandedContentRef.current) {
-            // Animate out the expanded content
             gsap.to(expandedContentRef.current, {
                 opacity: 0,
                 scale: 0.95,
@@ -815,7 +764,6 @@ const VFX = () => {
                 ease: "power2.in",
                 onComplete: () => {
                     setExpandedSection(null);
-                    // Animate in the split section
                     if (splitSectionRef.current) {
                         gsap.fromTo(
                             splitSectionRef.current,
@@ -872,13 +820,11 @@ const VFX = () => {
             {/* Hero Section */}
             {!expandedSection && (
                 <section className="relative w-full min-h-screen bg-[#15171e] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
-                    {/* Main Title */}
                     <div className="max-w-6xl w-full mt-20">
                         <h1 className="font-display text-[35px] md:text-[95px] lg:text-[105px] font-bold text-theme-primaryText mb-6 leading-tight">
                             VFX: Movies & Ads
                         </h1>
 
-                        {/* Description */}
                         <AnimatedColorText
                             whiteText="A leading digital Creative Technology Company, which focuses on delivering rememberable web designs that are searchable,"
                             blueText="alongside other online promotion solutions in Coventry. We provide our clients with striking, practical, and intuitive sites that attract clientele and yield revenue."
@@ -893,16 +839,15 @@ const VFX = () => {
                     ref={splitSectionRef}
                     className="relative w-full overflow-hidden bg-black"
                 >
-                    {/* ── DESKTOP: diagonal split (unchanged) ── */}
+                    {/* ── DESKTOP: diagonal split ── */}
                     <div className="hidden md:block relative w-full h-screen">
-                        {/* Full-bleed movies image as base layer — prevents black corners showing through clip gaps */}
                         <img
                             src="/assets/images/vfx/movie-background-leg.jpg"
                             alt=""
                             aria-hidden="true"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
-                        {/* Movies (Left, diagonally clipped) */}
+                        {/* Movies */}
                         <div
                             onClick={() => handleExpand("movies")}
                             onMouseEnter={() => setHoveredSide("movies")}
@@ -928,12 +873,12 @@ const VFX = () => {
                                     : "bg-black/45 group-hover:bg-black/25"
                                     }`}
                             />
-                            <h2 className="absolute left-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-white group-hover:text-[#4ab6ff] transition-all duration-500 group-hover:scale-105">
+                            <h2 className="absolute left-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-theme-secondaryBg2 group-hover:text-white transition-all duration-500 group-hover:scale-105">
                                 Films & Episodic
                             </h2>
                         </div>
 
-                        {/* Ads (Right, diagonally clipped) */}
+                        {/* Ads */}
                         <div
                             onClick={() => handleExpand("ads")}
                             onMouseEnter={() => setHoveredSide("ads")}
@@ -954,21 +899,17 @@ const VFX = () => {
                                 className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 pointer-events-none bg-black/45 transition-all duration-500 group-hover:bg-black/25" />
-                            <h2 className="absolute right-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-white group-hover:text-[#4ab6ff] transition-all duration-500 group-hover:scale-105">
+                            <h2 className="absolute right-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-theme-secondaryBg2 group-hover:text-white transition-all duration-500 group-hover:scale-105">
                                 Advertising
                             </h2>
                         </div>
                     </div>
 
-                    {/* ── MOBILE: vertical equivalent of the desktop diagonal split ── */}
-                    {/* Same two panels, same images, same titles, same onClick —
-              clipPath axes swapped so the diagonal cut runs horizontally
-              and the panels stack top (Films) / bottom (Ads). */}
+                    {/* ── MOBILE: vertical equivalent ── */}
                     <div
                         className="md:hidden relative w-full"
                         style={{ height: "100svh" }}
                     >
-                        {/* Base layer — films image fills the seam gap between the two clips */}
                         <img
                             src="/assets/images/vfx/movie-background-leg.jpg"
                             alt=""
@@ -976,7 +917,6 @@ const VFX = () => {
                             className="absolute inset-0 w-full h-full object-cover"
                         />
 
-                        {/* Films & Episodic — top panel, clipped with a horizontal diagonal */}
                         <div
                             onClick={() => handleExpand("movies")}
                             className="absolute inset-0 overflow-hidden cursor-pointer transition-all duration-700"
@@ -994,7 +934,6 @@ const VFX = () => {
                             </h2>
                         </div>
 
-                        {/* Advertising — bottom panel, clipped mirror */}
                         <div
                             onClick={() => handleExpand("ads")}
                             className="absolute inset-0 overflow-hidden cursor-pointer transition-all duration-700"
@@ -1015,7 +954,7 @@ const VFX = () => {
                 </section>
             )}
 
-            {/* Back Button for Expanded Movies or Ads */}
+            {/* Back Button */}
             {expandedSection && (
                 <button
                     onClick={handleCollapse}
@@ -1028,9 +967,7 @@ const VFX = () => {
             {/* Expanded Movies Section */}
             {expandedSection === "movies" && (
                 <div ref={expandedContentRef} className="w-full">
-                    {/* Hero Section */}
                     <section className="relative w-full min-h-screen bg-theme-primaryBg1 flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
-                        {/* FixedHero-style Background */}
                         <div
                             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                             style={{
@@ -1038,13 +975,11 @@ const VFX = () => {
                             }}
                         />
                         <div className="absolute inset-0 bg-black/60" />
-                        {/* Main Title */}
                         <div className="relative z-10 max-w-6xl w-full mt-20">
-                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] font-bold text-[#4ab6ff] mb-10 leading-tight">
+                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] font-bold text-theme-primaryText mb-10 leading-tight">
                                 VFX: Films & Episodic
                             </h1>
 
-                            {/* Description */}
                             <AnimatedColorText
                                 whiteText="We bring stories to life with cutting-edge visual effects that captivate audiences worldwide."
                                 blueText="Our team has contributed to major productions across streaming platforms and theatrical releases, creating immersive worlds and unforgettable moments."
@@ -1056,14 +991,15 @@ const VFX = () => {
                     <section className="mt-0 px-12 md:px-24 py-24 bg-theme-primaryBg1">
                         <div className="max-w-7xl mx-auto">
                             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light text-[#f2eee2] mb-4">
-                                VFX: Films & Episodic <span className="text-[#4ab6ff]">|</span>{" "}
+                                VFX: Films & Episodic <span className="text-[#f2eee2]/30">|</span>{" "}
                                 <span className="text-[#f2eee2]/60 font-bold">Showcase</span>
                             </h2>
                         </div>
                     </section>
 
                     {/* Movies Showcase Carousel */}
-                    <section className="relative w-full bg-theme-primaryBg1 px-12 md:px-24">
+                    {/* Added pb-24 padding configuration to fix spacing seen in Screenshot 2026-07-05 at 4.10.24 pm.jpg */}
+                    <section className="relative w-full bg-theme-primaryBg1 px-12 md:px-24 pb-24">
                         <div className="max-w-7xl mx-auto">
                             <div className="relative">
                                 {/* Carousel Navigation */}
@@ -1071,10 +1007,10 @@ const VFX = () => {
                                     onClick={handleMoviePrev}
                                     disabled={currentMovieIndex === 0}
                                     className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 z-10 w-12 h-12 rounded-full flex items-center justify-center text-[#f2eee2] transition-all duration-300 ${currentMovieIndex === 0
-                                        ? "bg-[#4ab6ff]/10 cursor-not-allowed opacity-50"
-                                        : "bg-[#4ab6ff]/20 hover:bg-[#4ab6ff]/40 cursor-pointer"
+                                        ? "bg-white/5 cursor-not-allowed opacity-50"
+                                        : "bg-white/10 hover:bg-white/20 cursor-pointer"
                                         }`}
-                                >
+                                automatic-bg-blue-disabled="">
                                     <ChevronLeft className="w-6 h-6" />
                                 </button>
 
@@ -1088,18 +1024,7 @@ const VFX = () => {
                                         {movieShowcasePages.map((pageItems, pageIndex) => (
                                             <div
                                                 key={pageIndex}
-                                                className="
-                                                shrink-0
-                                                min-w-full
-                                                grid
-                                                grid-cols-1
-                                                md:grid-cols-2
-                                                lg:grid-cols-4
-                                                gap-6
-                                                max-w-sm
-                                                mx-auto
-                                                md:max-w-none
-                                                "
+                                                className="shrink-0 min-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-sm mx-auto md:max-w-none"
                                             >
                                                 {pageItems.map((movie, index) => (
                                                     <div
@@ -1116,7 +1041,7 @@ const VFX = () => {
                                                         />
 
                                                         {/* Hover Overlay */}
-                                                        <div className="absolute inset-0 bg-[#4ab6ff]/0 group-hover:bg-[#4ab6ff]/20 transition-all duration-500" />
+                                                        <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-all duration-500" />
 
                                                         {/* Title overlay on hover */}
                                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
@@ -1124,7 +1049,7 @@ const VFX = () => {
                                                                 <p className="text-[#f2eee2] font-bold text-lg">
                                                                     {movie.title}
                                                                 </p>
-                                                                <p className="text-[#4ab6ff] text-sm">
+                                                                <p className="text-[#f2eee2]/60 text-sm">
                                                                     {movie.platform}
                                                                 </p>
                                                             </div>
@@ -1150,46 +1075,19 @@ const VFX = () => {
                                         currentMovieIndex + ITEMS_PER_PAGE >= moviesShowcase.length
                                     }
                                     className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 z-10 w-12 h-12 rounded-full flex items-center justify-center text-[#f2eee2] transition-all duration-300 ${currentMovieIndex + ITEMS_PER_PAGE >= moviesShowcase.length
-                                        ? "bg-[#4ab6ff]/10 cursor-not-allowed opacity-50"
-                                        : "bg-[#4ab6ff]/20 hover:bg-[#4ab6ff]/40 cursor-pointer"
+                                        ? "bg-white/5 cursor-not-allowed opacity-50"
+                                        : "bg-white/10 hover:bg-white/20 cursor-pointer"
                                         }`}
                                 >
                                     <ChevronRight className="w-6 h-6" />
                                 </button>
                             </div>
 
-                            {/* Additional Content */}
-                            {/* <div className="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                  <h3 className="font-display text-4xl font-bold text-white mb-6">
-                    Cinematic Excellence
-                  </h3>
-                  <p className="text-[#f2eee2]/80 text-lg leading-relaxed mb-4">
-                    We bring stories to life with cutting-edge visual effects that captivate audiences worldwide. Our team has contributed to major productions across streaming platforms and theatrical releases.
-                  </p>
-                  <p className="text-[#f2eee2]/60 text-base leading-relaxed">
-                    From concept art to final compositing, we deliver VFX that seamlessly blend with live-action footage, creating immersive worlds and unforgettable moments.
-                  </p>
-                </div>
-                
-                <div className="space-y-6">
-                  <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-                    <h4 className="text-[#4ab6ff] font-semibold text-xl mb-2">Our Expertise</h4>
-                    <ul className="text-[#f2eee2]/70 space-y-2">
-                      <li>• CGI & Digital Animation</li>
-                      <li>• Motion Capture & Performance</li>
-                      <li>• Virtual Production</li>
-                      <li>• Color Grading & Finishing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div> */}
-
                             {/* Areas of Expertise Section */}
                             <section className="py-24 bg-theme-secondaryText -mx-12 md:-mx-24 px-12 md:px-24">
                                 <h2 className="font-display text-4xl md:text-5xl font-light text-[#f2eee2] mb-4">
                                     VFX: Films & Episodic{" "}
-                                    <span className="text-[#4ab6ff]">|</span>{" "}
+                                    <span className="text-[#f2eee2]/30">|</span>{" "}
                                     <span className="text-[#f2eee2]/60 font-bold">Showreel</span>
                                 </h2>
 
@@ -1201,8 +1099,8 @@ const VFX = () => {
                                                 <button
                                                     onClick={() => setSelectedMovieCategory(category)}
                                                     className={`transition-colors duration-300 ${selectedMovieCategory === category
-                                                        ? "text-[#4ab6ff]"
-                                                        : "text-[#f2eee2]/40 hover:text-[#4ab6ff]"
+                                                        ? "text-white"
+                                                        : "text-[#f2eee2]/40 hover:text-white"
                                                         }`}
                                                 >
                                                     {category}
@@ -1223,7 +1121,7 @@ const VFX = () => {
                                                 <button
                                                     onClick={() => setSelectedMovieCategory(category)}
                                                     className={`transition-colors duration-300 ${selectedMovieCategory === category
-                                                        ? "text-[#4ab6ff]"
+                                                        ? "text-white"
                                                         : "text-[#f2eee2]/40"
                                                         }`}
                                                 >
@@ -1240,7 +1138,7 @@ const VFX = () => {
                                 {/* Showreel Display */}
                                 {selectedMovieShowreel && (
                                     <div className="w-full">
-                                        <div className="relative aspect-video md:aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-white/10">
+                                        <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-white/10">
                                             {selectedMovieShowreel.youtubeEmbedUrl.endsWith(
                                                 ".webm",
                                             ) ? (
@@ -1276,7 +1174,6 @@ const VFX = () => {
                             {/* Security Certifications Section */}
                             <div className="mt-0 mb-0 -mx-12 md:-mx-24 px-12 md:px-24 py-24 bg-theme-primaryBg1">
                                 <div className="flex flex-col lg:flex-row gap-12 items-center">
-                                    {/* Left Side - Text Content */}
                                     <div className="flex-1">
                                         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primaryText mb-8 leading-tight">
                                             Security
@@ -1298,7 +1195,6 @@ const VFX = () => {
                                         </p>
                                     </div>
 
-                                    {/* Right Side - Company Logos Image */}
                                     <div className="flex-1 min-w-0 overflow-hidden rounded-2xl relative mt-8 lg:mt-0 h-auto lg:h-[420px]">
                                         <img
                                             src="/assets/images/vfx/Security-Certification.png"
@@ -1312,7 +1208,6 @@ const VFX = () => {
                             {/* Films & Episodic Clients Section */}
                             <div className="mt-0 mb-0 -mx-12 md:-mx-24 px-12 md:px-24 py-24 bg-theme-secondaryText">
                                 <div className="flex flex-col lg:flex-row gap-12 items-start">
-                                    {/* Left Side - Title */}
                                     <div className="lg:w-[45%]">
                                         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primaryText leading-tight">
                                             Films & Episodic <br />
@@ -1320,7 +1215,6 @@ const VFX = () => {
                                         </h2>
                                     </div>
 
-                                    {/* Right Side - Client Logos */}
                                     <div className="flex-1 min-w-0">
                                         <img
                                             src="/assets/images/vfx/Films-and-episodic-client.png"
@@ -1338,7 +1232,6 @@ const VFX = () => {
             {/* Expanded Ads Section */}
             {expandedSection === "ads" && (
                 <div ref={expandedContentRef} className="w-full">
-                    {/* Hero Section */}
                     <section className="relative w-full min-h-screen bg-theme-primaryBg1 flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
                         <div
                             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -1347,13 +1240,11 @@ const VFX = () => {
                             }}
                         />
                         <div className="absolute inset-0 bg-black/60" />
-                        {/* Main Title */}
                         <div className="relative z-10 max-w-6xl w-full mt-20">
-                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] font-bold text-[#4ab6ff] mb-10 leading-tight">
+                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] font-bold text-theme-primaryText mb-10 leading-tight">
                                 VFX: Advertising
                             </h1>
 
-                            {/* Description */}
                             <AnimatedColorText
                                 whiteText="Crafting compelling commercial content that resonates with audiences and drives results."
                                 blueText="From concept to final delivery, we blend creativity with strategic thinking to produce commercials that make an impact across all platforms."
@@ -1365,7 +1256,7 @@ const VFX = () => {
                     <section className="px-12 md:px-24 py-24 bg-theme-primaryBg1">
                         <div className="max-w-7xl mx-auto translate-y-8">
                             <h2 className="font-display text-4xl md:text-5xl font-bold text-[#f2eee2] mb-4">
-                                VFX: Advertising <span className="text-[#4ab6ff]">|</span>{" "}
+                                VFX: Advertising <span className="text-[#f2eee2]/30">|</span>{" "}
                                 <span className="text-[#f2eee2]/60">Showreel</span>
                             </h2>
 
@@ -1376,8 +1267,8 @@ const VFX = () => {
                                             <button
                                                 onClick={() => setSelectedAdCategory(category)}
                                                 className={`transition-colors duration-300 ${selectedAdCategory === category
-                                                    ? "text-[#4ab6ff]"
-                                                    : "text-[#f2eee2]/40 hover:text-[#4ab6ff]"
+                                                    ? "text-white"
+                                                    : "text-[#f2eee2]/40 hover:text-white"
                                                     }`}
                                             >
                                                 {category}
@@ -1395,7 +1286,7 @@ const VFX = () => {
                                             <button
                                                 onClick={() => setSelectedAdCategory(category)}
                                                 className={`transition-colors duration-300 ${selectedAdCategory === category
-                                                    ? "text-[#4ab6ff]"
+                                                    ? "text-white"
                                                     : "text-[#f2eee2]/40"
                                                     }`}
                                             >
@@ -1454,9 +1345,6 @@ const VFX = () => {
                     </section>
 
                     {/* ── Ads Video Feed ─────────────────────────────────────────────────── */}
-                    {/* The section is a continuous dark canvas of 16:9 cards.             */}
-                    {/* Layout alternates between full, split, T, 2×2, and inverted-T.     */}
-                    {/* Ads immersive video feed — dynamic, driven by adsVideoFeed + LAYOUT_PATTERN */}
                     <div className="w-full bg-theme-primaryBg1 p-3 flex flex-col gap-3">
                         {adBlocks.map((block, blockIdx) => {
                             const [v0, v1, v2, v3] = block.videos;
@@ -1538,18 +1426,11 @@ const VFX = () => {
 
                     <section className="px-12 md:px-24 py-24 bg-theme-secondaryText">
                         <div className="max-w-7xl mx-auto">
-                            {/* ── CGI Stills — full-bleed masonry grid ── */}
                             <h2 className="font-display text-4xl md:text-5xl font-light text-[#f2eee2] mb-10">
-                                VFX: CGI Stills <span className="text-[#4ab6ff]">|</span>{" "}
+                                VFX: CGI Stills <span className="text-[#f2eee2]/30">|</span>{" "}
                                 <span className="text-[#f2eee2]/60 font-bold">Showcase</span>
                             </h2>
 
-                            {/*
-                Tailwind CSS-columns masonry: `columns-2 md:columns-3` sets 2 cols
-                on mobile and 3 on md+. `gap-2` applies the column gutter.
-                `break-inside-avoid` on each card stops images splitting across
-                column boundaries. No JS / window.innerWidth needed.
-              */}
                             <div className="w-full columns-2 md:columns-3 gap-2">
                                 {cgiStillsShowcase.map((image, index) => {
                                     const aspects = [
@@ -1577,7 +1458,6 @@ const VFX = () => {
                                                 decoding="async"
                                             />
                                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-300 pointer-events-none" />
-                                            {/* index badge — appears on hover */}
                                             <span className="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[9px] text-[#f2eee2]/70 uppercase tracking-widest bg-black/50 backdrop-blur-sm px-2 py-0.5">
                                                 {String(index + 1).padStart(2, "0")}
                                             </span>
@@ -1590,7 +1470,7 @@ const VFX = () => {
                 </div>
             )}
 
-            {/* Original Expandable Items Section - Only show when nothing is expanded */}
+            {/* Original Expandable Items Section */}
             {!expandedSection && (
                 <section className="w-full bg-theme-primaryBg1">
                 </section>
