@@ -66,10 +66,10 @@ const caseStudyPages: Record<string, { page: number; title: string }[]> = {
         { page: 38, title: "Logo identity e-bike showcase" },
     ],
     "elegant": [
-        { page: 39, title: "Atmos project Cover" },
-        { page: 40, title: "Nature inspired leaflet" },
-        { page: 41, title: "Brochure presentation" },
-        { page: 42, title: "Outdoor Atmos city launch" },
+        { page: 43, title: "Monte Carlo Cover" },
+        { page: 44, title: "Summer Fashion Collection Visual" },
+        { page: 45, title: "Contemporary Looks Catalog" },
+        { page: 46, title: "Versatile Style Showcase" },
     ],
     "micl": [
         { page: 43, title: "Aaradhya Cover" },
@@ -78,10 +78,14 @@ const caseStudyPages: Record<string, { page: number; title: string }[]> = {
         { page: 46, title: "Outdoor facade campaign" },
     ],
     "puravankara": [
-        { page: 47, title: "Puravankara Cover" },
+        { page: 47, title: "Happy Home Cover" },
         { page: 48, title: "Avanne Dubash Influencer Series" },
     ],
 };
+
+const existingMobilePages = new Set(
+    Array.from({ length: 50 }, (_, i) => i + 1).filter((p) => p !== 2)
+);
 
 // Simple text formatter for screen readers / SEO
 const formatSlideText = (text: string) => {
@@ -168,6 +172,21 @@ const CaseStudyPage = () => {
                                                 {/* Left Column: Image and View Case Bar */}
                                                 <div className="w-full lg:w-[58%] flex flex-col">
                                                     <div className="relative w-full aspect-[1.58] overflow-hidden bg-white/20">
+                                                        {/* Mobile optimized cover image commented out for now
+                                                        <picture>
+                                                            <source 
+                                                                media="(max-width: 768px)" 
+                                                                srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.png`} 
+                                                            />
+                                                            <img
+                                                                src={coverImgSrc}
+                                                                alt={`${study.title} Cover`}
+                                                                loading="eager"
+                                                                decoding="async"
+                                                                className="w-full h-full object-cover block"
+                                                            />
+                                                        </picture>
+                                                        */}
                                                         <img
                                                             src={coverImgSrc}
                                                             alt={`${study.title} Cover`}
@@ -222,6 +241,31 @@ const CaseStudyPage = () => {
                             return (
                                 <section key={slide.page} className={`w-full ${bgColor} py-12 px-6 md:px-16 flex items-center justify-center border-b border-black/[0.04]`}>
                                     <div className="max-w-[1420px] mx-auto w-full">
+                                        {/* Mobile optimized slide images commented out for now
+                                        {existingMobilePages.has(slide.page) ? (
+                                            <picture>
+                                                <source 
+                                                    media="(max-width: 768px)" 
+                                                    srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.png`} 
+                                                />
+                                                <img
+                                                    src={slideImgSrc}
+                                                    alt={`${study.title} case study slide ${idx + 1}`}
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    className="w-full h-auto block"
+                                                />
+                                            </picture>
+                                        ) : (
+                                            <img
+                                                src={slideImgSrc}
+                                                alt={`${study.title} case study slide ${idx + 1}`}
+                                                loading="lazy"
+                                                decoding="async"
+                                                className="w-full h-auto block"
+                                            />
+                                        )}
+                                        */}
                                         <img
                                             src={slideImgSrc}
                                             alt={`${study.title} case study slide ${idx + 1}`}

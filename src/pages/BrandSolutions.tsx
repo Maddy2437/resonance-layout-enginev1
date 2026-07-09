@@ -239,7 +239,7 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
         ],
         client: "MORDE",
         year: "2025",
-        service: "Launch New Packaging",
+        service: "Exhibition brand collaterals",
         objective:
             "Refresh brand identity and drive engagement across B2B and B2C audiences.",
         approach:
@@ -262,11 +262,10 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "/assets/images/CaseStudies/Killer/Killer1-01.png",
             "/assets/images/CaseStudies/Killer/Killer1-0-01.png",
         ],
-        client: "Killer Jeans",
+        client: "KEWAL KIRAN CLOTHING LTD.",
         year: "2024",
         service: "Original Content & Copywriting",
-        objective:
-            "Reinforce brand identity for a younger, style-forward audience.",
+        objective: "Reinforce Killer Jeans’ bold, youthful identity through an integrated campaign, creating high-impact communication across print, social media, and outdoor.",
         approach:
             "Developed a bold, content-first strategy spanning print, social, and OOH, including influencer-led and trend-driven creatives.",
         impact:
@@ -283,9 +282,9 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "/assets/images/CaseStudies/Netflix/4.png",
         ],
         client: "Netflix India",
-        year: "2023",
-        service: "Campaign Production",
-        objective: "Drive engagement through culturally relevant storytelling.",
+        year: "2021-2024",
+        service: "Preferred CG Partner",
+        objective: "Partnered with Netflix across 4 years continuously as a VFX partner for their year-end Playback videos which won us the prestigious Kyoorious Award.",
         approach:
             "Created end-of-year Playback campaigns for 2021, 2022, and 2023, delivering high-viewership content. Extended impact through brand collaborations like KitKat and award-winning work recognised at Kyoorius 2023.",
         impact:
@@ -305,9 +304,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
         ],
         client: "CONOSH",
         year: "2025",
-        service: "Brand Solutions",
-        objective:
-            "Build a community-driven culinary platform and grow digital presence.",
+        service: "IP & Communication Collaterals",
+        objective: "Developed IP - India Ultimate Home Chef across mediums to drive culinary curiosity, audience interactions and participation.",
         approach:
             "Created an end-to-end ecosystem—social media, website, video content, and a flagship web series featuring celebrity chefs.",
         impact:
@@ -323,8 +321,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
         ],
         client: "OPPO",
         year: "2024",
-        service: "Video Editing & Animation",
-        objective: "Bring AI capabilities to life in an engaging, humanised way.",
+        service: "Mascot identity & brand film",
+        objective: "Communicate OPPO AI capabilities, driving narrative through celebrity Ranbir Kapoor.",
         approach:
             "Conceptualised and executed a mascot-led narrative, blending storytelling with product demonstration.",
     },
@@ -341,9 +339,9 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "/assets/images/CaseStudies/Mahindra/6.png",
         ],
         client: "Mahindra XUV 500",
-        year: "2018",
-        service: "Campaign Production",
-        objective: "Showcase product innovation and elevate brand perception.",
+        year: "2018-2021",
+        service: "3D renders & brand films",
+        objective: "Created high-quality CGI visuals for Mahindra Auto, combining advanced technology with photorealistic rendering to showcase vehicle design, performance, and innovation.",
         approach:
             "Delivered high-quality product films and full-CG executions, highlighting design, performance, and features.",
         impact:
@@ -365,8 +363,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "/assets/images/CaseStudies/Vraj/Vraj_1-3-01.png",
         ],
         client: "Vraj Group",
-        year: "2024",
-        service: "Brand Campaign",
+        year: "2026",
+        service: "INTEGRATED BRAND PROPERTY LAUNCH",
         objective: "Build a premium project identity.",
         approach: "Designed branding, visual language, and high-end collateral.",
         impact: "Delivered a refined, luxury positioning.",
@@ -381,10 +379,10 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "/assets/images/CaseStudies/Estuary/3.png",
             "/assets/images/CaseStudies/Estuary/4.png",
         ],
-        client: "Estuary",
-        year: "2020",
-        service: "Digital Marketing",
-        objective: "Establish a premium identity in a niche category.",
+        client: "ESTUARY",
+        year: "2022",
+        service: "Creative Campaign",
+        objective: "Position Estuary as the finest blending water for premium spirits, creating a cohesive brand ecosystem across film, social media, and website.",
         approach:
             "Built a refined brand language across packaging, digital, website, and films.",
         impact: "Positioned the brand as aspirational and category-defining.",
@@ -404,16 +402,16 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
         ],
         client: "Calamus One - Ultrabike",
         year: "2019",
-        service: "Brand Film",
-        objective: "Launch a next-gen e-bike with a tech-forward narrative.",
+        service: "FILM",
+        objective: "Establish Calamus One as a pioneering smart e-bike brand through a future-ready identity and compelling storytelling.",
         approach:
             "Developed product films and digital storytelling highlighting innovation.",
         impact: "Enabled strong market entry and successful crowdfunding traction.",
     },
     {
-        title: "Puravankara",
-        image: "/assets/images/CaseStudies/Purvankara/PurvThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Purvankara/PurvThumb.png",
+        title: "HAPPY HOME",
+        image: "/assets/images/CaseStudies/Cover_Images/12.png",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/12.png",
         galleryImages: [
             "/assets/images/CaseStudies/Purvankara/2.png",
             "/assets/images/CaseStudies/Purvankara/3.png",
@@ -425,18 +423,18 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "/assets/images/CaseStudies/PURAVANKARA/Puravankara_1-2-01.png",
             "/assets/images/CaseStudies/PURAVANKARA/Puravankara_1-4-01.png",
         ],
-        client: "Puravankara",
-        year: "2022",
-        service: "Real Estate Marketing",
-        objective: "Launch a premium residential project across channels.",
+        client: "HAPPY HOME",
+        year: "2026",
+        service: "Influencer Marketing",
+        objective: "Strengthen Happy Home Group’s brand credibility by showcasing its consumer-first philosophy, trusted legacy, and thoughtfully designed developments through authentic storytelling.",
         approach:
             "Delivered a 360° campaign across print, digital, and on-ground media.",
         impact: "Built a consistent, high-end brand narrative.",
     },
     {
-        title: "Elegant Builders & Developers",
-        image: "/assets/images/CaseStudies/Elegent/ElegThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Elegent/ElegThumb.png",
+        title: "MONTE CARLO",
+        image: "/assets/images/CaseStudies/Cover_Images/10.png",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/10.png",
         galleryImages: [
             "/assets/images/CaseStudies/Elegent/2.png",
             "/assets/images/CaseStudies/Elegent/3.png",
@@ -448,10 +446,10 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "/assets/images/CaseStudies/Elegent/Elegant_1-01.png",
             "/assets/images/CaseStudies/Elegent/Elegant_1-4-01.png",
         ],
-        client: "Elegant Builders & Developers",
-        year: "2024",
-        service: "Brand Solutions",
-        objective: "Launch a nature-led luxury project.",
+        client: "MONTE CARLO",
+        year: "2026",
+        service: "Creative Campaign",
+        objective: "Position Monte Carlo SS\'26 as the season\'s definitive summer fashion collection through a hybrid AI-led campaign, showcasing effortless style, contemporary design, and versatile looks for the modern consumer.",
         approach: "Built a brand language rooted in conscious living across media.",
         impact:
             "Positioned the project at the intersection of sustainability and luxury.",

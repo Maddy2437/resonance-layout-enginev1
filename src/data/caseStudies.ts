@@ -26,12 +26,12 @@ export const caseStudies: CaseStudy[] = [
     {
         slug: "vraj-meridian",
         title: "Meridian",
-        client: "Vraj Group",
-        service: "Brand Campaign",
-        year: "2024",
+        client: "VRAJ GROUP",
+        service: "INTEGRATED BRAND PROPERTY LAUNCH",
+        year: "2026",
         heroImage: caseStudyPath("Vraj", "VrajThumb.png"),
         thumbnail: caseStudyPath("Vraj", "VrajThumb.png"),
-        summary: "A premium real estate communication system for Meridian, extending from identity and collateral to digital and outdoor touchpoints.",
+        summary: "Launching Vraj group exclusive property in Mumbai Developed the brand communication for Vraj Meridian, a prime project in Andheri (W) Mumbai. From creating the logo, look and colour palette, the campaign was taken across multiple touchpoints like social, outdoor, and print, including a coffee table placed at the sales gallery.",
         objective: "Build a premium project identity for a high-end residential launch.",
         challenge: "Create a refined brand presence that could work across sales collateral, digital media, OOH, and on-ground communication.",
         solution: "Developed a luxury-led visual language and translated it into campaign assets, collateral, and showcase imagery.",
@@ -46,19 +46,19 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Vraj", "2.png"), alt: "Meridian social media campaign", variant: "contained" }
         ],
         pdfClient: "VRAJ GROUP",
-        pdfService: "LAUNCH NEW PROPERTY",
-        pdfYear: "2025",
+        pdfService: "INTEGRATED BRAND PROPERTY LAUNCH",
+        pdfYear: "2026",
         pdfDescription: "Launching Vraj group exclusive property in Mumbai Developed the brand communication for Vraj Meridian, a prime project in Andheri (W) Mumbai. From creating the logo, look and colour palette, the campaign was taken across multiple touchpoints like social, outdoor, and print, including a coffee table placed at the sales gallery."
     },
     {
         slug: "morde",
         title: "MORDE",
         client: "MORDE",
-        service: "Launch New Packaging",
+        service: "Exhibition brand collaterals",
         year: "2025",
         heroImage: caseStudyPath("Morde", "MordThumb.png"),
         thumbnail: caseStudyPath("Morde", "MordThumb.png"),
-        summary: "A packaging launch and brand refresh system across brochures, digital content, POSM, and social media.",
+        summary: "Digital content to drive engagement and increase footfalls for the brand at Bakery Business South, Hyderabad with emailers, videos, e-brochures, Insta reels, posts, and carousels.",
         objective: "Refresh brand identity and drive engagement across B2B and B2C audiences.",
         challenge: "Showcase the product range and new packaging across trade, digital, and on-ground contexts without losing consistency.",
         solution: "Created an integrated campaign language across catalogues, social content, store visibility, and launch communication.",
@@ -70,19 +70,19 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Morde", "4.png"), alt: "MORDE social media and website layout", variant: "full" }
         ],
         pdfClient: "MORDE",
-        pdfService: "LAUNCH NEW PACKAGING",
+        pdfService: "Exhibition brand collaterals",
         pdfYear: "2025",
-        pdfDescription: "Objective: Digital content to drive engagement and increase footfalls for the brand at Bakery Business South, Hyderabad with emailers, videos, e-brochures, Insta reels, posts, and carousels."
+        pdfDescription: "Digital content to drive engagement and increase footfalls for the brand at Bakery Business South, Hyderabad with emailers, videos, e-brochures, Insta reels, posts, and carousels."
     },
     {
         slug: "killer",
         title: "Killer Jeans",
-        client: "Killer Jeans",
-        service: "Original Content & Copywriting",
+        client: "KEWAL KIRAN CLOTHING LTD.",
+        service: "SOCIAL MEDIA",
         year: "2024",
         heroImage: caseStudyPath("Killer", "KillThumb.png"),
         thumbnail: caseStudyPath("Killer", "KillThumb.png"),
-        summary: "A youth-first content and campaign system spanning print, digital, social media, and outdoor formats.",
+        summary: "Reinforce Killer Jeans’ bold, youthful identity through an integrated campaign, creating high-impact communication across print, social media, and outdoor to strengthen brand recall and style appeal.",
         objective: "Reinforce brand identity for a younger, style-forward audience.",
         challenge: "Build high-energy creative that felt native to youth culture while retaining the brand's established attitude.",
         solution: "Developed bold copy, campaign visuals, social formats, and activation-led content.",
@@ -97,18 +97,18 @@ export const caseStudies: CaseStudy[] = [
         ],
         pdfClient: "KEWAL KIRAN CLOTHING LTD.",
         pdfService: "SOCIAL MEDIA",
-        pdfYear: "2020",
-        pdfDescription: "Creative mandate for the iconic denim brand for print, social and OOH. Developed the brand communication for Vraj Meridian, a prime project in Andheri (W) Mumbai."
+        pdfYear: "2024",
+        pdfDescription: "Reinforce Killer Jeans’ bold, youthful identity through an integrated campaign, creating high-impact communication across print, social media, and outdoor to strengthen brand recall and style appeal."
     },
     {
         slug: "netflix",
         title: "Netflix India",
-        client: "Netflix India",
-        service: "Campaign Production",
-        year: "2021-2023",
+        client: "NETFLIX",
+        service: "Preferred CG Partner",
+        year: "2021- 2024",
         heroImage: caseStudyPath("Netflix", "NetfThumb.png"),
         thumbnail: caseStudyPath("Netflix", "NetfThumb.png"),
-        summary: "End-of-year Playback campaigns and entertainment-led social films built around culturally relevant storytelling.",
+        summary: "Partnered with Netflix across 4 years continuously as a VFX partner for their year-end Playback videos which won us the prestigious Kyoorious Award.",
         objective: "Drive engagement through culturally relevant storytelling.",
         challenge: "Create high-recall campaign films that could connect platform titles with Indian pop culture moments.",
         solution: "Produced the Playback campaign series and extended platform engagement through celebrity-led, shareable content.",
@@ -121,19 +121,19 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Netflix", "4.png"), alt: "Netflix Playback behind the scenes still", variant: "contained" }
         ],
         pdfClient: "NETFLIX",
-        pdfService: "XXXXX XXXX XXXX",
-        pdfYear: "XXXX",
-        pdfDescription: "Objective: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis."
+        pdfService: "Preferred CG Partner",
+        pdfYear: "2021- 2024",
+        pdfDescription: "Partnered with Netflix across 4 years continuously as a VFX partner for their year-end Playback videos which won us the prestigious Kyoorious Award."
     },
     {
         slug: "conosh",
         title: "CONOSH",
         client: "CONOSH",
-        service: "Brand Solutions",
-        year: "2025",
+        service: "IP & Communication Collaterals",
+        year: "2024",
         heroImage: caseStudyPath("Conosh", "ConoThumb.png"),
         thumbnail: caseStudyPath("Conosh", "ConoThumb.png"),
-        summary: "A community-led culinary brand ecosystem spanning social media, website, videos, and a flagship content series.",
+        summary: "Developed IP - India Ultimate Home Chef across mediums to drive culinary curiosity, audience interactions and participation.",
         objective: "Build a community-driven culinary platform and grow digital presence.",
         challenge: "Unify chef-led community content, digital discovery, and premium food experiences under one recognizable identity.",
         solution: "Created social media systems, website content, video assets, and a flagship web series featuring celebrity chefs.",
@@ -152,19 +152,19 @@ export const caseStudies: CaseStudy[] = [
             ] }
         ],
         pdfClient: "CONOSH",
-        pdfService: "XXXXX XXXX XXXX",
-        pdfYear: "XXXX",
-        pdfDescription: "Objective: A hospitality company promoting culinary learning and experence dining on a global stage. Here guests interact with culinary stars to share, imbibe and expand their clulinary senses."
+        pdfService: "IP & Communication Collaterals",
+        pdfYear: "2024",
+        pdfDescription: "Developed IP - India Ultimate Home Chef across mediums to drive culinary curiosity, audience interactions and participation."
     },
     {
         slug: "oppo",
         title: "OPPO",
         client: "OPPO",
-        service: "Video Editing & Animation",
+        service: "Mascot identity & brand film",
         year: "2024",
         heroImage: caseStudyPath("Oppo", "OppoThumb.png"),
         thumbnail: caseStudyPath("Oppo", "OppoThumb.png"),
-        summary: "A mascot-led product narrative that made OPPO AI features clear, approachable, and human.",
+        summary: "Communicate OPPO AI capabilities, driving narrative through celebrity Ranbir Kapoor.",
         objective: "Bring AI capabilities to life in an engaging, humanised way.",
         challenge: "Explain AI product features through a story that felt warm rather than technical.",
         solution: "Conceptualised and executed a mascot-led narrative blending storytelling with product demonstration.",
@@ -176,19 +176,19 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Oppo", "3.png"), alt: "OPPO AI campaign supporting frames", variant: "contained" }
         ],
         pdfClient: "OPPO",
-        pdfService: "MASCOT IDENTITY & BRAND FILM",
+        pdfService: "Mascot identity & brand film",
         pdfYear: "2024",
         pdfDescription: "Communicate OPPO AI capabilities, driving narrative through celebrity Ranbir Kapoor."
     },
     {
         slug: "mahindra-xuv-500",
         title: "Mahindra XUV 500",
-        client: "Mahindra XUV 500",
-        service: "Campaign Production",
-        year: "2018",
+        client: "Mahindra",
+        service: "3D renders & brand films",
+        year: "2018 – 2021",
         heroImage: caseStudyPath("Mahindra", "MahiThumb.png"),
         thumbnail: caseStudyPath("Mahindra", "MahiThumb.png"),
-        summary: "A full-CG automotive launch and product film campaign showcasing design, performance, and technology.",
+        summary: "Created high-quality CGI visuals for Mahindra Auto, combining advanced technology with photorealistic rendering to showcase vehicle design, performance, and innovation across marketing campaigns with precision, consistency, and visual impact.",
         objective: "Showcase product innovation and elevate brand perception.",
         challenge: "Create premium automotive films and CG imagery that made the new vehicle feel technically advanced and desirable.",
         solution: "Delivered product films and full-CG executions highlighting design, performance, and features.",
@@ -205,19 +205,19 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Mahindra", "6.png"), alt: "Mahindra CGI image film frames", variant: "full" }
         ],
         pdfClient: "Mahindra",
-        pdfService: "XXXXX XXXX XXXX",
-        pdfYear: "XXXX",
-        pdfDescription: "Objective: This product film is a visual experience, showcasing the best of what Mahindra XUV 500 has to offer. With this, we became the first Indian company to execute end-to-end CG for a car launch."
+        pdfService: "3D renders & brand films",
+        pdfYear: "2018 – 2021",
+        pdfDescription: "Created high-quality CGI visuals for Mahindra Auto, combining advanced technology with photorealistic rendering to showcase vehicle design, performance, and innovation across marketing campaigns with precision, consistency, and visual impact."
     },
     {
         slug: "estuary",
         title: "Estuary",
-        client: "Estuary",
-        service: "Digital Marketing",
-        year: "2020",
+        client: "ESTUARY",
+        service: "Creative Campaign",
+        year: "2022",
         heroImage: caseStudyPath("Estuary", "EstuThumb.png"),
         thumbnail: caseStudyPath("Estuary", "EstuThumb.png"),
-        summary: "A refined brand and digital language for a premium bottled water brand.",
+        summary: "Position Estuary as the finest blending water for premium spirits, creating a cohesive brand ecosystem across film, social media, and website to elevate awareness, desirability, and consumer understanding.",
         objective: "Establish a premium identity in a niche category.",
         challenge: "Position the brand as aspirational while keeping the communication clean and product-forward.",
         solution: "Built a refined brand language across packaging, digital, website, and films.",
@@ -231,20 +231,20 @@ export const caseStudies: CaseStudy[] = [
                 { src: caseStudyPath("Estuary", "4.png"), alt: "Estuary product film visual" }
             ] }
         ],
-        pdfClient: "Mahindra",
-        pdfService: "XXXXX XXXX XXXX",
-        pdfYear: "XXXX",
-        pdfDescription: "Objective: This product film is a visual experience, showcasing the best of what Mahindra XUV 500 has to offer. With this, we became the first Indian company to execute end-to-end CG for a car launch."
+        pdfClient: "ESTUARY",
+        pdfService: "Creative Campaign",
+        pdfYear: "2022",
+        pdfDescription: "Position Estuary as the finest blending water for premium spirits, creating a cohesive brand ecosystem across film, social media, and website to elevate awareness, desirability, and consumer understanding."
     },
     {
         slug: "calamus-one",
         title: "Calamus One - Ultrabike",
-        client: "Calamus One - Ultrabike",
-        service: "Brand Film",
+        client: "CALAMUS",
+        service: "FILM",
         year: "2019",
         heroImage: caseStudyPath("Calumus", "CaluThumb.png"),
         thumbnail: caseStudyPath("Calumus", "CaluThumb.png"),
-        summary: "A tech-forward launch narrative and campaign system for a next-generation e-bike.",
+        summary: "Establish Calamus One as a pioneering smart e-bike brand through a future-ready identity and compelling storytelling, highlighting its breakthrough technology, intelligent features, and premium urban mobility experience.",
         objective: "Launch a next-gen e-bike with a tech-forward narrative.",
         challenge: "Introduce a new mobility product with enough product clarity and future-facing energy to support market entry.",
         solution: "Developed product films and digital storytelling highlighting design innovation and smart features.",
@@ -256,19 +256,19 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Calumus", "3.png"), alt: "Calamus One product film frames", variant: "contained" }
         ],
         pdfClient: "CALAMUS",
-        pdfService: "SHOWREEL",
+        pdfService: "FILM",
         pdfYear: "2019",
-        pdfDescription: "Objective: o introduce Calamus One, a next-generation E-bike, by positioning it as a breakthrough in urban mobility. The brand identity and messaging highlighted its pioneering features like the world’s first Android-enabled integrated display, on-board navigation, biometric rider recognition, and real-time diagnostics. The design language and campaign visuals conveyed a sense of intelligent innovation and precision engineering for the tech-savvy commuter."
+        pdfDescription: "Establish Calamus One as a pioneering smart e-bike brand through a future-ready identity and compelling storytelling, highlighting its breakthrough technology, intelligent features, and premium urban mobility experience."
     },
     {
         slug: "elegant",
         title: "Elegant Builders & Developers",
-        client: "Elegant Builders & Developers",
-        service: "Brand Solutions",
-        year: "2024",
+        client: "MONTE CARLO",
+        service: "Creative Campaign",
+        year: "2026",
         heroImage: caseStudyPath("Elegent", "ElegThumb.png"),
         thumbnail: caseStudyPath("Elegent", "ElegThumb.png"),
-        summary: "A nature-led luxury project launch positioned around conscious living and refined residential design.",
+        summary: "Position Monte Carlo SS'26 as the season's definitive summer fashion collection through a hybrid AI-led campaign, showcasing effortless style, contemporary design, and versatile looks for the modern consumer.",
         objective: "Launch a nature-led luxury project.",
         challenge: "Express sustainability and premium residential value without making the communication feel generic.",
         solution: "Built a brand language rooted in conscious living across campaign and media assets.",
@@ -282,10 +282,10 @@ export const caseStudies: CaseStudy[] = [
             ] },
             { type: "image", image: caseStudyPath("Elegent", "4.png"), alt: "Elegant project supporting visual", variant: "contained" }
         ],
-        pdfClient: "ELEGENT",
-        pdfService: "CAMPAIGN",
-        pdfYear: "2024",
-        pdfDescription: "Objective: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio"
+        pdfClient: "MONTE CARLO",
+        pdfService: "Creative Campaign",
+        pdfYear: "2026",
+        pdfDescription: "Position Monte Carlo SS'26 as the season's definitive summer fashion collection through a hybrid AI-led campaign, showcasing effortless style, contemporary design, and versatile looks for the modern consumer."
     },
     {
         slug: "micl",
@@ -317,12 +317,12 @@ export const caseStudies: CaseStudy[] = [
     {
         slug: "puravankara",
         title: "Puravankara",
-        client: "Puravankara",
-        service: "Real Estate Marketing",
-        year: "2022",
+        client: "HAPPY HOME",
+        service: "Influencer Marketing",
+        year: "2026",
         heroImage: caseStudyPath("Purvankara", "PurvThumb.png"),
         thumbnail: caseStudyPath("Purvankara", "PurvThumb.png"),
-        summary: "A premium residential launch campaign across print, digital, and on-ground media.",
+        summary: "Strengthen Happy Home Group’s brand credibility by showcasing its consumer-first philosophy, trusted legacy, and thoughtfully designed developments through authentic storytelling that highlighted project advantages, lifestyle, and brand values.",
         objective: "Launch a premium residential project across channels.",
         challenge: "Carry a luxury real estate story across sales, outdoor, brochure, and digital campaign touchpoints.",
         solution: "Delivered a 360-degree campaign across print, digital, and on-ground media.",
@@ -336,10 +336,10 @@ export const caseStudies: CaseStudy[] = [
                 { src: caseStudyPath("Purvankara", "4.png"), alt: "Puravankara digital campaign assets" }
             ] }
         ],
-        pdfClient: "ELEGENT",
-        pdfService: "CAMPAIGN",
-        pdfYear: "2024",
-        pdfDescription: "Objective: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio"
+        pdfClient: "HAPPY HOME",
+        pdfService: "Influencer Marketing",
+        pdfYear: "2026",
+        pdfDescription: "Strengthen Happy Home Group’s brand credibility by showcasing its consumer-first philosophy, trusted legacy, and thoughtfully designed developments through authentic storytelling that highlighted project advantages, lifestyle, and brand values."
     }
 ];
 
