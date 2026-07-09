@@ -37,7 +37,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
             {/* Side Menu Panel */}
             <div
-                className={`fixed top-0 right-0 bottom-0 z-[70] w-full md:w-[450px] ${isLightMenuTheme ? "bg-theme-primaryBg1" : "bg-theme-secondaryBg2"
+                className={`fixed top-0 right-0 bottom-0 z-[70] w-full md:w-[450px] ${isLightMenuTheme ? "bg-[#f0ede1]" : "bg-[#14171d]"
                     } transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
                 style={{
@@ -51,8 +51,8 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                     onClick={onClose}
                     aria-label="Close menu"
                     className={`absolute top-8 right-8 flex items-center gap-2 transition-colors duration-300 group z-10 ${isLightMenuTheme
-                            ? "text-theme-secondaryBg2 hover:text-theme-secondaryText"
-                            : "text-theme-primaryBg1 hover:text-theme-secondaryText"
+                            ? "text-[#14171d] hover:text-[#cdcbc7]"
+                            : "text-[#f6f4ed] hover:text-[#58595b]"
                         }`}
                 >
                     <X className="w-5 h-5" strokeWidth={1.5} />
@@ -62,7 +62,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 </button>
 
                 {/* Menu Items - Centered with Padding */}
-                <nav className="h-full flex flex-col items-center justify-center gap-3 px-12 py-20">
+                <nav className="h-full flex flex-col justify-center gap-3 px-12 py-20 items-start">
                     {menuItems.map((item, index) => {
                         const isActive = location.pathname === item.href;
 
@@ -71,7 +71,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                                 key={item.href}
                                 to={item.href}
                                 onClick={onClose}
-                                className="group relative w-full py-3 text-center flex items-center justify-center"
+                                className="group relative w-full py-3 flex items-center justify-start"
                                 style={{
                                     opacity: isOpen ? 1 : 0,
                                     transform: isOpen ? "translateX(0)" : "translateX(30px)",
@@ -80,12 +80,13 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                                 }}
                             >
                                 <span
-                                    className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight transition-colors duration-300 ${isActive
-                                            ? (isLightMenuTheme ? "text-theme-secondaryBg2" : "text-theme-primaryBg1")
+                                    className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight transition-colors duration-300 ${
+                                        isActive
+                                            ? (isLightMenuTheme ? "text-[#14171d]" : "text-[#f6f4ed]")
                                             : isLightMenuTheme
-                                                ? "text-theme-secondaryText group-hover:text-theme-secondaryBg2"
-                                                : "text-[#d2d3d4] group-hover:text-theme-primaryBg1"
-                                        }`}
+                                                ? "text-[#14171d] group-hover:text-[#cdcbc7]"
+                                                : "text-[#f6f4ed] group-hover:text-[#58595b]"
+                                    }`}
                                     style={{ willChange: "color" }}
                                 >
                                     {item.label}
@@ -97,7 +98,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
                 {/* Email at Bottom */}
                 <div
-                    className={`absolute bottom-12 left-0 right-0 flex justify-center text-xs px-8 ${isLightMenuTheme ? "text-theme-secondaryBg2" : "text-theme-primaryBg1"
+                    className={`absolute bottom-12 left-0 right-0 flex justify-center text-xs px-8 ${isLightMenuTheme ? "text-[#14171d]" : "text-[#f6f4ed]"
                         }`}
                     style={{
                         opacity: isOpen ? 1 : 0,
@@ -106,7 +107,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 >
                     <a
                         href="mailto:info@resonancedigital.in"
-                        className="hover:text-theme-secondaryText transition-colors duration-300"
+                        className={`${isLightMenuTheme ? "hover:text-[#cdcbc7]" : "hover:text-[#58595b]"} transition-colors duration-300`}
                     >
                         info@resonancedigital.com
                     </a>

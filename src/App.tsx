@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BrandSolutions from "./pages/BrandSolutions";
 import MotionPictures from "./pages/MotionPictures";
+import CaseStudyPage from "./pages/CaseStudyPage";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/brand-solutions" element={<BrandSolutions />} />
                         <Route path="/motion-pictures" element={<MotionPictures />} />
+                        <Route path="/case-studies/:slug" element={<CaseStudyPage />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </BrowserRouter>

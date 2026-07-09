@@ -12,7 +12,7 @@ const Header = () => {
     "/",
     "/brand-solutions",
     "/motion-pictures",
-  ].includes(pathname);
+  ].includes(pathname) || pathname.startsWith("/case-studies");
 
   const isHomePage = pathname === "/";
   const visible = !isHomePage || verticalsReached || isMenuOpen;
@@ -40,7 +40,13 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 flex items-center justify-between`}
+        className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-2 flex items-center justify-between backdrop-blur-md ${
+          !isMenuOpen
+            ? isLightThemePage
+              ? "bg-[#f0ede1]/60"
+              : "bg-[#14171d]/60"
+            : "bg-transparent"
+        }`}
         style={{
           opacity: visible ? 1 : 0,
           transform: visible ? "translateY(0)" : "translateY(-12px)",
@@ -56,14 +62,16 @@ const Header = () => {
           <img
             src="/assets/images/RDL_logo.png"
             alt="Resonance"
-            className="h-10 md:h-12"
+            className="h-14 md:h-16"
           />
         </Link>
 
         {/* Hamburger */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="relative z-50 w-12 h-12 flex items-center justify-center text-gray-500 hover:text-primary transition-colors duration-300"
+          className={`relative z-50 w-12 h-12 flex items-center justify-center transition-colors duration-300 ${
+            isLightThemePage ? "text-gray-600 hover:text-gray-900" : "text-gray-200 hover:text-white"
+          }`}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMenuOpen ? (

@@ -1001,7 +1001,7 @@ const VFX = () => {
                     {/* Added pb-24 padding configuration to fix spacing seen in Screenshot 2026-07-05 at 4.10.24 pm.jpg */}
                     <section className="relative w-full bg-theme-primaryBg1 px-12 md:px-24 pb-24">
                         <div className="max-w-7xl mx-auto">
-                            <div className="relative">
+                            <div className="relative mb-20 md:mb-28">
                                 {/* Carousel Navigation */}
                                 <button
                                     onClick={handleMoviePrev}

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AnimatedColorText from "../components/AnimatedColorText";
@@ -754,44 +755,59 @@ const BrandSolutions = () => {
             </AnimatePresence>
 
             {/* Brand Solutions — Case Studies */}
-            <section className="w-full bg-theme-secondaryBg2 pb-24 px-10 py-10 md:px-16">
+            <section id="case-studies" className="w-full bg-theme-secondaryBg2 pb-24 px-10 py-10 md:px-16">
                 <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-400 mb-12 translate-y-3">
                     Brand Solutions <span className="text-gray-400">|</span>{" "}
                     <span className="font-bold text-gray-700">Case Studies</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {caseStudyShowcase.map((item, index) => (
-                        <button
-                            key={`${item.title}-${item.year}-${index}`}
-                            type="button"
-                            className="flex flex-col text-left cursor-pointer group"
-                            onClick={() => openCaseStudy(index)}
-                            aria-label={`Open case study ${item.title}`}
-                        >
-                            <div className="relative aspect-video overflow-hidden rounded-sm bg-[#e7e5df] border border-[#d7d4cc]">
-                                {/* FIX 5: lazy-load case study card thumbnails — 11 images
-                    were all fetching eagerly. The first card stays eager
-                    since it may be in the initial viewport. */}
-                                <img
-                                    src={item.image}
-                                    alt={item.title}
-                                    loading={index === 0 ? "eager" : "lazy"}
-                                    decoding="async"
-                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-xs uppercase tracking-widest font-semibold border border-white/60 px-4 py-2">
-                                        View Case Study
-                                    </span>
+                    {caseStudyShowcase.map((item, index) => {
+                        const caseStudySlugs = [
+                            "morde",
+                            "killer",
+                            "netflix",
+                            "conosh",
+                            "oppo",
+                            "mahindra-xuv-500",
+                            "vraj-meridian",
+                            "estuary",
+                            "calamus-one",
+                            "puravankara",
+                            "elegant",
+                        ];
+                        const slug = caseStudySlugs[index];
+                        return (
+                            <Link
+                                key={`${item.title}-${item.year}-${index}`}
+                                to={`/case-studies/${slug}`}
+                                className="flex flex-col text-left cursor-pointer group"
+                                aria-label={`Open case study ${item.title}`}
+                            >
+                                <div className="relative aspect-video overflow-hidden rounded-sm bg-[#e7e5df] border border-[#d7d4cc]">
+                                    {/* FIX 5: lazy-load case study card thumbnails — 11 images
+                        were all fetching eagerly. The first card stays eager
+                        since it may be in the initial viewport. */}
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        loading={index === 0 ? "eager" : "lazy"}
+                                        decoding="async"
+                                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-xs uppercase tracking-widest font-semibold border border-white/60 px-4 py-2">
+                                            View Case Study
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <p className="mt-3 text-sm text-gray-500 uppercase tracking-wide">
-                                {item.client} <span className="text-gray-400">|</span>{" "}
-                                {item.year}
-                            </p>
-                        </button>
-                    ))}
+                                <p className="mt-3 text-sm text-gray-500 uppercase tracking-wide">
+                                    {item.client} <span className="text-gray-400">|</span>{" "}
+                                    {item.year}
+                                </p>
+                            </Link>
+                        );
+                    })}
                 </div>
             </section>
 
