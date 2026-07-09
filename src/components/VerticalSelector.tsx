@@ -13,16 +13,6 @@ const verticals = [
         bgImage: "/assets/images/vfxposter.png",
     },
     {
-        id: "brand-solutions",
-        title: "Brand Solutions",
-        subtitle: "",
-        description:
-            "Strategic brand content and campaigns that resonate with audiences worldwide.",
-        href: "/brand-solutions",
-        bgImage:
-            "/assets/images/brandsolposter.png",
-    },
-    {
         id: "real-estate",
         title: "Real Estate",
         subtitle: "Mar-tech",
@@ -31,6 +21,16 @@ const verticals = [
         href: "/real-estate",
         bgImage:
             "/assets/images/realestposter.png",
+    },
+    {
+        id: "brand-solutions",
+        title: "Brand Solutions",
+        subtitle: "",
+        description:
+            "Strategic brand content and campaigns that resonate with audiences worldwide.",
+        href: "/brand-solutions",
+        bgImage:
+            "/assets/images/brandsolposter.png",
     },
     {
         id: "motion-pictures",

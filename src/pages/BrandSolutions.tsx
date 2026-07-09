@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import AnimatedColorText from "../components/AnimatedColorText";
 import FixedHero from "../components/FixedHero";
 import { ChevronDown, Play, X } from "lucide-react";
+import { caseStudies } from "../data/caseStudies";
 
 type BrandShowcaseItem = {
     title: string;
@@ -219,13 +220,33 @@ const brandStatements = [
         title: "Campaign Planning",
         body: "Developing integrated campaigns that align objectives, audiences, channels and creative execution for measurable impact.",
     },
-];
-
-const caseStudyShowcase: BrandShowcaseItem[] = [
+];const caseStudyShowcase: BrandShowcaseItem[] = [
+    {
+        title: "Meridian",
+        image: "/assets/images/CaseStudies/Cover_Images/1.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/1.webp",
+        galleryImages: [
+            "/assets/images/CaseStudies/Vraj/2.png",
+            "/assets/images/CaseStudies/Vraj/3.png",
+            "/assets/images/CaseStudies/Vraj/4.png",
+        ],
+        mobileGalleryImages: [
+            "/assets/images/CaseStudies/Vraj/Vraj_1-01.png",
+            "/assets/images/CaseStudies/Vraj/Vraj_1-02-01.png",
+            "/assets/images/CaseStudies/Vraj/Vraj_0-01.png",
+            "/assets/images/CaseStudies/Vraj/Vraj_1-3-01.png",
+        ],
+        client: "Vraj Group",
+        year: "2026",
+        service: "INTEGRATED BRAND PROPERTY LAUNCH",
+        objective: "Build a premium project identity.",
+        approach: "Designed branding, visual language, and high-end collateral.",
+        impact: "Delivered a refined, luxury positioning.",
+    },
     {
         title: "MORDE",
-        image: "/assets/images/CaseStudies/Morde/MordThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Morde/MordThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/2.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/2.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Morde/2.png",
             "/assets/images/CaseStudies/Morde/3.png",
@@ -249,8 +270,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     },
     {
         title: "Killer Jeans",
-        image: "/assets/images/CaseStudies/Killer/KillThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Killer/KillThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/3.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/3.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Killer/2.png",
             "/assets/images/CaseStudies/Killer/3.png",
@@ -273,8 +294,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     },
     {
         title: "Netflix India",
-        image: "/assets/images/CaseStudies/Netflix/NetfThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Netflix/NetfThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/4.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/4.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Netflix/1.png",
             "/assets/images/CaseStudies/Netflix/2.png",
@@ -286,14 +307,14 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
         service: "Preferred CG Partner",
         objective: "Partnered with Netflix across 4 years continuously as a VFX partner for their year-end Playback videos which won us the prestigious Kyoorious Award.",
         approach:
-            "Created end-of-year Playback campaigns for 2021, 2022, and 2023, delivering high-viewership content. Extended impact through brand collaborations like KitKat and award-winning work recognised at Kyoorius 2023.",
+            "Created end-of-year Playback campaigns for 2021, 2022, and 2023, delivering high-viewership content. Extended impact through brand collaborations like KitKat and award-winning work recognised at Kyoorious 2023.",
         impact:
             "Built high-recall, shareable content that amplified platform love and cultural relevance.",
     },
     {
         title: "CONOSH",
-        image: "/assets/images/CaseStudies/Conosh/ConoThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Conosh/ConoThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/5.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/5.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Conosh/1.png",
             "/assets/images/CaseStudies/Conosh/2.png",
@@ -313,8 +334,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     },
     {
         title: "OPPO",
-        image: "/assets/images/CaseStudies/Oppo/OppoThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Oppo/OppoThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/6.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/6.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Oppo/2.png",
             "/assets/images/CaseStudies/Oppo/3.png",
@@ -328,8 +349,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     },
     {
         title: "Mahindra XUV 500",
-        image: "/assets/images/CaseStudies/Mahindra/MahiThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Mahindra/MahiThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/7.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/7.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Mahindra/1.png",
             "/assets/images/CaseStudies/Mahindra/2.png",
@@ -348,31 +369,9 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
             "Positioned Mahindra as a tech-forward automotive brand, including executing India's first end-to-end CG car launch.",
     },
     {
-        title: "Vraj Group",
-        image: "/assets/images/CaseStudies/Vraj/VrajThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Vraj/VrajThumb.png",
-        galleryImages: [
-            "/assets/images/CaseStudies/Vraj/2.png",
-            "/assets/images/CaseStudies/Vraj/3.png",
-            "/assets/images/CaseStudies/Vraj/4.png",
-        ],
-        mobileGalleryImages: [
-            "/assets/images/CaseStudies/Vraj/Vraj_1-01.png",
-            "/assets/images/CaseStudies/Vraj/Vraj_1-02-01.png",
-            "/assets/images/CaseStudies/Vraj/Vraj_0-01.png",
-            "/assets/images/CaseStudies/Vraj/Vraj_1-3-01.png",
-        ],
-        client: "Vraj Group",
-        year: "2026",
-        service: "INTEGRATED BRAND PROPERTY LAUNCH",
-        objective: "Build a premium project identity.",
-        approach: "Designed branding, visual language, and high-end collateral.",
-        impact: "Delivered a refined, luxury positioning.",
-    },
-    {
         title: "Estuary",
-        image: "/assets/images/CaseStudies/Estuary/EstuThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Estuary/EstuThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/8.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/8.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Estuary/1.png",
             "/assets/images/CaseStudies/Estuary/2.png",
@@ -389,11 +388,11 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     },
     {
         title: "Calamus One - Ultrabike",
-        image: "/assets/images/CaseStudies/Calumus/CaluThumb.png",
-        caseStudyImage: "/assets/images/CaseStudies/Calumus/CaluThumb.png",
+        image: "/assets/images/CaseStudies/Cover_Images/9.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/9.webp",
         galleryImages: [
-            "/assets/images/CaseStudies/Calumus/2.png",
-            "/assets/images/CaseStudies/Calumus/3.png",
+            "/assets/images/CaseStudies/Calamus/2.png",
+            "/assets/images/CaseStudies/Calamus/3.png",
         ],
         mobileGalleryImages: [
             "/assets/images/CaseStudies/Calamus/Calamus1-0-01.png",
@@ -407,6 +406,44 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
         approach:
             "Developed product films and digital storytelling highlighting innovation.",
         impact: "Enabled strong market entry and successful crowdfunding traction.",
+    },
+    {
+        title: "Elegant Builders & Developers",
+        image: "/assets/images/CaseStudies/Cover_Images/10.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/10.webp",
+        galleryImages: [
+            "/assets/images/CaseStudies/MICL/2.png",
+            "/assets/images/CaseStudies/MICL/3.png",
+            "/assets/images/CaseStudies/MICL/4.png",
+        ],
+        client: "ELEGANT BUILDERS & DEVELOPERS",
+        year: "2024",
+        service: "INTEGRATED MARKETING CAMPAIGN",
+        objective: "Launch a nature-led luxury project.",
+        approach: "Built a brand language rooted in conscious living across campaign and media assets.",
+        impact: "Positioned the project at the intersection of sustainability and luxury.",
+    },
+    {
+        title: "MONTE CARLO",
+        image: "/assets/images/CaseStudies/Cover_Images/11.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/11.webp",
+        galleryImages: [
+            "/assets/images/CaseStudies/Elegant/2.png",
+            "/assets/images/CaseStudies/Elegant/3.png",
+            "/assets/images/CaseStudies/Elegant/4.png",
+        ],
+        mobileGalleryImages: [
+            "/assets/images/CaseStudies/Elegant/Elegant_1-2-01.png",
+            "/assets/images/CaseStudies/Elegant/Elegant_1-3-01.png",
+            "/assets/images/CaseStudies/Elegant/Elegant_1-01.png",
+            "/assets/images/CaseStudies/Elegant/Elegant_1-4-01.png",
+        ],
+        client: "MONTE CARLO",
+        year: "2026",
+        service: "Creative Campaign",
+        objective: "Position Monte Carlo SS\'26 as the season\'s definitive summer fashion collection through a hybrid AI-led campaign, showcasing effortless style, contemporary design, and versatile looks for the modern consumer.",
+        approach: "Crafted a visually compelling campaign blending AI-generated imagery with a hybrid production model, anchored by an extensive Malaysia shoot.",
+        impact: "Delivered a scalable asset ecosystem deployed across all consumer touchpoints and media platforms.",
     },
     {
         title: "HAPPY HOME",
@@ -430,29 +467,6 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
         approach:
             "Delivered a 360° campaign across print, digital, and on-ground media.",
         impact: "Built a consistent, high-end brand narrative.",
-    },
-    {
-        title: "MONTE CARLO",
-        image: "/assets/images/CaseStudies/Cover_Images/10.webp",
-        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/10.webp",
-        galleryImages: [
-            "/assets/images/CaseStudies/Elegent/2.png",
-            "/assets/images/CaseStudies/Elegent/3.png",
-            "/assets/images/CaseStudies/Elegent/4.png",
-        ],
-        mobileGalleryImages: [
-            "/assets/images/CaseStudies/Elegent/Elegant_1-2-01.png",
-            "/assets/images/CaseStudies/Elegent/Elegant_1-3-01.png",
-            "/assets/images/CaseStudies/Elegent/Elegant_1-01.png",
-            "/assets/images/CaseStudies/Elegent/Elegant_1-4-01.png",
-        ],
-        client: "MONTE CARLO",
-        year: "2026",
-        service: "Creative Campaign",
-        objective: "Position Monte Carlo SS\'26 as the season\'s definitive summer fashion collection through a hybrid AI-led campaign, showcasing effortless style, contemporary design, and versatile looks for the modern consumer.",
-        approach: "Built a brand language rooted in conscious living across media.",
-        impact:
-            "Positioned the project at the intersection of sustainability and luxury.",
     },
 ];
 
@@ -662,7 +676,8 @@ const BrandSolutions = () => {
             <section className="w-full bg-theme-primaryBg2 pb-24 px-10 py-10 md:px-16">
                 <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-400 mb-12">
                     <span className="font-bold text-gray-700">Brand Solutions</span> <span className="text-gray-400">|</span>{" "}
-                    <span className="text-gray-400 font-light">TVC | Showcase</span>
+                    <span className="text-gray-500 font-light">TVC</span> <span className="text-gray-400">|</span>{" "}
+                    <span className="text-gray-400 font-light">Showcase</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -758,34 +773,20 @@ const BrandSolutions = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {caseStudyShowcase.map((item, index) => {
-                        const caseStudySlugs = [
-                            "morde",
-                            "killer",
-                            "netflix",
-                            "conosh",
-                            "oppo",
-                            "mahindra-xuv-500",
-                            "vraj-meridian",
-                            "estuary",
-                            "calamus-one",
-                            "puravankara",
-                            "elegant",
-                        ];
-                        const slug = caseStudySlugs[index];
+                    {caseStudies.map((item, index) => {
                         return (
                             <Link
                                 key={`${item.title}-${item.year}-${index}`}
-                                to={`/case-studies/${slug}`}
+                                to={`/case-studies/${item.slug}`}
                                 className="flex flex-col text-left cursor-pointer group"
                                 aria-label={`Open case study ${item.title}`}
                             >
                                 <div className="relative aspect-video overflow-hidden rounded-sm bg-[#e7e5df] border border-[#d7d4cc]">
-                                    {/* FIX 5: lazy-load case study card thumbnails — 11 images
+                                    {/* FIX 5: lazy-load case study card thumbnails — 12 images
                         were all fetching eagerly. The first card stays eager
                         since it may be in the initial viewport. */}
                                     <img
-                                        src={item.image}
+                                        src={item.thumbnail}
                                         alt={item.title}
                                         loading={index === 0 ? "eager" : "lazy"}
                                         decoding="async"
@@ -1074,14 +1075,10 @@ const BrandSolutions = () => {
                             {(() => {
                                 if (!activeCaseStudy.galleryImages?.length) return null;
 
-                                // Temporarily disable the mobile-specific gallery so mobile and desktop
-                                // render the same image set.
-                                // const galleryList =
-                                //     isMobile && activeCaseStudy.mobileGalleryImages?.length
-                                //         ? activeCaseStudy.mobileGalleryImages
-                                //         : activeCaseStudy.galleryImages;
-
-                                const galleryList = activeCaseStudy.galleryImages;
+                                const galleryList =
+                                    isMobile && activeCaseStudy.mobileGalleryImages?.length
+                                        ? activeCaseStudy.mobileGalleryImages
+                                        : activeCaseStudy.galleryImages;
 
                                 return (
                                     <div className="flex flex-col">

@@ -102,7 +102,7 @@ const Hero = () => {
                         <span
                             style={{
                                 display: "block",
-                                color: "#f2eee2",
+                                color: "#a6a6a6",
                             }}
                         >
                             We are a team of
@@ -130,7 +130,7 @@ const Hero = () => {
                         <span
                             style={{
                                 display: "block",
-                                color: "#f2eee2",
+                                color: "#a6a6a6",
                             }}
                         >
                             experts.

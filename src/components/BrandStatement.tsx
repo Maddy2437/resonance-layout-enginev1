@@ -120,7 +120,7 @@ const BrandStatement = () => {
                     <span className="text-gray-300"> | </span>
                     <span className="text-theme-secondaryText font-bold">Real Estate Mar-Tech</span>
                     <span className="text-gray-300"> | </span>
-                    <span className="text-theme-secondaryText font-bold">Brand Solution</span>
+                    <span className="text-theme-secondaryText font-bold">Brand Solutions</span>
                     <span className="text-gray-300"> | </span>
                     <span className="text-theme-secondaryText font-bold">Motion Pictures</span>
                 </p>

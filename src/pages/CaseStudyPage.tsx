@@ -66,26 +66,63 @@ const caseStudyPages: Record<string, { page: number; title: string }[]> = {
         { page: 38, title: "Logo identity e-bike showcase" },
     ],
     "elegant": [
+        { page: 39, title: "Elegant Cover" },
+        { page: 40, title: "Single Fold Leaflet" },
+        { page: 41, title: "Elegant Brochure" },
+        { page: 42, title: "Outdoor Campaign" },
+    ],
+    "monte-carlo": [
         { page: 43, title: "Monte Carlo Cover" },
         { page: 44, title: "Summer Fashion Collection Visual" },
         { page: 45, title: "Contemporary Looks Catalog" },
         { page: 46, title: "Versatile Style Showcase" },
     ],
-    "micl": [
-        { page: 43, title: "Aaradhya Cover" },
-        { page: 44, title: "Coastal lifestyle visual" },
-        { page: 45, title: "Print and Brochure details" },
-        { page: 46, title: "Outdoor facade campaign" },
-    ],
-    "puravankara": [
+    "happy-home": [
         { page: 47, title: "Happy Home Cover" },
-        { page: 48, title: "Avanne Dubash Influencer Series" },
+        { page: 48, title: "Influencer Series" },
     ],
 };
 
-const existingMobilePages = new Set(
-    Array.from({ length: 50 }, (_, i) => i + 1).filter((p) => p !== 2)
-);
+const mobilePageMap: Record<number, number> = {
+    // Vraj Meridian (offset +5)
+    2: 7,
+    3: 8,
+    4: 9,
+    6: 11,
+    7: 12,
+    // Killer Jeans (offset +4)
+    14: 18,
+    16: 20,
+    // Netflix (offset +4)
+    18: 22,
+    19: 23,
+    20: 24,
+    21: 25,
+    // Conosh (offset +4)
+    23: 27,
+    24: 28,
+    25: 29,
+    // Oppo (offset +4)
+    28: 32,
+    // Mahindra (offset +4 / +5)
+    30: 34,
+    31: 36,
+    // Estuary (offset +4)
+    34: 38,
+    35: 39,
+    // Calamus (offset +4)
+    37: 41,
+    38: 42,
+    // Elegant (offset +5)
+    40: 45,
+    41: 46,
+    42: 47,
+    // Monte Carlo (offset +5)
+    45: 50,
+    46: 51,
+    // Happy Home (offset +5)
+    48: 53
+};
 
 // Simple text formatter for screen readers / SEO
 const formatSlideText = (text: string) => {
@@ -133,7 +170,7 @@ const CaseStudyPage = () => {
                     {/* Sticky Header - Under Navbar */}
                     <div className="fixed top-[72px] md:top-[80px] left-0 right-0 z-40 w-full bg-[#f0ede1]/60 backdrop-blur-md py-5 px-12 md:px-24 select-none">
                         <div className="w-full flex items-center justify-between">
-                            <h2 className="font-sans md:text-4xl text-3xl font-normal text-gray-800 tracking-tight leading-none">
+                            <h2 className="font-sans text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-gray-800 tracking-tight leading-none">
                                 <span className="font-bold text-gray-700">Brand Solutions</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
                                 <span className="text-gray-400 font-light">Case Studies</span>
                             </h2>
@@ -143,7 +180,7 @@ const CaseStudyPage = () => {
                                 className="text-gray-400 hover:text-gray-800 transition-colors flex items-center justify-center p-2 rounded-full hover:bg-black/[0.04]"
                                 aria-label="Close case study"
                             >
-                                <X className="h-5 w-5 stroke-[1.2]" />
+                                <X className="h-5 w-5 stroke-[3]" />
                             </Link>
                         </div>
                     </div>
@@ -172,21 +209,6 @@ const CaseStudyPage = () => {
                                                 {/* Left Column: Image and View Case Bar */}
                                                 <div className="w-full lg:w-[58%] flex flex-col">
                                                     <div className="relative w-full aspect-[1.58] overflow-hidden bg-white/20">
-                                                        {/* Mobile optimized cover image commented out for now
-                                                        <picture>
-                                                            <source 
-                                                                media="(max-width: 768px)" 
-                                                                srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.webp`} 
-                                                            />
-                                                            <img
-                                                                src={coverImgSrc}
-                                                                alt={`${study.title} Cover`}
-                                                                loading="eager"
-                                                                decoding="async"
-                                                                className="w-full h-full object-cover block"
-                                                            />
-                                                        </picture>
-                                                        */}
                                                         <img
                                                             src={coverImgSrc}
                                                             alt={`${study.title} Cover`}
@@ -198,9 +220,9 @@ const CaseStudyPage = () => {
                                                     {/* Interactive View Case Bar */}
                                                     <button 
                                                         onClick={scrollToNextSlide}
-                                                        className="w-full flex items-center justify-between bg-[#9ea2ac] hover:bg-[#8e929c] text-black font-semibold text-xs px-5 py-3 select-none transition-colors duration-200 mt-[1px]"
+                                                        className="w-full flex items-center justify-between bg-[#9ea2ac] hover:bg-[#8e929c] text-black font-semibold text-sm md:text-base lg:text-lg px-5 py-3 select-none transition-colors duration-200 mt-[1px]"
                                                     >
-                                                        <span className="font-sans tracking-[0.12em] uppercase font-bold text-[10px]">View Case</span>
+                                                        <span className="font-sans tracking-[0.12em] uppercase font-bold text-xs md:text-sm lg:text-base">View Case</span>
                                                         <span className="text-sm font-bold">→</span>
                                                     </button>
                                                 </div>
@@ -209,26 +231,26 @@ const CaseStudyPage = () => {
                                                 <div className="w-full lg:w-[42%] flex flex-col justify-center">
                                                     <div className="w-full border-t border-black/[0.08] border-b border-black/[0.08] divide-y divide-black/[0.08] max-w-lg lg:max-w-xl xl:max-w-2xl">
                                                         <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
-                                                            <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] tracking-[0.05em] text-gray-500 font-normal">Client</span>
-                                                            <span className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-gray-500 font-normal">Client</span>
+                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
                                                                 {clientVal}
                                                             </span>
                                                         </div>
                                                         <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
-                                                            <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] tracking-[0.05em] text-gray-500 font-normal">Service</span>
-                                                            <span className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-gray-500 font-normal">Service</span>
+                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
                                                                 {serviceVal}
                                                             </span>
                                                         </div>
                                                         <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
-                                                            <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] tracking-[0.05em] text-gray-500 font-normal">Year</span>
-                                                            <span className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-gray-500 font-normal">Year</span>
+                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
                                                                 {yearVal}
                                                             </span>
                                                         </div>
                                                     </div>
 
-                                                    <p className="text-gray-600 text-xs md:text-sm lg:text-base xl:text-lg leading-relaxed font-sans mt-7 max-w-lg lg:max-w-xl xl:max-w-2xl font-light tracking-wide">
+                                                    <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-2xl leading-relaxed font-sans mt-7 max-w-lg lg:max-w-xl xl:max-w-2xl font-light tracking-wide">
                                                         {descVal.startsWith("Objective:") ? descVal.substring("Objective:".length).trim() : descVal}
                                                     </p>
                                                 </div>
@@ -238,42 +260,42 @@ const CaseStudyPage = () => {
                                 );
                             }
 
+                            let responsiveClass = "w-full";
+                            if (study.slug === "vraj-meridian") {
+                                if ([2, 3, 4].includes(slide.page)) {
+                                    responsiveClass = "w-full hidden md:block";
+                                } else if ([5, 6, 7].includes(slide.page)) {
+                                    responsiveClass = "w-full block md:hidden";
+                                }
+                            }
+
                             return (
-                                <section key={slide.page} className={`w-full ${bgColor} py-0 flex items-center justify-center border-b border-black/[0.04]`}>
+                                <section key={slide.page} className={`${responsiveClass} ${bgColor} py-0 flex items-center justify-center border-b border-black/[0.04]`}>
                                     <div className="w-full">
-                                        {/* Mobile optimized slide images commented out for now
-                                        {existingMobilePages.has(slide.page) ? (
-                                            <picture>
-                                                <source 
-                                                    media="(max-width: 768px)" 
-                                                    srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.webp`} 
-                                                />
-                                                <img
-                                                    src={slideImgSrc}
-                                                    alt={`${study.title} case study slide ${idx + 1}`}
-                                                    loading="lazy"
-                                                    decoding="async"
-                                                    className="w-full h-auto block"
-                                                />
-                                            </picture>
-                                        ) : (
-                                            <img
-                                                src={slideImgSrc}
-                                                alt={`${study.title} case study slide ${idx + 1}`}
-                                                loading="lazy"
-                                                decoding="async"
-                                                className="w-full h-auto block"
-                                            />
-                                        )}
-                                        */}
-                                        <img
-                                            src={slideImgSrc}
-                                            alt={`${study.title} case study slide ${idx + 1}`}
-                                            loading="lazy"
-                                            decoding="async"
-                                            className="w-full h-auto block"
-                                        />
-                                    </div>
+                                         {mobilePageMap[slide.page] !== undefined ? (
+                                             <picture>
+                                                 <source 
+                                                     media="(max-width: 768px)" 
+                                                     srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(mobilePageMap[slide.page]).padStart(2, "0")}.webp`} 
+                                                 />
+                                                 <img
+                                                     src={slideImgSrc}
+                                                     alt={`${study.title} case study slide ${idx + 1}`}
+                                                     loading="lazy"
+                                                     decoding="async"
+                                                     className="w-full h-auto block"
+                                                 />
+                                             </picture>
+                                         ) : (
+                                             <img
+                                                 src={slideImgSrc}
+                                                 alt={`${study.title} case study slide ${idx + 1}`}
+                                                 loading="lazy"
+                                                 decoding="async"
+                                                 className="w-full h-auto block"
+                                             />
+                                         )}
+                                     </div>
 
                                     {/* Screen-reader Only Container to maintain SEO text accessibility */}
                                     <div className="sr-only" aria-hidden="true">
