@@ -131,11 +131,11 @@ const CaseStudyPage = () => {
                 <Header />
                 <main className="pt-[148px] md:pt-[164px] pb-16">
                     {/* Sticky Header - Under Navbar */}
-                    <div className="fixed top-[72px] md:top-[80px] left-0 right-0 z-40 w-full bg-[#f0ede1]/60 backdrop-blur-md py-5 px-6 md:px-16 select-none">
-                        <div className="max-w-[1420px] mx-auto flex items-center justify-between">
-                            <h2 className="font-sans text-[20px] md:text-[26px] font-normal text-gray-800 tracking-tight leading-none">
-                                Brand Solutions <span className="text-gray-300 font-light mx-1">|</span>{" "}
-                                <span className="font-semibold text-gray-705">Case Studies</span>
+                    <div className="fixed top-[72px] md:top-[80px] left-0 right-0 z-40 w-full bg-[#f0ede1]/60 backdrop-blur-md py-5 px-12 md:px-24 select-none">
+                        <div className="w-full flex items-center justify-between">
+                            <h2 className="font-sans md:text-4xl text-3xl font-normal text-gray-800 tracking-tight leading-none">
+                                <span className="font-bold text-gray-700">Brand Solutions</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
+                                <span className="text-gray-400 font-light">Case Studies</span>
                             </h2>
                             {/* Close Button linking back to /brand-solutions#case-studies */}
                             <Link 
@@ -151,7 +151,7 @@ const CaseStudyPage = () => {
                     {/* Slides Vertical Feed - Covering Entire Screen Width */}
                     <div className="w-full space-y-0 px-0 mx-0 mt-0">
                         {pages.map((slide, idx) => {
-                            const slideImgSrc = `/assets/images/CaseStudies/PDF_Pages/Reso_website-AAa-${String(slide.page).padStart(2, "0")}.png`;
+                            const slideImgSrc = `/assets/images/CaseStudies/PDF_Pages/Reso_website-AAa-${String(slide.page).padStart(2, "0")}.webp`;
                             const ocrText = textData[String(slide.page)] || "";
 
                             // Alternate between white and cream background
@@ -159,15 +159,15 @@ const CaseStudyPage = () => {
                             const bgColor = isCream ? "bg-[#f7f5ee]" : "bg-white";
 
                             if (idx === 0) {
-                                const coverImgSrc = `/assets/images/CaseStudies/Cover_Images/${currentIndex + 1}.png`;
+                                const coverImgSrc = `/assets/images/CaseStudies/Cover_Images/${currentIndex + 1}.webp`;
                                 const clientVal = study.pdfClient || study.client;
                                 const serviceVal = study.pdfService || study.service;
                                 const yearVal = study.pdfYear || study.year;
                                 const descVal = study.pdfDescription || study.summary;
 
                                 return (
-                                    <section key={slide.page} className="w-full bg-[#f7f5ee] py-16 px-6 md:px-16 border-b border-black/[0.06] select-none">
-                                        <div className="max-w-[1420px] mx-auto">
+                                    <section key={slide.page} className="w-full bg-[#f7f5ee] py-16 px-12 md:px-24 border-b border-black/[0.06] select-none">
+                                        <div className="w-full">
                                             <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 items-center">
                                                 {/* Left Column: Image and View Case Bar */}
                                                 <div className="w-full lg:w-[58%] flex flex-col">
@@ -176,7 +176,7 @@ const CaseStudyPage = () => {
                                                         <picture>
                                                             <source 
                                                                 media="(max-width: 768px)" 
-                                                                srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.png`} 
+                                                                srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.webp`} 
                                                             />
                                                             <img
                                                                 src={coverImgSrc}
@@ -207,28 +207,28 @@ const CaseStudyPage = () => {
 
                                                 {/* Right Column: Metadata Table + Description */}
                                                 <div className="w-full lg:w-[42%] flex flex-col justify-center">
-                                                    <div className="w-full border-t border-black/[0.08] border-b border-black/[0.08] divide-y divide-black/[0.08] max-w-lg">
-                                                        <div className="grid grid-cols-[110px_1fr] py-3 items-baseline">
-                                                            <span className="text-[12px] tracking-[0.05em] text-gray-500 font-normal">Client</span>
-                                                            <span className="text-[13px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                    <div className="w-full border-t border-black/[0.08] border-b border-black/[0.08] divide-y divide-black/[0.08] max-w-lg lg:max-w-xl xl:max-w-2xl">
+                                                        <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
+                                                            <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] tracking-[0.05em] text-gray-500 font-normal">Client</span>
+                                                            <span className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
                                                                 {clientVal}
                                                             </span>
                                                         </div>
-                                                        <div className="grid grid-cols-[110px_1fr] py-3 items-baseline">
-                                                            <span className="text-[12px] tracking-[0.05em] text-gray-500 font-normal">Service</span>
-                                                            <span className="text-[13px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                        <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
+                                                            <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] tracking-[0.05em] text-gray-500 font-normal">Service</span>
+                                                            <span className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
                                                                 {serviceVal}
                                                             </span>
                                                         </div>
-                                                        <div className="grid grid-cols-[110px_1fr] py-3 items-baseline">
-                                                            <span className="text-[12px] tracking-[0.05em] text-gray-500 font-normal">Year</span>
-                                                            <span className="text-[13px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                        <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
+                                                            <span className="text-[11px] md:text-[12px] lg:text-[13px] xl:text-[15px] tracking-[0.05em] text-gray-500 font-normal">Year</span>
+                                                            <span className="text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
                                                                 {yearVal}
                                                             </span>
                                                         </div>
                                                     </div>
 
-                                                    <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed font-sans mt-7 max-w-lg font-light tracking-wide">
+                                                    <p className="text-gray-600 text-xs md:text-sm lg:text-base xl:text-lg leading-relaxed font-sans mt-7 max-w-lg lg:max-w-xl xl:max-w-2xl font-light tracking-wide">
                                                         {descVal.startsWith("Objective:") ? descVal.substring("Objective:".length).trim() : descVal}
                                                     </p>
                                                 </div>
@@ -239,14 +239,14 @@ const CaseStudyPage = () => {
                             }
 
                             return (
-                                <section key={slide.page} className={`w-full ${bgColor} py-12 px-6 md:px-16 flex items-center justify-center border-b border-black/[0.04]`}>
-                                    <div className="max-w-[1420px] mx-auto w-full">
+                                <section key={slide.page} className={`w-full ${bgColor} py-0 flex items-center justify-center border-b border-black/[0.04]`}>
+                                    <div className="w-full">
                                         {/* Mobile optimized slide images commented out for now
                                         {existingMobilePages.has(slide.page) ? (
                                             <picture>
                                                 <source 
                                                     media="(max-width: 768px)" 
-                                                    srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.png`} 
+                                                    srcSet={`/assets/images/CaseStudies/PDF_Pages_Mobile/Reso_Mobile-web_BS-${String(slide.page + 2).padStart(2, "0")}.webp`} 
                                                 />
                                                 <img
                                                     src={slideImgSrc}

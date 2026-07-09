@@ -820,8 +820,8 @@ const VFX = () => {
             {/* Hero Section */}
             {!expandedSection && (
                 <section className="relative w-full min-h-screen bg-[#15171e] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
-                    <div className="max-w-6xl w-full mt-20">
-                        <h1 className="font-display text-[35px] md:text-[95px] lg:text-[105px] font-bold text-theme-primaryText mb-6 leading-tight">
+                    <div className="w-full max-w-[85%] mt-20">
+                        <h1 className="font-display text-[35px] md:text-[95px] lg:text-[105px] xl:text-[115px] 2xl:text-[130px] font-bold text-theme-primaryText mb-6 leading-tight">
                             VFX: Movies & Ads
                         </h1>
 
@@ -975,8 +975,8 @@ const VFX = () => {
                             }}
                         />
                         <div className="absolute inset-0 bg-black/60" />
-                        <div className="relative z-10 max-w-6xl w-full mt-20">
-                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] font-bold text-theme-primaryText mb-10 leading-tight">
+                        <div className="relative z-10 w-full max-w-[85%] mt-20">
+                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] xl:text-[115px] 2xl:text-[130px] font-bold text-theme-primaryText mb-10 leading-tight">
                                 VFX: Films & Episodic
                             </h1>
 
@@ -989,10 +989,10 @@ const VFX = () => {
 
                     {/* featured projects section */}
                     <section className="mt-0 px-12 md:px-24 py-24 bg-theme-primaryBg1">
-                        <div className="max-w-7xl mx-auto">
+                        <div className="w-full">
                             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light text-[#f2eee2] mb-4">
-                                VFX: Films & Episodic <span className="text-[#f2eee2]/30">|</span>{" "}
-                                <span className="text-[#f2eee2]/60 font-bold">Showcase</span>
+                                <span className="font-bold text-[#f2eee2]">VFX: Films & Episodic</span> <span className="text-[#f2eee2]/30">|</span>{" "}
+                                <span className="text-[#f2eee2]/60 font-light">Showcase</span>
                             </h2>
                         </div>
                     </section>
@@ -1000,7 +1000,7 @@ const VFX = () => {
                     {/* Movies Showcase Carousel */}
                     {/* Added pb-24 padding configuration to fix spacing seen in Screenshot 2026-07-05 at 4.10.24 pm.jpg */}
                     <section className="relative w-full bg-theme-primaryBg1 px-12 md:px-24 pb-24">
-                        <div className="max-w-7xl mx-auto">
+                        <div className="w-full">
                             <div className="relative mb-20 md:mb-28">
                                 {/* Carousel Navigation */}
                                 <button
@@ -1086,9 +1086,9 @@ const VFX = () => {
                             {/* Areas of Expertise Section */}
                             <section className="py-24 bg-theme-secondaryText -mx-12 md:-mx-24 px-12 md:px-24">
                                 <h2 className="font-display text-4xl md:text-5xl font-light text-[#f2eee2] mb-4">
-                                    VFX: Films & Episodic{" "}
+                                    <span className="font-bold text-[#f2eee2]">VFX: Films & Episodic</span>{" "}
                                     <span className="text-[#f2eee2]/30">|</span>{" "}
-                                    <span className="text-[#f2eee2]/60 font-bold">Showreel</span>
+                                    <span className="text-[#f2eee2]/60 font-light">Showreel</span>
                                 </h2>
 
                                 {/* Category Filter */}
@@ -1240,8 +1240,8 @@ const VFX = () => {
                             }}
                         />
                         <div className="absolute inset-0 bg-black/60" />
-                        <div className="relative z-10 max-w-6xl w-full mt-20">
-                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] font-bold text-theme-primaryText mb-10 leading-tight">
+                        <div className="relative z-10 w-full max-w-[85%] mt-20">
+                            <h1 className="font-display text-[45px] md:text-[95px] lg:text-[105px] xl:text-[115px] 2xl:text-[130px] font-bold text-theme-primaryText mb-10 leading-tight">
                                 VFX: Advertising
                             </h1>
 
@@ -1254,10 +1254,10 @@ const VFX = () => {
 
                     {/* Areas of Expertise Section */}
                     <section className="px-12 md:px-24 py-24 bg-theme-primaryBg1">
-                        <div className="max-w-7xl mx-auto translate-y-8">
+                        <div className="w-full translate-y-8">
                             <h2 className="font-display text-4xl md:text-5xl font-bold text-[#f2eee2] mb-4">
                                 VFX: Advertising <span className="text-[#f2eee2]/30">|</span>{" "}
-                                <span className="text-[#f2eee2]/60">Showreel</span>
+                                <span className="text-[#f2eee2]/60 font-light">Showreel</span>
                             </h2>
 
                             <div className="mt-8 mb-12">
@@ -1425,10 +1425,10 @@ const VFX = () => {
                     </div>
 
                     <section className="px-12 md:px-24 py-24 bg-theme-secondaryText">
-                        <div className="max-w-7xl mx-auto">
+                        <div className="w-full">
                             <h2 className="font-display text-4xl md:text-5xl font-light text-[#f2eee2] mb-10">
-                                VFX: CGI Stills <span className="text-[#f2eee2]/30">|</span>{" "}
-                                <span className="text-[#f2eee2]/60 font-bold">Showcase</span>
+                                <span className="font-bold text-[#f2eee2]">VFX: CGI Stills</span> <span className="text-[#f2eee2]/30">|</span>{" "}
+                                <span className="text-[#f2eee2]/60 font-light">Showcase</span>
                             </h2>
 
                             <div className="w-full columns-2 md:columns-3 gap-2">

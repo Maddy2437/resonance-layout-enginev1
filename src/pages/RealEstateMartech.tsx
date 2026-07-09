@@ -382,8 +382,8 @@ const RealEstateMartech = () => {
 
             <section className="w-full min-h-screen bg-theme-secondaryBg2 py-10 md:py-12 px-10 md:px-16 flex flex-col justify-center">
                 <h2 className="font-display text-2xl md:text-3xl font-normal text-theme-secondaryText/70 mb-8">
-                    Real Estate Mar-Tech <span className="text-black/50">|</span>{" "}
-                    <span className="font-bold text-theme-secondaryText">Clients</span>
+                    <span className="font-bold text-theme-secondaryText">Real Estate Mar-Tech</span> <span className="text-black/50">|</span>{" "}
+                    <span className="text-theme-secondaryText/70 font-light">Clients</span>
                 </h2>
 
                 <div className="flex flex-col lg:flex-row gap-12">
@@ -451,8 +451,8 @@ const RealEstateMartech = () => {
                 className="w-full bg-theme-primaryBg1 pt-16 pb-10 md:pt-20 md:pb-12 px-10 md:px-16"
             >
                 <h2 className="font-display text-3xl md:text-4xl font-normal text-theme-primaryText/70 mb-6">
-                    Real Estate Mar-Tech <span className="text-white/50">|</span>{" "}
-                    <span className="font-bold text-theme-primaryText">Areas of expertise</span>
+                    <span className="font-bold text-theme-primaryText">Real Estate Mar-Tech</span> <span className="text-white/50">|</span>{" "}
+                    <span className="text-theme-primaryText/70 font-light">Areas of expertise</span>
                 </h2>
 
                 <div className="mt-6 mb-8 w-full max-w-[1700px]">
@@ -654,11 +654,11 @@ const RealEstateMartech = () => {
             </section>
 
             {/* ── Section 2: Immersive Technology Solutions ─────────────────── */}
-            <section className="w-full bg-theme-secondaryBg2 py-14 md:py-16">
-                <div className="mx-auto w-full max-w-[1240px] px-6 sm:px-10 lg:px-0">
+            <section className="w-full bg-theme-secondaryBg2 py-14 md:py-16 px-6 sm:px-10 lg:px-16">
+                <div className="w-full">
                     <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] font-normal text-theme-secondaryText/70 mb-10">
-                        Real Estate Mar-Tech <span className="text-black/50">|</span>{" "}
-                        <span className="font-bold text-theme-primaryBg1">
+                        <span className="font-bold text-theme-secondaryText">Real Estate Mar-Tech</span> <span className="text-black/50">|</span>{" "}
+                        <span className="text-theme-secondaryText/70 font-light">
                             Immersive Technology Solutions
                         </span>
                     </h2>

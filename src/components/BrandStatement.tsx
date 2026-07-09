@@ -115,7 +115,7 @@ const BrandStatement = () => {
         >
             <div className="w-full max-w-[1900px] mx-auto flex flex-col items-start pl-0 md:pl-2 lg:pl-4">
                 {/* Verticals line - NEVER animates */}
-                <p className="mb-8 text-[18px] md:text-[20px] lg:text-[22px] font-medium tracking-wide text-left">
+                <p className="mb-8 text-[18px] md:text-[20px] lg:text-[22px] xl:text-[26px] 2xl:text-[30px] font-medium tracking-wide text-left">
                     <span className="text-theme-secondaryText font-bold">VFX: Films & Ads</span>
                     <span className="text-gray-300"> | </span>
                     <span className="text-theme-secondaryText font-bold">Real Estate Mar-Tech</span>
@@ -126,13 +126,13 @@ const BrandStatement = () => {
                 </p>
 
                 {/* Main statement - scroll-driven typewriter effect */}
-                <div className="max-w-7xl">
-                    <p className="text-[25px] md:text-[45px] lg:text-[65px] font-display font-large leading-[0.9] tracking-tight font-bold">
+                <div className="max-w-[90%] w-full">
+                    <p className="text-[25px] md:text-[45px] lg:text-[65px] xl:text-[80px] 2xl:text-[95px] font-display font-large leading-[0.9] tracking-tight font-bold">
                         {statementText.split("").map((char, index) => (
                             <span
                                 key={index}
                                 style={{
-                                    color: index < visibleCharacters ? "#201c50" : "#f2eee2",
+                                    color: index < visibleCharacters ? "#000000" : "#f2eee2",
                                 }}
                             >
                                 {char}

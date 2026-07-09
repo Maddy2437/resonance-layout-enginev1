@@ -7,16 +7,18 @@ type Props = {
     whiteText: string;
     blueText: string;
     className?: string;
+    theme?: "light" | "dark";
 };
 
 /**
- * Renders a two-part paragraph where the first part is static white and the
+ * Renders a two-part paragraph where the first part is static white/dark and the
  * second part appears using a typewriter animation on mount.
  */
 export default function AnimatedColorText({
     whiteText,
     blueText,
     className = "",
+    theme = "dark",
 }: Props) {
     const [visibleChars, setVisibleChars] = useState(0);
 
@@ -41,6 +43,9 @@ export default function AnimatedColorText({
     const hiddenText = blueText.slice(visibleChars);
     const visibleText = blueText.slice(0, visibleChars);
 
+    const staticColor = theme === "light" ? "text-gray-800" : "text-[#ceccc7]";
+    const animatedColor = theme === "light" ? "text-gray-300 font-extrabold" : "text-theme-secondaryText";
+
     return (
         <p
             className={`font-display text-[20px] md:text-[25px] lg:text-[50px] leading-[0.9] max-w-[1200px] font-bold ${className}`}
@@ -50,10 +55,10 @@ export default function AnimatedColorText({
                 willChange: "auto",
             }}
         >
-            <span className="text-[#ceccc7]">{whiteText} </span>
+            <span className={staticColor}>{whiteText} </span>
             <span>
-                <span className="text-[#ceccc7]">{visibleText}</span>
-                <span className="text-theme-secondaryText">{hiddenText}</span>
+                <span className={staticColor}>{visibleText}</span>
+                <span className={animatedColor}>{hiddenText}</span>
             </span>
         </p>
     );

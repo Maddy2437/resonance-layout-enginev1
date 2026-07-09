@@ -139,22 +139,22 @@ const VerticalSelector = () => {
             {/* ── Content layer ──────────────────────────────────────────────────── */}
             <div className="relative z-10 h-full flex flex-col">
                 {/* Section header */}
-                <div className="px-6 md:px-14 py-4 md:py-4">
+                <div className="px-6 md:px-16 py-4 md:py-4">
                     <h2 className="text-4xl tracking-tight text-white/50">
-                        Our Verticals
+                        Business Verticals
                     </h2>
                 </div>
 
                 {/* ════════════════════════════════════════════════════════════════════
             DESKTOP — 4-col tall card layout (completely unchanged from original)
             ════════════════════════════════════════════════════════════════════ */}
-                <div className="hidden md:grid flex-1 grid-cols-4 gap-12 px-16 pt-2 pb-28 items-start content-start">
+                <div className="hidden md:grid flex-1 grid-cols-4 gap-8 px-6 md:px-16 pt-2 pb-28 items-start content-start">
                     {verticals.map((vertical, index) => (
                         <Link
                             key={vertical.id}
                             to={vertical.href}
                             onMouseEnter={() => setActiveVertical(vertical.id)}
-                            className="vertical-card group relative flex flex-col justify-between p-6 md:p-8 overflow-hidden transition-all duration-300 rounded-lg hover:scale-110 hover:shadow-2xl h-[600px] max-w-[280px] mx-auto w-full"
+                            className="vertical-card group relative flex flex-col justify-between p-6 md:p-8 overflow-hidden transition-all duration-300 rounded-lg hover:scale-110 hover:shadow-2xl h-[600px] w-full"
                             style={{
                                 backgroundImage: `url(${vertical.bgImage})`,
                                 backgroundSize: "cover",

@@ -81,8 +81,8 @@ const FixedHero = ({
                     opacity: Math.max(1 - progress * 2, 0),
                 }}
             >
-                <div className="max-w-6xl">
-                    <h1 className="font-display text-[65px] md:text-[75px] lg:text-[85px] font-bold text-secondaryText mb-10 leading-tight">
+                <div className="w-full max-w-[85%]">
+                    <h1 className="font-display text-[65px] md:text-[75px] lg:text-[85px] xl:text-[95px] 2xl:text-[110px] font-bold text-secondaryText mb-10 leading-tight">
                         {title}
                     </h1>
 

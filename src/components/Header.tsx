@@ -11,6 +11,7 @@ const Header = () => {
   const isLightThemePage = [
     "/",
     "/brand-solutions",
+    "/about",
     "/motion-pictures",
   ].includes(pathname) || pathname.startsWith("/case-studies");
 

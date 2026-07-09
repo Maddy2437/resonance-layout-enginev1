@@ -410,8 +410,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     },
     {
         title: "HAPPY HOME",
-        image: "/assets/images/CaseStudies/Cover_Images/12.png",
-        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/12.png",
+        image: "/assets/images/CaseStudies/Cover_Images/12.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/12.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Purvankara/2.png",
             "/assets/images/CaseStudies/Purvankara/3.png",
@@ -433,8 +433,8 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     },
     {
         title: "MONTE CARLO",
-        image: "/assets/images/CaseStudies/Cover_Images/10.png",
-        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/10.png",
+        image: "/assets/images/CaseStudies/Cover_Images/10.webp",
+        caseStudyImage: "/assets/images/CaseStudies/Cover_Images/10.webp",
         galleryImages: [
             "/assets/images/CaseStudies/Elegent/2.png",
             "/assets/images/CaseStudies/Elegent/3.png",
@@ -599,8 +599,8 @@ const BrandSolutions = () => {
             {/* Clients + Statements Section */}
             <section className="w-full bg-theme-secondaryBg2 py-20 px-10 md:px-16">
                 <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-400 mb-12">
-                    Brand Solutions <span className="text-gray-400">|</span>{" "}
-                    <span className="font-bold text-gray-700">Clients</span>
+                    <span className="font-bold text-gray-700">Brand Solutions</span> <span className="text-gray-400">|</span>{" "}
+                    <span className="text-gray-400 font-light">Clients</span>
                 </h2>
 
                 <div className="flex flex-col lg:flex-row gap-12">
@@ -661,10 +661,8 @@ const BrandSolutions = () => {
             {/* Brand Solutions — TVC Showcase */}
             <section className="w-full bg-theme-primaryBg2 pb-24 px-10 py-10 md:px-16">
                 <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-400 mb-12">
-                    Brand Solutions <span className="text-gray-400">|</span>{" "}
-                    <span className="text-gray-600">TVC</span>{" "}
-                    <span className="text-gray-400">|</span>{" "}
-                    <span className="font-bold text-gray-700">Showcase</span>
+                    <span className="font-bold text-gray-700">Brand Solutions</span> <span className="text-gray-400">|</span>{" "}
+                    <span className="text-gray-400 font-light">TVC | Showcase</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -754,9 +752,9 @@ const BrandSolutions = () => {
 
             {/* Brand Solutions — Case Studies */}
             <section id="case-studies" className="w-full bg-theme-secondaryBg2 pb-24 px-10 py-10 md:px-16">
-                <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-400 mb-12 translate-y-3">
-                    Brand Solutions <span className="text-gray-400">|</span>{" "}
-                    <span className="font-bold text-gray-700">Case Studies</span>
+                <h2 className="font-display text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-gray-400 mb-12 translate-y-3">
+                    <span className="font-bold text-gray-700">Brand Solutions</span> <span className="text-gray-400">|</span>{" "}
+                    <span className="text-gray-400 font-light">Case Studies</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

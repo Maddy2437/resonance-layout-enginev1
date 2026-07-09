@@ -22,6 +22,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
     const isLightMenuTheme = [
         "/",
         "/brand-solutions",
+        "/about",
         "/motion-pictures",
     ].includes(location.pathname);
 

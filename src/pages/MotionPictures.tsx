@@ -50,8 +50,8 @@ const MotionPictures = () => {
             <section className="w-full bg-theme-primaryBg2 py-20">
                 <div className="px-6 md:px-12 lg:px-20">
                     <h2 className="font-display text-3xl md:text-4xl font-normal text-theme-secondaryText mb-12">
-                        Motion Picture <span className="text-theme-primaryText">|</span>{" "}
-                        <span className="font-bold text-theme-secondaryText">Showcase</span>
+                        <span className="font-bold text-theme-secondaryText">Motion Picture</span> <span className="text-theme-primaryText">|</span>{" "}
+                        <span className="text-theme-secondaryText/70 font-light">Showcase</span>
                     </h2>
                 </div>
 
