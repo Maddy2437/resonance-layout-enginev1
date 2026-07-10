@@ -57,7 +57,7 @@ const Awards = () => {
             {/* Awards Showcase Image */}
             <section className="relative w-full bg-theme-secondaryText">
                 {/* Desktop overlay title */}
-                <div className="hidden md:block absolute top-[180px] left-6 md:left-12 lg:left-20 z-10">
+                <div className="md:block absolute top-[180px] left-10 md:left-12 lg:left-20 z-10">
                     <h2 className="font-display text-[45px] md:text-[55px] lg:text-[75px] font-bold text-theme-primaryText tracking-tight leading-[0.95]">
                         Awards Showcase
                     </h2>
