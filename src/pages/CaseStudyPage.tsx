@@ -206,7 +206,7 @@ const CaseStudyPage = () => {
                                     <section key={slide.page} className="w-full bg-[#f7f5ee] py-16 px-12 md:px-24 border-b border-black/[0.06] select-none">
                                         <div className="w-full">
                                             <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 items-center">
-                                                {/* Left Column: Image and View Case Bar */}
+                                                {/* Left Column: Image */}
                                                 <div className="w-full lg:w-[58%] flex flex-col">
                                                     <div className="relative w-full aspect-[1.58] overflow-hidden bg-white/20">
                                                         <img
@@ -217,14 +217,6 @@ const CaseStudyPage = () => {
                                                             className="w-full h-full object-cover block"
                                                         />
                                                     </div>
-                                                    {/* Interactive View Case Bar */}
-                                                    <button 
-                                                        onClick={scrollToNextSlide}
-                                                        className="w-full flex items-center justify-between bg-[#9ea2ac] hover:bg-[#8e929c] text-black font-semibold text-sm md:text-base lg:text-lg px-5 py-3 select-none transition-colors duration-200 mt-[1px]"
-                                                    >
-                                                        <span className="font-sans tracking-[0.12em] uppercase font-bold text-xs md:text-sm lg:text-base">View Case</span>
-                                                        <span className="text-sm font-bold">→</span>
-                                                    </button>
                                                 </div>
 
                                                 {/* Right Column: Metadata Table + Description */}
@@ -305,6 +297,16 @@ const CaseStudyPage = () => {
                                 </section>
                             );
                         })}
+                    </div>
+
+                    {/* Back to Case Studies Button */}
+                    <div className="w-full flex justify-center py-16 bg-transparent border-t border-black/[0.04] select-none">
+                        <Link
+                            to="/brand-solutions#case-studies"
+                            className="px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white font-sans text-xs md:text-sm font-bold tracking-[0.2em] uppercase rounded-sm shadow-sm transition-all duration-300 hover:scale-[1.02] flex items-center gap-2"
+                        >
+                            Back to Case Studies
+                        </Link>
                     </div>
                 </main>
             </div>

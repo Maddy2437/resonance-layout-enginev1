@@ -826,8 +826,8 @@ const VFX = () => {
                         </h1>
 
                         <AnimatedColorText
-                            whiteText="A leading digital Creative Technology Company, which focuses on delivering rememberable web designs that are searchable,"
-                            blueText="alongside other online promotion solutions in Coventry. We provide our clients with striking, practical, and intuitive sites that attract clientele and yield revenue."
+                            whiteText="Our VFX division delivers world-class visual effects for films, television, OTT, and advertising. "
+                            blueText="Combining technical precision with creative excellence, we seamlessly integrate CGI, simulations, compositing, and digital environments that elevate storytelling beyond the limits of live action."
                         />
                     </div>
                 </section>

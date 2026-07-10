@@ -40,8 +40,8 @@ const MotionPictures = () => {
                 title="Motion Pictures"
                 description={
                     <AnimatedColorText
-                        whiteText="A leading digital Creative Technology Company, which focuses on delivering rememberable web designs that are search"
-                        blueText="able, alongside other online promotion solutions in Coventry. We provide our clients with striking, practical, and intuitive sites that attract clientele and yield revenue."
+                        whiteText="From brand stories and commercials to documentaries, corporate films, and digital-first content, we produce cinematic narratives that inspire, engage, and persuade—"
+                        blueText="combining strategic storytelling, world-class production, and cutting-edge post-production under one integrated creative ecosystem."
                     />
                 }
             />

@@ -116,13 +116,14 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Stats Section */}
-            <section className="w-full min-h-screen bg-white px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center">
+            {/* Stats and Services Section */}
+            <section className="w-full bg-white px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center py-20">
                 <div className="w-full max-w-[1700px] mx-auto flex flex-col justify-center">
-                    {/* Stats Row */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-20 xl:gap-24 justify-items-center mb-24">
+                    
+                    {/* Stats Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 xl:gap-20 justify-items-center mb-20">
                         {/* Stat 1 */}
-                        <div className="w-full max-w-[340px] mx-auto text-center">
+                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
                             <div className="flex items-end justify-center gap-0 mb-4">
                                 <img
                                     src="/assets/images/about/man.png"
@@ -136,13 +137,13 @@ const About = () => {
                                     +
                                 </span>
                             </div>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide max-w-[260px] mx-auto">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide">
                                 Experts in our team
                             </p>
                         </div>
 
                         {/* Stat 2 */}
-                        <div className="w-full max-w-[340px] mx-auto text-center">
+                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
                             <div className="flex items-end justify-center gap-0 mb-4">
                                 <img
                                     src="/assets/images/about/globe.png"
@@ -156,13 +157,33 @@ const About = () => {
                                     +
                                 </span>
                             </div>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide max-w-[260px] mx-auto">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide">
                                 Countries served
                             </p>
                         </div>
 
                         {/* Stat 3 */}
-                        <div className="w-full max-w-[340px] mx-auto text-center">
+                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
+                            <div className="flex items-end justify-center gap-0 mb-4">
+                                <img
+                                    src="/assets/images/about/projects.png"
+                                    alt="Projects done"
+                                    className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 object-contain mb-2 filter brightness-0 opacity-80 shrink-0"
+                                />
+                                <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-gray-800 leading-none">
+                                    1000
+                                </span>
+                                <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-gray-800 leading-none -translate-x-2 -translate-y-6 md:-translate-y-8">
+                                    +
+                                </span>
+                            </div>
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide">
+                                Projects done
+                            </p>
+                        </div>
+
+                        {/* Stat 4 */}
+                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
                             <div className="flex items-end justify-center gap-0 mb-4">
                                 <img
                                     src="/assets/images/about/2016.png"
@@ -176,62 +197,62 @@ const About = () => {
                                     +
                                 </span>
                             </div>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide max-w-[260px] mx-auto">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide">
                                 Years of legacy
                             </p>
                         </div>
                     </div>
 
-                    {/* Services Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 lg:gap-16 xl:gap-20 items-start">
+                    {/* Services Description Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 xl:gap-20 items-start border-t border-black/[0.06] pt-12 w-full">
                         {/* VFX: Movies & Ads */}
                         <div>
-                            <h3 className="font-display text-xl md:text-xl lg:text-2xl xl:text-3xl font-normal text-gray-800 mb-5">
+                            <h3 className="font-display text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 mb-5">
                                 VFX: Movies & Ads
                             </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed mb-5">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
                                 Successfully delivered visual effects for more than 200 Hollywood projects & 50 Bollywood projects.
                             </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
                                 Films, Episodic, Commercials, Automobiles, Architectural & more.
                             </p>
                         </div>
 
                         {/* Brand Solutions */}
                         <div>
-                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-normal text-gray-800 mb-5">
+                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 mb-5">
                                 Brand Solutions
                             </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed mb-5">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
                                 Multiple campaigns for more than 50 brands/corporates in varied mediums.
                             </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
                                 Branding, Digital Marketing, Mainline advertising, Product photography, TVC production, Audio Visual films and Content creation.
                             </p>
                         </div>
 
                         {/* Real Estate Mar-tech */}
                         <div>
-                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-normal text-gray-800 mb-5">
+                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 mb-5">
                                 Real Estate Mar-tech
                             </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed mb-5">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
                                 Ideated and designed technology campaigns for large scale brands and corporates across India.
                             </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
                                 AR, VR, MR, Projection Mapping, Interactive Media, Custom Web & App development.
                             </p>
                         </div>
 
                         {/* Motion Pictures */}
                         <div>
-                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-normal text-gray-800 mb-5">
+                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 mb-5">
                                 Motion Pictures
                             </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed mb-5">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
                                 Produced IP's ranging from web series, documentaries to short films.
                             </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-xl leading-relaxed">
+                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
                                 Series, documentaries & short films.
                             </p>
                         </div>
@@ -253,7 +274,7 @@ const About = () => {
 
                         <div className="max-w-[1100px] text-gray-800 text-[32px] md:text-[46px] lg:text-[58px] font-semibold leading-[0.95] tracking-tight">
                             Guided by strong vision and thoughtful, Resonance is proud to be a reliable
-                            <span className="text-blue-700"> partner for major creative initiatives in India and beyond.</span>
+                            <span className="text-gray-400"> partner for major creative initiatives in India and beyond.</span>
                         </div>
                     </div>
 
@@ -261,7 +282,7 @@ const About = () => {
                     <div className="relative z-30 mt-2 md:mt-1 min-h-[700px] md:min-h-[500px] flex flex-col md:flex-row items-center md:items-end justify-center gap-6 md:gap-0">
                         {/* Left Info Card */}
                         <div className="relative md:absolute md:left-0 md:bottom-8 z-50 bg-white/90 border border-black/[0.06] backdrop-blur-sm p-6 w-full max-w-[320px] md:w-[280px] text-gray-800 shadow-2xl">
-                            <h3 className="text-blue-800 font-semibold text-lg mb-3">
+                            <h3 className="text-gray-500 font-semibold text-lg mb-3">
                                 Abhyuday Grover
                             </h3>
 
@@ -293,7 +314,7 @@ const About = () => {
 
                         {/* Right Info Card */}
                         <div className="relative md:absolute md:right-0 md:bottom-0 z-50 bg-white/90 border border-black/[0.06] backdrop-blur-sm p-6 w-full max-w-[320px] md:w-[280px] text-gray-800 shadow-2xl">
-                            <h3 className="text-blue-800 font-semibold text-lg mb-3">
+                            <h3 className="text-gray-500 font-semibold text-lg mb-3">
                                 Utsarg Grover
                             </h3>
 

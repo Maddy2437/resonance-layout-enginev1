@@ -374,8 +374,8 @@ const RealEstateMartech = () => {
                 mirrored
                 description={
                     <AnimatedColorText
-                        whiteText="A leading digital Creative Technology Company, which focuses on delivering rememberable web designs that are search"
-                        blueText="able, alongside other online promotion solutions in Coventry. We provide our clients with striking, practical, and intuitive sites that attract clientele and yield revenue."
+                        whiteText="We redefine how real estate is imagined, experienced, and sold through immersive technology. "
+                        blueText="From photorealistic visualisations and cinematic walkthroughs to interactive sales experiences, holograms, projection mapping, virtual reality, and intelligent digital tools, we transform projects into compelling buyer journeys."
                     />
                 }
             />

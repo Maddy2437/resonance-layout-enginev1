@@ -52,8 +52,8 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                     onClick={onClose}
                     aria-label="Close menu"
                     className={`absolute top-8 right-8 flex items-center gap-2 transition-colors duration-300 group z-10 ${isLightMenuTheme
-                            ? "text-[#14171d] hover:text-[#cdcbc7]"
-                            : "text-[#f6f4ed] hover:text-[#58595b]"
+                            ? "text-[#cdcbc7] hover:text-[#14171d]"
+                            : "text-[#58595b] hover:text-[#f6f4ed]"
                         }`}
                 >
                     <X className="w-5 h-5" strokeWidth={1.5} />
@@ -63,7 +63,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 </button>
 
                 {/* Menu Items - Centered with Padding */}
-                <nav className="h-full flex flex-col justify-center gap-3 px-12 py-20 items-start">
+                <nav className="h-full flex flex-col justify-center gap-1 px-12 py-20 items-start">
                     {menuItems.map((item, index) => {
                         const isActive = location.pathname === item.href;
 
@@ -72,7 +72,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                                 key={item.href}
                                 to={item.href}
                                 onClick={onClose}
-                                className="group relative w-full py-3 flex items-center justify-start"
+                                className="group relative w-full py-1.5 flex items-center justify-start"
                                 style={{
                                     opacity: isOpen ? 1 : 0,
                                     transform: isOpen ? "translateX(0)" : "translateX(30px)",
@@ -85,8 +85,8 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                                         isActive
                                             ? (isLightMenuTheme ? "text-[#14171d]" : "text-[#f6f4ed]")
                                             : isLightMenuTheme
-                                                ? "text-[#14171d] group-hover:text-[#cdcbc7]"
-                                                : "text-[#f6f4ed] group-hover:text-[#58595b]"
+                                                ? "text-[#cdcbc7] group-hover:text-[#14171d]"
+                                                : "text-[#58595b] group-hover:text-[#f6f4ed]"
                                     }`}
                                     style={{ willChange: "color" }}
                                 >
@@ -99,7 +99,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
                 {/* Email at Bottom */}
                 <div
-                    className={`absolute bottom-12 left-0 right-0 flex justify-center text-xs px-8 ${isLightMenuTheme ? "text-[#14171d]" : "text-[#f6f4ed]"
+                    className={`absolute bottom-12 left-0 right-0 flex justify-center text-xs px-8 ${isLightMenuTheme ? "text-[#cdcbc7]" : "text-[#58595b]"
                         }`}
                     style={{
                         opacity: isOpen ? 1 : 0,
@@ -108,7 +108,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 >
                     <a
                         href="mailto:info@resonancedigital.in"
-                        className={`${isLightMenuTheme ? "hover:text-[#cdcbc7]" : "hover:text-[#58595b]"} transition-colors duration-300`}
+                        className={`${isLightMenuTheme ? "hover:text-[#14171d]" : "hover:text-[#f6f4ed]"} transition-colors duration-300`}
                     >
                         info@resonancedigital.com
                     </a>

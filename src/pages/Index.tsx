@@ -146,32 +146,92 @@ const Index = () => {
                         <Hero />
                     </section>
                     <BrandStatement />
-                    {/*<section className="w-full bg-theme-primaryText py-24 md:py-32">
-                      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-y-12 md:gap-y-0">
-                        <div className="flex flex-col items-center">
-                          <span className="relative inline-block text-6xl md:text-8xl font-extralight tracking-tight text-theme-secondaryText leading-none">
-                            <CountUp end={50} />
-                            <span className="absolute -top-1 font-bold md:-top-2 -right-3 md:-right-5 text-2xl md:text-4xl">+</span>
-                          </span>
-                          <span className="mt-2 text-sm md:text-base text-gray-500">Projects Delivered</span>
-                        </div>
+                    {/* Stats Section */}
+                    <section className="w-full bg-white px-6 md:px-12 lg:px-24 border-y border-black/[0.06] py-16 md:py-24 flex items-center">
+                        <div className="w-full max-w-[1700px] mx-auto flex flex-col justify-center">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 xl:gap-20 justify-items-center">
+                                {/* Stat 1 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center">
+                                    <div className="flex items-end justify-center gap-0 mb-4">
+                                        <img
+                                            src="/assets/images/about/man.png"
+                                            alt="Experts"
+                                            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 object-contain mb-2 filter brightness-0 opacity-80 shrink-0"
+                                        />
+                                        <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-gray-800 leading-none">
+                                            250
+                                        </span>
+                                        <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-gray-800 leading-none -translate-x-2 -translate-y-6 md:-translate-y-8">
+                                            +
+                                        </span>
+                                    </div>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide max-w-[260px] mx-auto">
+                                        Experts in our team
+                                    </p>
+                                </div>
 
-                        <div className="flex flex-col items-center">
-                          <span className="text-6xl md:text-8xl font-extralight tracking-tight text-theme-secondaryText"><CountUp end={8} suffix="x" /></span>
-                          <span className="mt-2 text-sm md:text-base text-gray-500">Average Campaign</span>
-                        </div>
+                                {/* Stat 2 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center">
+                                    <div className="flex items-end justify-center gap-0 mb-4">
+                                        <img
+                                            src="/assets/images/about/globe.png"
+                                            alt="Countries"
+                                            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 object-contain mb-2 filter brightness-0 opacity-80 shrink-0"
+                                        />
+                                        <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-gray-800 leading-none">
+                                            20
+                                        </span>
+                                        <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-gray-800 leading-none -translate-x-2 -translate-y-6 md:-translate-y-8">
+                                            +
+                                        </span>
+                                    </div>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide max-w-[260px] mx-auto">
+                                        Countries served
+                                    </p>
+                                </div>
 
-                        <div className="flex flex-col items-center">
-                          <span className="text-6xl md:text-8xl font-extralight tracking-tight text-theme-secondaryText"><><CountUp end={4} /></></span>
-                          <span className="mt-2 text-sm md:text-base text-gray-500">Specialist Divisions</span>
-                        </div>
+                                {/* Stat 3 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center">
+                                    <div className="flex items-end justify-center gap-0 mb-4">
+                                        <img
+                                            src="/assets/images/about/projects.png"
+                                            alt="Projects done"
+                                            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 object-contain mb-2 filter brightness-0 opacity-80 shrink-0"
+                                        />
+                                        <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-gray-800 leading-none">
+                                            1000
+                                        </span>
+                                        <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-gray-800 leading-none -translate-x-2 -translate-y-6 md:-translate-y-8">
+                                            +
+                                        </span>
+                                    </div>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide max-w-[260px] mx-auto">
+                                        Projects done
+                                    </p>
+                                </div>
 
-                        <div className="flex flex-col items-center">
-                          <span className="text-6xl md:text-8xl font-extralight tracking-tight text-theme-secondaryText"><CountUp end={10} /></span>
-                          <span className="mt-2 text-sm md:text-base text-gray-500">Years In the Industry</span>
+                                {/* Stat 4 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center">
+                                    <div className="flex items-end justify-center gap-0 mb-4">
+                                        <img
+                                            src="/assets/images/about/2016.png"
+                                            alt="Years"
+                                            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 object-contain mb-2 filter brightness-0 opacity-80 shrink-0"
+                                        />
+                                        <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-gray-800 leading-none">
+                                            10
+                                        </span>
+                                        <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-gray-800 leading-none -translate-x-2 -translate-y-6 md:-translate-y-8">
+                                            +
+                                        </span>
+                                    </div>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl tracking-wide max-w-[260px] mx-auto">
+                                        Years of legacy
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </section>*/}
+                    </section>
                     <VerticalSelector />
                 </main>
                 <Footer />

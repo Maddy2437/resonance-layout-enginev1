@@ -604,8 +604,8 @@ const BrandSolutions = () => {
                 title="Brand Solutions"
                 description={
                     <AnimatedColorText
-                        whiteText="A leading digital Creative Technology"
-                        blueText="Company, which focuses on delivering rememberable web designs that are searchable, alongside other online promotion solutions in Coventry. We provide our clients with striking, practical, and intuitive sites that attract clientele and yield revenue."
+                        whiteText="We build brands through ideas that travel across every touchpoint. "
+                        blueText="From strategy and identity to campaigns, digital experiences, films, packaging, and content ecosystems, we create integrated brand solutions that drive visibility, engagement, and long-term business growth."
                     />
                 }
             />
