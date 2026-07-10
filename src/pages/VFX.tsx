@@ -1110,8 +1110,8 @@ const VFX = () => {
                                                 <button
                                                     onClick={() => setSelectedMovieCategory(category)}
                                                     className={`transition-colors duration-300 ${selectedMovieCategory === category
-                                                        ? "text-[#f2eee2]"
-                                                        : "text-[#f2eee2]/15 hover:text-[#f2eee2]"
+                                                        ? "text-[#ceccc7]"
+                                                        : "text-[#ceccc7]/15 hover:text-[#ceccc7]"
                                                         }`}
                                                 >
                                                     {category}
@@ -1278,8 +1278,8 @@ const VFX = () => {
                                             <button
                                                 onClick={() => setSelectedAdCategory(category)}
                                                 className={`transition-colors duration-300 ${selectedAdCategory === category
-                                                    ? "text-[#f2eee2]"
-                                                    : "text-[#f2eee2]/15 hover:text-[#f2eee2]"
+                                                    ? "text-[#ceccc7]"
+                                                    : "text-[#ceccc7]/15 hover:text-[#ceccc7]"
                                                     }`}
                                             >
                                                 {category}

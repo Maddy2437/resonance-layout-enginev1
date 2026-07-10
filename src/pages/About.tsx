@@ -100,7 +100,7 @@ const About = () => {
             <Header />
 
             {/* Hero Section with Animated Text */}
-            <section className="relative w-full min-h-screen bg-[#f7f5ee] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
+            <section className="relative w-full min-h-screen bg-[#f2eee2] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
                 <div className="w-full max-w-[1700px] mx-auto mt-20">
                     <h1 className="font-display text-[65px] md:text-[85px] lg:text-[105px] font-bold text-gray-800 mb-16 leading-tight">
                         About us
@@ -117,7 +117,7 @@ const About = () => {
             </section>
 
             {/* Stats and Services Section */}
-                    <section className="w-full bg-[#f2eee2] px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center py-20">
+                    <section className="w-full bg-[#f7f5ee] px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center py-20">
                         <div className="w-full max-w-[1700px] mx-auto flex flex-col justify-center">
 
                             {/* Stats Grid */}
@@ -252,20 +252,20 @@ const About = () => {
                         </div>
                     </section>
             {/* Meet Our Team Section */}
-            <section className="relative w-full overflow-hidden bg-[#f7f5ee] py-24 px-6 md:px-12 lg:px-20">
+            <section className="relative w-full overflow-hidden bg-[#f2eee2] py-24 px-6 md:px-12 lg:px-20">
                 {/* Background Glow */}
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top,rgba(0,0,0,0.05),transparent_55%)]" />
 
                 <div className="relative z-10 w-full">
                     {/* Heading */}
                     <div className="max-w-5xl relative z-10">
-                        <h2 className="font-display text-[56px] md:text-[80px] lg:text-[100px] font-bold text-gray-800 leading-[0.95] mb-8">
+                        <h2 className=" text-[56px] md:text-[80px] lg:text-[100px] font-bold text-black leading-[0.95] mb-8">
                             Meet our team
                         </h2>
 
-                        <div className="max-w-[1100px] text-gray-800 text-[32px] md:text-[46px] lg:text-[58px] font-semibold leading-[0.95] tracking-tight">
+                        <div className="max-w-[1100px] text-theme-secondaryText text-[32px] md:text-[46px] lg:text-[58px] font-bold font-display leading-[0.90] tracking-tight">
                             Guided by strong vision and thoughtful, Resonance is proud to be a reliable
-                            <span className="text-gray-400"> partner for major creative initiatives in India and beyond.</span>
+                            <span className="text-theme-secondaryText font-display font-bold"> partner for major creative initiatives in India and beyond.</span>
                         </div>
                     </div>
 
@@ -322,7 +322,7 @@ const About = () => {
             </section>
 
             {/* Team Members Grid */}
-            <section className="w-full bg-[#f7f5ee] px-12 md:px-24 pb-24 pt-24">
+            <section className="w-full bg-[#f2eee2] px-12 md:px-24 pb-24 pt-24">
                 <div className="max-w-[1700px] mx-auto flex flex-col gap-[2px]">
                     {/* Row 1 */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-[2px]">
@@ -339,35 +339,6 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-
-            {/* Awards Showcase Image */}
-            <section className="relative w-full bg-white">
-                {/* Desktop overlay title */}
-                <div className="hidden md:block absolute top-[180px] left-6 md:left-12 lg:left-20 z-10">
-                    <h2 className="font-display text-[45px] md:text-[55px] lg:text-[75px] font-bold text-gray-800 tracking-tight leading-[0.95]">
-                        Awards Showcase
-                    </h2>
-                </div>
-
-                {/* Mobile standalone title container */}
-                <div className="md:hidden px-6 pt-8 pb-6 bg-[#f7f5ee] border-b border-black/[0.04] flex justify-center text-center">
-                    <h2 className="font-display text-3xl font-bold text-gray-800 leading-tight">
-                        Awards Showcase
-                    </h2>
-                </div>
-
-                <picture>
-                    <source
-                        media="(max-width: 768px), (max-aspect-ratio: 4/5)"
-                        srcSet="/assets/images/awards/awardshowcase-mobile.png"
-                    />
-                    <img
-                        src="/assets/images/awards/awardshowcase.png"
-                        alt="Awards Showcase"
-                        className="w-full h-auto block"
-                    />
-                </picture>
             </section>
 
             <Footer theme="light" />

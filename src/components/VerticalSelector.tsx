@@ -140,7 +140,7 @@ const VerticalSelector = () => {
             <div className="relative z-10 h-full flex flex-col">
                 {/* Section header */}
                 <div className="px-6 md:px-16 py-4 md:py-4">
-                    <h2 className="text-4xl tracking-tight text-white/50">
+                    <h2 className="text-4xl tracking-tight text-[#f2eee2">
                         Business Verticals
                     </h2>
                 </div>

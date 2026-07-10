@@ -32,7 +32,7 @@ const Awards = () => {
                                 Achievements
                             </h1>
 
-                            <div className="max-w-[620px] text-lg md:text-lg leading-relaxed">
+                            <div className="max-w-[620px] text-base md:text-lg leading-relaxed">
                                 <AnimatedColorText
                                     whiteText="A leading digital Creative Technology Company, which We"
                                     blueText="provide our clients with striking, practical, and intuitive sites that attract clientele and yield revenue."
@@ -42,11 +42,11 @@ const Awards = () => {
 
                         {/* Right Side */}
                         <div className="absolute inset-0 lg:relative lg:flex lg:items-center lg:justify-end pointer-events-none">
-                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[80vw] max-w-[460px] lg:static lg:translate-y-0 lg:w-full lg:max-w-[760px] lg:h-[640px] flex items-center justify-center">
+                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[85vw] max-w-[520px] lg:static lg:translate-y-0 lg:w-full lg:max-w-[820px] lg:h-[700px] flex items-center justify-center">
                                 <img
                                     src="/assets/images/awards/Awards-01.png"
                                     alt="Awards"
-                                    className="w-full h-full object-contain scale-110 lg:scale-125 opacity-90"
+                                    className="w-full h-full object-contain scale-125 lg:scale-140 opacity-90"
                                 />
                             </div>
                         </div>
@@ -55,8 +55,13 @@ const Awards = () => {
             </section>
 
             {/* Awards Showcase Image */}
-            <section className="relative w-full bg-black">
+            <section className="relative w-full bg-theme-secondaryText">
                 {/* Desktop overlay title */}
+                <div className="hidden md:block absolute top-[180px] left-6 md:left-12 lg:left-20 z-10">
+                    <h2 className="font-display text-[45px] md:text-[55px] lg:text-[75px] font-bold text-theme-primaryText tracking-tight leading-[0.95]">
+                        Awards Showcase
+                    </h2>
+                </div>
 
                 {/* Mobile standalone title container */}
                 <picture>
@@ -72,7 +77,7 @@ const Awards = () => {
                 </picture>
             </section>
 
-            <Footer theme="light" />
+            <Footer theme="dark" />
         </>
     );
 };

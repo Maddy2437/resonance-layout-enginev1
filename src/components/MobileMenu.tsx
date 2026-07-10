@@ -23,7 +23,6 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         "/",
         "/brand-solutions",
         "/about",
-        "/motion-pictures",
     ].includes(location.pathname);
 
     return (
