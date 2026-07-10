@@ -1106,7 +1106,7 @@ const VFX = () => {
                                                     {category}
                                                 </button>
                                                 {index < movieCategories.length - 1 && (
-                                                    <span className="text-[#f2eee2]/30 mx-4">|</span>
+                                                    <span className="text-[#f2eee2]/30 font-light mx-4">|</span>
                                                 )}
                                             </div>
                                         ))}
@@ -1256,7 +1256,7 @@ const VFX = () => {
                     <section className="px-12 md:px-24 py-24 bg-theme-primaryBg1">
                         <div className="w-full translate-y-8">
                             <h2 className="font-display text-4xl md:text-5xl font-bold text-[#f2eee2] mb-4">
-                                VFX: Advertising <span className="text-[#f2eee2]/30">|</span>{" "}
+                                VFX: Advertising <span className="text-[#f2eee2]/30  font-light">|</span>{" "}
                                 <span className="text-[#f2eee2]/60 font-light">Showreel</span>
                             </h2>
 
