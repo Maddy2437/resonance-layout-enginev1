@@ -216,7 +216,7 @@ const immersiveTabs: ImmersiveTabData[] = [
     {
         id: "digital-twin",
         label: "Digital Twin",
-        videoSrc: "https://www.youtube.com/embed/E02wLhAMBWs",
+        videoSrc: "/assets/videos/DigitalTwin.webm",
     },
     {
         id: "experience-center",
@@ -227,7 +227,7 @@ const immersiveTabs: ImmersiveTabData[] = [
     {
         id: "ar-vr",
         label: "AR / VR",
-        videoSrc: "https://www.youtube.com/embed/sgD8tVOTqsE",
+        videoSrc: "/assets/videos/ARVR.webm",
     },
 ];
 

@@ -27,12 +27,12 @@ const Awards = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] items-center gap-10 lg:gap-16 flex-1">
                         {/* Left Side */}
                         <div className="relative z-30 max-w-[720px] lg:min-h-[520px] flex flex-col justify-center">
-                            <h1 className="font-display text-[56px] leading-[0.95] md:text-[84px] lg:text-[110px] font-bold text-theme-primaryText tracking-tight mb-8 md:mb-10">
+                            <h1 className="font-display text-[56px] leading-[0.95] md:text-[84px] lg:text-[90px] font-bold text-theme-primaryText tracking-tight mb-8 md:mb-10">
                                 Awards &<br />
                                 Achievements
                             </h1>
 
-                            <div className="max-w-[620px] text-base md:text-xl leading-relaxed">
+                            <div className="max-w-[620px] text-lg md:text-lg leading-relaxed">
                                 <AnimatedColorText
                                     whiteText="A leading digital Creative Technology Company, which We"
                                     blueText="provide our clients with striking, practical, and intuitive sites that attract clientele and yield revenue."
@@ -42,11 +42,11 @@ const Awards = () => {
 
                         {/* Right Side */}
                         <div className="absolute inset-0 lg:relative lg:flex lg:items-center lg:justify-end pointer-events-none">
-                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[70vw] max-w-[380px] lg:static lg:translate-y-0 lg:w-full lg:max-w-[620px] lg:h-[520px] flex items-center justify-center">
+                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[80vw] max-w-[460px] lg:static lg:translate-y-0 lg:w-full lg:max-w-[760px] lg:h-[640px] flex items-center justify-center">
                                 <img
                                     src="/assets/images/awards/Awards-01.png"
                                     alt="Awards"
-                                    className="w-full h-full object-contain opacity-90 lg:opacity-90"
+                                    className="w-full h-full object-contain scale-110 lg:scale-125 opacity-90"
                                 />
                             </div>
                         </div>
@@ -57,19 +57,8 @@ const Awards = () => {
             {/* Awards Showcase Image */}
             <section className="relative w-full bg-black">
                 {/* Desktop overlay title */}
-                <div className="hidden md:block absolute top-[180px] left-6 md:left-12 lg:left-20 z-10">
-                    <h2 className="font-display text-[45px] md:text-[55px] lg:text-[75px] font-bold text-theme-primaryText tracking-tight leading-[0.95]">
-                        Awards Showcase
-                    </h2>
-                </div>
 
                 {/* Mobile standalone title container */}
-                <div className="md:hidden px-6 pt-8 pb-6 bg-black flex justify-center text-center">
-                    <h2 className="font-display text-3xl font-bold text-theme-primaryText leading-tight">
-                        Awards Showcase
-                    </h2>
-                </div>
-
                 <picture>
                     <source
                         media="(max-width: 768px), (max-aspect-ratio: 4/5)"

@@ -12,7 +12,6 @@ const Header = () => {
     "/",
     "/brand-solutions",
     "/about",
-    "/motion-pictures",
     "/real-estate",
   ].includes(pathname) || pathname.startsWith("/case-studies");
 
