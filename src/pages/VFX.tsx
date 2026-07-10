@@ -659,8 +659,16 @@ const VFX = () => {
                     muted
                     loop
                     playsInline
-                    preload="metadata"
+                    preload="none"
                     data-autopause="true"
+                    onLoadedData={(e) => {
+                        const video = e.currentTarget;
+                        const rect = video.getBoundingClientRect();
+                        const isVisible = rect.bottom > 0 && rect.top < window.innerHeight;
+                        if (!isVisible) {
+                            video.pause();
+                        }
+                    }}
                 />
             ) : (
                 <iframe
@@ -718,7 +726,10 @@ const VFX = () => {
                     }
                 });
             },
-            { threshold: 0.2 }
+            {
+                threshold: 0.5,
+                rootMargin: "150px 0px",
+            }
         );
 
         videos.forEach((video) => {
@@ -1261,7 +1272,7 @@ const VFX = () => {
                             </h2>
 
                             <div className="mt-8 mb-12">
-                                <div className="hidden md:flex flex-wrap gap-y-4 gap-x-0 text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed">
+                                <div className="hidden md:flex flex-wrap gap-y-1 gap-x-0 text-xl md:text-4xl lg:text-5xl font-bold leading-relaxed tracking-tighter">
                                     {adCategories.map((category, index) => (
                                         <div key={category} className="flex items-center">
                                             <button
@@ -1274,7 +1285,7 @@ const VFX = () => {
                                                 {category}
                                             </button>
                                             {index < adCategories.length - 1 && (
-                                                <span className="text-[#f2eee2]/30 mx-5">|</span>
+                                                <span className="text-[#f2eee2]/30 font-light mx-4">|</span>
                                             )}
                                         </div>
                                     ))}
@@ -1363,8 +1374,16 @@ const VFX = () => {
                                                     muted
                                                     loop
                                                     playsInline
-                                                    preload="metadata"
+                                                    preload="none"
                                                     data-autopause="true"
+                                                    onLoadedData={(e) => {
+                                                        const video = e.currentTarget;
+                                                        const rect = video.getBoundingClientRect();
+                                                        const isVisible = rect.bottom > 0 && rect.top < window.innerHeight;
+                                                        if (!isVisible) {
+                                                            video.pause();
+                                                        }
+                                                    }}
                                                 />
                                             ) : (
                                                 <iframe

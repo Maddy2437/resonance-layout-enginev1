@@ -618,14 +618,14 @@ const BrandSolutions = () => {
                 </h2>
 
                 <div className="flex flex-col lg:flex-row gap-12">
-                    <div className="w-full lg:w-1/2">
+                    <div className="w-full lg:w-1/2 flex items-start pt-10 lg:pt-12">
                         {/* FIX 2: lazy-load the large client logo sheet (below the fold) */}
                         <img
                             src="/assets/images/CaseStudies/Brand-solution-logo.png"
                             alt="Brand Solutions Clients"
                             loading="lazy"
                             decoding="async"
-                            className="max-w-full max-h-full object-contain"
+                            className="w-full h-auto object-contain object-top self-start"
                         />
                     </div>
 

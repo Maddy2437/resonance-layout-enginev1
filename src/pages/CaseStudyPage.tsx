@@ -164,20 +164,20 @@ const CaseStudyPage = () => {
                 <meta name="description" content={study.summary} />
             </Helmet>
 
-            <div className="min-h-screen bg-theme-secondaryBg2 text-theme-secondaryText">
+            <div className="min-h-screen bg-theme-secondaryBg2 text-[#58595b]">
                 <Header />
                 <main className="pt-[148px] md:pt-[164px] pb-16">
                     {/* Sticky Header - Under Navbar */}
                     <div className="fixed top-[72px] md:top-[80px] left-0 right-0 z-40 w-full bg-[#f0ede1]/60 backdrop-blur-md py-5 px-12 md:px-24 select-none">
                         <div className="w-full flex items-center justify-between">
-                            <h2 className="font-sans text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-gray-800 tracking-tight leading-none">
-                                <span className="font-bold text-gray-700">Brand Solutions</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
-                                <span className="text-gray-400 font-light">Case Studies</span>
+                            <h2 className="font-sans text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-[#58595b] tracking-tight leading-none">
+                                <span className="font-bold text-[#58595b]">Brand Solutions</span> <span className="text-[#58595b]/30 font-light mx-1">|</span>{" "}
+                                <span className="text-[#58595b]/60 font-light">Case Studies</span>
                             </h2>
                             {/* Close Button linking back to /brand-solutions#case-studies */}
                             <Link 
                                 to="/brand-solutions#case-studies"
-                                className="text-gray-400 hover:text-gray-800 transition-colors flex items-center justify-center p-2 rounded-full hover:bg-black/[0.04]"
+                                className="text-[#58595b]/60 hover:text-[#58595b] transition-colors flex items-center justify-center p-2 rounded-full hover:bg-black/[0.04]"
                                 aria-label="Close case study"
                             >
                                 <X className="h-5 w-5 stroke-[3]" />
@@ -191,9 +191,9 @@ const CaseStudyPage = () => {
                             const slideImgSrc = `/assets/images/CaseStudies/PDF_Pages/Reso_website-AAa-${String(slide.page).padStart(2, "0")}.webp`;
                             const ocrText = textData[String(slide.page)] || "";
 
-                            // Alternate between white and cream background
+                            // Alternate between #f2eee2 and #f7f5ee background
                             const isCream = idx % 2 === 0;
-                            const bgColor = isCream ? "bg-[#f7f5ee]" : "bg-white";
+                            const bgColor = isCream ? "bg-[#f2eee2]" : "bg-[#f7f5ee]";
 
                             if (idx === 0) {
                                 const coverImgSrc = `/assets/images/CaseStudies/Cover_Images/${currentIndex + 1}.webp`;
@@ -203,7 +203,7 @@ const CaseStudyPage = () => {
                                 const descVal = study.pdfDescription || study.summary;
 
                                 return (
-                                    <section key={slide.page} className="w-full bg-[#f7f5ee] py-16 px-12 md:px-24 border-b border-black/[0.06] select-none">
+                                    <section key={slide.page} className="w-full bg-[#f2eee2] py-16 px-12 md:px-24 border-b border-black/[0.06] select-none">
                                         <div className="w-full">
                                             <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 items-center">
                                                 {/* Left Column: Image */}
@@ -221,28 +221,28 @@ const CaseStudyPage = () => {
 
                                                 {/* Right Column: Metadata Table + Description */}
                                                 <div className="w-full lg:w-[42%] flex flex-col justify-center">
-                                                    <div className="w-full border-t border-black/[0.08] border-b border-black/[0.08] divide-y divide-black/[0.08] max-w-lg lg:max-w-xl xl:max-w-2xl">
+                                                    <div className="w-full border-t border-[#58595b]/20 border-b border-[#58595b]/20 divide-y divide-[#58595b]/20 max-w-lg lg:max-w-xl xl:max-w-2xl">
                                                         <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
-                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-gray-500 font-normal">Client</span>
-                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-[#58595b]/70 font-normal">Client</span>
+                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-normal text-[#58595b] pl-4 font-sans">
                                                                 {clientVal}
                                                             </span>
                                                         </div>
                                                         <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
-                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-gray-500 font-normal">Service</span>
-                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-[#58595b]/70 font-normal">Service</span>
+                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-normal text-[#58595b] pl-4 font-sans">
                                                                 {serviceVal}
                                                             </span>
                                                         </div>
                                                         <div className="grid grid-cols-[100px_1fr] md:grid-cols-[110px_1fr] lg:grid-cols-[120px_1fr] xl:grid-cols-[140px_1fr] py-3 items-baseline">
-                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-gray-500 font-normal">Year</span>
-                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-wider text-gray-800 pl-4 font-sans">
+                                                            <span className="text-xs md:text-sm lg:text-base xl:text-lg tracking-[0.05em] text-[#58595b]/70 font-normal">Year</span>
+                                                            <span className="text-sm md:text-base lg:text-lg xl:text-2xl font-bold uppercase tracking-normal text-[#58595b] pl-4 font-sans">
                                                                 {yearVal}
                                                             </span>
                                                         </div>
                                                     </div>
 
-                                                    <p className="text-gray-600 text-sm md:text-base lg:text-lg xl:text-2xl leading-relaxed font-sans mt-7 max-w-lg lg:max-w-xl xl:max-w-2xl font-light tracking-wide">
+                                                    <p className="text-[#58595b] text-sm md:text-base lg:text-lg xl:text-2xl leading-relaxed font-sans mt-7 max-w-lg lg:max-w-xl xl:max-w-2xl font-light tracking-wide">
                                                         {descVal.startsWith("Objective:") ? descVal.substring("Objective:".length).trim() : descVal}
                                                     </p>
                                                 </div>

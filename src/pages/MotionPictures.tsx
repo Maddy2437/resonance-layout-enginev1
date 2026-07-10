@@ -18,7 +18,7 @@ const showcaseImages = [
     {
         image: "/assets/images/motionPictures/UHC1.png",
         title: "Conosh",
-        year: "2025",
+        year: "2024",
     },
 ];
 
@@ -48,12 +48,6 @@ const MotionPictures = () => {
 
             {/* Motion Picture Showcase */}
             <section className="w-full bg-theme-primaryBg2 py-20">
-                <div className="px-6 md:px-12 lg:px-20">
-                    <h2 className="font-display text-3xl md:text-4xl font-normal text-theme-secondaryText mb-12">
-                        <span className="font-bold text-theme-secondaryText">Motion Picture</span> <span className="text-theme-primaryText">|</span>{" "}
-                        <span className="text-theme-secondaryText/70 font-light">Showcase</span>
-                    </h2>
-                </div>
 
                 <div className="space-y-0">
                     {showcaseImages.map((item, index) => (
@@ -69,12 +63,15 @@ const MotionPictures = () => {
                                     loading="lazy"
                                 />
 
-                                <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 text-right text-white pointer-events-none">
-                                    <div className="font-display text-xl md:text-3xl font-semibold leading-none">
-                                        {item.title}
-                                    </div>
-                                    <div className="mt-1 text-sm md:text-lg tracking-wider leading-none">
-                                        {item.year}
+                                <div className="absolute bottom-6 left-6 md:bottom-10 md:right-10 text-left text-white pointer-events-none">
+                                    <div className="flex items-baseline gap-2 font-display leading-none">
+                                        <span className="text-xl md:text-3xl font-bold text-white">
+                                            {item.title}
+                                        </span>
+                                        <span className="text-xl md:text-3xl font-light text-white/80">|</span>
+                                        <span className="text-lg md:text-3xl font-light text-white/80 tracking-normal">
+                                            {item.year}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
