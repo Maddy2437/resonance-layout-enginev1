@@ -148,13 +148,13 @@ const VerticalSelector = () => {
                 {/* ════════════════════════════════════════════════════════════════════
             DESKTOP — 4-col tall card layout (completely unchanged from original)
             ════════════════════════════════════════════════════════════════════ */}
-                <div className="hidden md:grid flex-1 grid-cols-4 gap-8 px-6 md:px-16 pt-2 pb-28 items-start content-start">
+                <div className="hidden md:grid flex-1 grid-cols-2 lg:grid-cols-4 gap-8 px-6 md:px-16 pt-2 pb-28 items-start content-start">
                     {verticals.map((vertical, index) => (
                         <Link
                             key={vertical.id}
                             to={vertical.href}
                             onMouseEnter={() => setActiveVertical(vertical.id)}
-                            className="vertical-card group relative flex flex-col justify-between p-6 md:p-8 overflow-hidden transition-all duration-300 rounded-lg hover:scale-110 hover:shadow-2xl h-[600px] w-full"
+                            className="vertical-card group relative flex flex-col justify-between p-6 md:p-8 overflow-hidden transition-all duration-300 rounded-lg hover:scale-105 hover:shadow-2xl w-full aspect-[10/16]"
                             style={{
                                 backgroundImage: `url(${vertical.bgImage})`,
                                 backgroundSize: "cover",
@@ -171,11 +171,11 @@ const VerticalSelector = () => {
 
                             {/* Title */}
                             <div className="translate-y-10 my-auto relative z-10">
-                                <h3 className="font-gotham-bold text-3xl md:text-4xl lg:text-5xl text-white group-hover:text-white/50 transition-colors duration-300">
+                                <h3 className="font-gotham-bold text-3xl md:text-4xl lg:text-5xl text-[#a6a8ab] group-hover:text-[#f2eee2] transition-colors duration-300">
                                     {vertical.title}
                                 </h3>
                                 {vertical.subtitle && (
-                                    <span className="block font-gotham-light text-lg md:text-xl text-white/70 group-hover:text-white/50 mt-1 transition-colors duration-300">
+                                    <span className="block font-bold text-lg md:text-xl text-[#a6a8ab] group-hover:text-[#f2eee2] mt-1 transition-colors duration-300">
                                         {vertical.subtitle}
                                     </span>
                                 )}
@@ -195,7 +195,7 @@ const VerticalSelector = () => {
                             </div>
 
                             {/* Hover bottom line */}
-                            <span className="absolute bottom-0 left-0 w-full h-px bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left z-10" />
+                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left z-10" />
                         </Link>
                     ))}
                 </div>
