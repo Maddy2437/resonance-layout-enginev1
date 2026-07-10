@@ -63,7 +63,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 </button>
 
                 {/* Menu Items - Centered with Padding */}
-                <nav className="h-full flex flex-col justify-center gap-1 px-12 py-20 items-start">
+                <nav className="h-full flex flex-col justify-center gap-0 px-12 py-20 items-start">
                     {menuItems.map((item, index) => {
                         const isActive = location.pathname === item.href;
 

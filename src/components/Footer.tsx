@@ -87,7 +87,7 @@ const Footer = ({ theme = "light" }: FooterProps) => {
             <div className="max-w-[1400px] mx-auto px-16 pt-24 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-28 items-start">
                 {/* LEFT COLUMN */}
                 <div className="flex flex-col items-start">
-                    <h2 className="text-3xl font-semibold mb-3">Art Comes First</h2>
+                    <h2 className="text-3xl font-semibold mb-3">Connect With Us</h2>
                     <p className={`text-sm max-w-md mb-8 ${mutedTextClass}`}>
                         We shape distinctive success stories with breakthrough ideas and
                         creative mastery, elevating you ahead of the competition.

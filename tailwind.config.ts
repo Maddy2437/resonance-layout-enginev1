@@ -29,14 +29,14 @@ export default {
       },
       colors: {
         theme: {
-          primaryBg1: '#15171e', //'#080032',
+          primaryBg1: '#010000', //'#080032',
           secondaryBg1: '#100a44',
 
           primaryBg2: '#f7f5ee',
           secondaryBg2: '#f2eee2',
 
           primaryText: '#f2eee2',
-          secondaryText: '#414044',
+          secondaryText: '#15171e',
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

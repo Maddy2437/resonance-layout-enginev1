@@ -856,9 +856,9 @@ const VFX = () => {
                             style={{
                                 clipPath:
                                     hoveredSide === "movies"
-                                        ? "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+                                        ? "polygon(0 0, 80% 0, 60% 100%, 0 100%)"
                                         : hoveredSide === "ads"
-                                            ? "polygon(0 0, 15% 0, 5% 100%, 0 100%)"
+                                            ? "polygon(0 0, 40% 0, 20% 100%, 0 100%)"
                                             : "polygon(0 0, 65% 0, 45% 100%, 0 100%)",
                             }}
                         >
@@ -873,7 +873,7 @@ const VFX = () => {
                                     : "bg-black/45 group-hover:bg-black/25"
                                     }`}
                             />
-                            <h2 className="absolute left-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-theme-secondaryBg2 group-hover:text-white transition-all duration-500 group-hover:scale-105">
+                            <h2 className="absolute left-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-theme-secondaryBg2 group-hover:text-[#f2eee2] transition-all duration-500 group-hover:scale-105">
                                 Films & Episodic
                             </h2>
                         </div>
@@ -887,9 +887,9 @@ const VFX = () => {
                             style={{
                                 clipPath:
                                     hoveredSide === "ads"
-                                        ? "polygon(5% 0, 100% 0, 100% 100%, 15% 100%)"
+                                        ? "polygon(37% 0, 100% 0, 100% 100%, 17% 100%)"
                                         : hoveredSide === "movies"
-                                            ? "polygon(95% 0, 100% 0, 100% 100%, 85% 100%)"
+                                            ? "polygon(77% 0, 100% 0, 100% 100%, 57% 100%)"
                                             : "polygon(62% 0, 100% 0, 100% 100%, 42% 100%)",
                             }}
                         >
@@ -899,7 +899,7 @@ const VFX = () => {
                                 className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 pointer-events-none bg-black/45 transition-all duration-500 group-hover:bg-black/25" />
-                            <h2 className="absolute right-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-theme-secondaryBg2 group-hover:text-white transition-all duration-500 group-hover:scale-105">
+                            <h2 className="absolute right-5 top-1/2 -translate-y-1/2 font-display text-[88px] font-bold text-theme-secondaryBg2 group-hover:text-[#f2eee2] transition-all duration-500 group-hover:scale-105">
                                 Advertising
                             </h2>
                         </div>
@@ -1007,8 +1007,8 @@ const VFX = () => {
                                     onClick={handleMoviePrev}
                                     disabled={currentMovieIndex === 0}
                                     className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 z-10 w-12 h-12 rounded-full flex items-center justify-center text-[#f2eee2] transition-all duration-300 ${currentMovieIndex === 0
-                                        ? "bg-white/5 cursor-not-allowed opacity-50"
-                                        : "bg-white/10 hover:bg-white/20 cursor-pointer"
+                                        ? "bg-[#f2eee2]/5 cursor-not-allowed opacity-50"
+                                        : "bg-[#f2eee2]/10 hover:bg-[#f2eee2]/20 cursor-pointer"
                                         }`}
                                 automatic-bg-blue-disabled="">
                                     <ChevronLeft className="w-6 h-6" />
@@ -1029,7 +1029,7 @@ const VFX = () => {
                                                 {pageItems.map((movie, index) => (
                                                     <div
                                                         key={`${movie.title}-${pageIndex}-${index}`}
-                                                        className="group relative aspect-[2/3] rounded-lg overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-105 hover:z-10"
+                                                        className="group relative aspect-[2/3] rounded-lg overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/40 hover:z-10"
                                                     >
                                                         {/* Movie Poster */}
                                                         <img
@@ -1041,7 +1041,7 @@ const VFX = () => {
                                                         />
 
                                                         {/* Hover Overlay */}
-                                                        <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-all duration-500" />
+                                                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
 
                                                         {/* Title overlay on hover */}
                                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
@@ -1075,8 +1075,8 @@ const VFX = () => {
                                         currentMovieIndex + ITEMS_PER_PAGE >= moviesShowcase.length
                                     }
                                     className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 z-10 w-12 h-12 rounded-full flex items-center justify-center text-[#f2eee2] transition-all duration-300 ${currentMovieIndex + ITEMS_PER_PAGE >= moviesShowcase.length
-                                        ? "bg-white/5 cursor-not-allowed opacity-50"
-                                        : "bg-white/10 hover:bg-white/20 cursor-pointer"
+                                        ? "bg-[#f2eee2]/5 cursor-not-allowed opacity-50"
+                                        : "bg-[#f2eee2]/10 hover:bg-[#f2eee2]/20 cursor-pointer"
                                         }`}
                                 >
                                     <ChevronRight className="w-6 h-6" />
@@ -1099,8 +1099,8 @@ const VFX = () => {
                                                 <button
                                                     onClick={() => setSelectedMovieCategory(category)}
                                                     className={`transition-colors duration-300 ${selectedMovieCategory === category
-                                                        ? "text-white"
-                                                        : "text-[#f2eee2]/40 hover:text-white"
+                                                        ? "text-[#f2eee2]"
+                                                        : "text-[#f2eee2]/15 hover:text-[#f2eee2]"
                                                         }`}
                                                 >
                                                     {category}
@@ -1121,7 +1121,7 @@ const VFX = () => {
                                                 <button
                                                     onClick={() => setSelectedMovieCategory(category)}
                                                     className={`transition-colors duration-300 ${selectedMovieCategory === category
-                                                        ? "text-white"
+                                                        ? "text-[#f2eee2]"
                                                         : "text-[#f2eee2]/40"
                                                         }`}
                                                 >
@@ -1138,7 +1138,7 @@ const VFX = () => {
                                 {/* Showreel Display */}
                                 {selectedMovieShowreel && (
                                     <div className="w-full">
-                                        <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-white/10">
+                                        <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-[#f2eee2]/10">
                                             {selectedMovieShowreel.youtubeEmbedUrl.endsWith(
                                                 ".webm",
                                             ) ? (
@@ -1267,8 +1267,8 @@ const VFX = () => {
                                             <button
                                                 onClick={() => setSelectedAdCategory(category)}
                                                 className={`transition-colors duration-300 ${selectedAdCategory === category
-                                                    ? "text-white"
-                                                    : "text-[#f2eee2]/40 hover:text-white"
+                                                    ? "text-[#f2eee2]"
+                                                    : "text-[#f2eee2]/15 hover:text-[#f2eee2]"
                                                     }`}
                                             >
                                                 {category}
@@ -1481,7 +1481,7 @@ const VFX = () => {
                     onClick={() => setActiveCgiImage(null)}
                 >
                     <button
-                        className="absolute top-6 right-6 text-white text-5xl leading-none z-10"
+                        className="absolute top-6 right-6 text-[#f2eee2] text-5xl leading-none z-10"
                         onClick={() => setActiveCgiImage(null)}
                     >
                         ×
