@@ -117,139 +117,140 @@ const About = () => {
             </section>
 
             {/* Stats and Services Section */}
-            <section className="w-full bg-[#f2eee2] px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center py-20">
-                <div className="w-full max-w-[1700px] mx-auto flex flex-col justify-center">
-                    
-                    {/* Stats Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.05fr_1.2fr_0.9fr_0.85fr] gap-12 lg:gap-16 xl:gap-20 justify-items-center mb-20">
-                        {/* Stat 1 */}
-                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
-                            <div className="flex items-center justify-center mb-1">
-                                <img
-                                    src="/assets/images/about/man.png"
-                                    alt="Experts"
-                                    className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-2 sm:-mr-3 md:-mr-4 lg:-mr-5 xl:-mr-6"
-                                />
-                                <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
-                                    200
-                                    <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
-                                </span>
+                    <section className="w-full bg-[#f2eee2] px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center py-20">
+                        <div className="w-full max-w-[1700px] mx-auto flex flex-col justify-center">
+
+                            {/* Stats Grid */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.05fr_1.2fr_0.9fr_0.85fr] gap-12 lg:gap-16 xl:gap-20 justify-items-center mb-20">
+                                {/* Stat 1 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
+                                    <div className="flex items-center justify-center -mb-3">
+                                        <img
+                                            src="/assets/images/about/man.png"
+                                            alt="Experts"
+                                            className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-6"
+                                        />
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
+                                            200
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                        </span>
+                                    </div>
+                                    <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
+                                        Experts in our team
+                                    </p>
+                                </div>
+
+                                {/* Stat 2 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
+                                    <div className="flex items-center justify-center -mb-3">
+                                        <img
+                                            src="/assets/images/about/projects.png"
+                                            alt="Projects Delivered"
+                                            className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-7"
+                                        />
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] tracking-tight leading-none ml-2">
+                                            1000
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                        </span>
+                                    </div>
+                                    <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
+                                        Projects Delivered
+                                    </p>
+                                </div>
+
+                                {/* Stat 3 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
+                                    <div className="flex items-center justify-center -mb-3">
+                                        <img
+                                            src="/assets/images/about/globe.png"
+                                            alt="Countries"
+                                            className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-6"
+                                        />
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
+                                            20
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                        </span>
+                                    </div>
+                                    <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
+                                        Countries served
+                                    </p>
+                                </div>
+
+                                {/* Stat 4 */}
+                                <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
+                                    <div className="flex items-center justify-center -mb-3">
+                                        <img
+                                            src="/assets/images/about/2016.png"
+                                            alt="Years"
+                                            className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-7"
+                                        />
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
+                                            10
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                        </span>
+                                    </div>
+                                    <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
+                                        Years of legacy
+                                    </p>
+                                </div>
                             </div>
-                            <p className="text-gray-800 text-sm md:text-base lg:text-lg font-sans font-medium tracking-wide">
-                                Experts in our team
-                            </p>
-                        </div>
 
-                        {/* Stat 2 */}
-                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
-                            <div className="flex items-center justify-center mb-1">
-                                <img
-                                    src="/assets/images/about/projects.png"
-                                    alt="Projects Delivered"
-                                    className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-2 sm:-mr-3 md:-mr-4 lg:-mr-5 xl:-mr-6"
-                                />
-                                <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
-                                    1<span className="-ml-[0.07em] inline-block">000</span>
-                                    <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
-                                </span>
+                            {/* Services Description Grid */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.05fr_1.2fr_0.9fr_0.85fr] gap-10 lg:gap-16 xl:gap-19 items-start w-full">
+                                {/* VFX: Movies & Ads */}
+                                <div>
+                                    <h3 className="font-display text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-[#58595b] pb-2 border-b border-black/[0.76] mb-3 whitespace-nowrap">
+                                        VFX: Movies & Ads
+                                    </h3>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+                                        Successfully delivered visual effects for more than 200 Hollywood projects & 50 Bollywood projects.
+                                    </p>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
+                                        Films, Episodic, Commercials, Automobiles, Architectural & Products.
+                                    </p>
+                                </div>
+
+                                {/* Brand Solutions */}
+                                <div>
+                                    <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-[#58595b] pb-2 border-b border-black/[0.76] mb-3 whitespace-nowrap">
+                                        Brand Solutions
+                                    </h3>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+                                        Multiple campaigns for more than 50 brands/corporates in varied mediums.
+                                    </p>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
+                                        Branding, Digital Marketing, Mainline advertising, Product photography, TVC production, Audio Visual films and Content Creation.
+                                    </p>
+                                </div>
+
+                                {/* Real Estate Mar-tech */}
+                                <div>
+                                    <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-[#58595b] pb-2 border-b border-black/[0.76] mb-3 whitespace-nowrap">
+                                        Real Estate Mar-tech
+                                    </h3>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+                                        Ideated and designed technology campaigns for large scale brands and corporates across India.
+                                    </p>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
+                                        AR, VR, MR, Projection Mapping, Interactive Media, Custom Web & App development.
+                                    </p>
+                                </div>
+
+                                {/* Motion Pictures */}
+                                <div>
+                                    <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-[#58595b] pb-2 border-b border-black/[0.76] mb-3 whitespace-nowrap">
+                                        Motion Pictures
+                                    </h3>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+                                        Produced IP's ranging from web series, documentaries to short films.
+                                    </p>
+                                    <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
+                                        Series, documentaries & short films.
+                                    </p>
+                                </div>
                             </div>
-                            <p className="text-gray-800 text-sm md:text-base lg:text-lg font-sans font-medium tracking-wide">
-                                Projects Delivered
-                            </p>
                         </div>
-
-                        {/* Stat 3 */}
-                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
-                            <div className="flex items-center justify-center mb-1">
-                                <img
-                                    src="/assets/images/about/globe.png"
-                                    alt="Countries"
-                                    className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-2 sm:-mr-3 md:-mr-4 lg:-mr-5 xl:-mr-6"
-                                />
-                                <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
-                                    20
-                                    <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
-                                </span>
-                            </div>
-                            <p className="text-gray-800 text-sm md:text-base lg:text-lg font-sans font-medium tracking-wide">
-                                Countries served
-                            </p>
-                        </div>
-
-                        {/* Stat 4 */}
-                        <div className="w-full max-w-[340px] mx-auto text-center flex flex-col items-center">
-                            <div className="flex items-center justify-center mb-1">
-                                <img
-                                    src="/assets/images/about/2016.png"
-                                    alt="Years"
-                                    className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-2 sm:-mr-3 md:-mr-4 lg:-mr-5 xl:-mr-6"
-                                />
-                                <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
-                                    10
-                                    <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
-                                </span>
-                            </div>
-                            <p className="text-gray-800 text-sm md:text-base lg:text-lg font-sans font-medium tracking-wide">
-                                Years of legacy
-                            </p>
-                        </div>
-                    </div>
-                    {/* Services Description Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.05fr_1.2fr_0.9fr_0.85fr] gap-12 lg:gap-16 xl:gap-20 items-start pt-12 w-full">
-                        {/* VFX: Movies & Ads */}
-                        <div>
-                            <h3 className="font-display text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-800 pb-3 border-b border-black/[0.06] mb-5 whitespace-nowrap">
-                                VFX: Movies & Ads
-                            </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
-                                Successfully delivered visual effects for more than 200 Hollywood projects & 50 Bollywood projects.
-                            </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                                Films, Episodic, Commercials, Automobiles, Architectural & Products.
-                            </p>
-                        </div>
-
-                        {/* Brand Solutions */}
-                        <div>
-                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 pb-3 border-b border-black/[0.06] mb-5 whitespace-nowrap">
-                                Brand Solutions
-                            </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
-                                Multiple campaigns for more than 50 brands/corporates in varied mediums.
-                            </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                                Branding, Digital Marketing, Mainline advertising, Product photography, TVC production, Audio Visual films and Content Creation.
-                            </p>
-                        </div>
-
-                        {/* Real Estate Mar-tech */}
-                        <div>
-                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 pb-3 border-b border-black/[0.06] mb-5 whitespace-nowrap">
-                                Real Estate Mar-tech
-                            </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
-                                Ideated and designed technology campaigns for large scale brands and corporates across India.
-                            </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                                AR, VR, MR, Projection Mapping, Interactive Media, Custom Web & App development.
-                            </p>
-                        </div>
-
-                        {/* Motion Pictures */}
-                        <div>
-                            <h3 className="font-display text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 pb-3 border-b border-black/[0.06] mb-5 whitespace-nowrap">
-                                Motion Pictures
-                            </h3>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-5">
-                                Produced IP's ranging from web series, documentaries to short films.
-                            </p>
-                            <p className="text-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                                Series, documentaries & short films.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    </section>
             {/* Meet Our Team Section */}
             <section className="relative w-full overflow-hidden bg-[#f7f5ee] py-24 px-6 md:px-12 lg:px-20">
                 {/* Background Glow */}
