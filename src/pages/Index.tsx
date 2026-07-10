@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import BrandStatement from "@/components/BrandStatement";
 import VerticalSelector from "@/components/VerticalSelector";
 // import HorizontalSelector from "@/components/HorizontalSelector";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const ScrollIndicator = () => {
     const [visible, setVisible] = useState(true);
@@ -161,7 +162,7 @@ const Index = () => {
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-6"
                                         />
                                         <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
-                                            200
+                                            <AnimatedCounter value={200} />
                                             <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
@@ -179,7 +180,7 @@ const Index = () => {
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-7"
                                         />
                                         <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] tracking-tight leading-none ml-2">
-                                            1000
+                                            <AnimatedCounter value={1000} />
                                             <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
@@ -197,7 +198,7 @@ const Index = () => {
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-6"
                                         />
                                         <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
-                                            20
+                                            <AnimatedCounter value={20} />
                                             <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
@@ -215,7 +216,7 @@ const Index = () => {
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-7"
                                         />
                                         <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
-                                            10
+                                            <AnimatedCounter value={10} />
                                             <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
