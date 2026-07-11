@@ -71,10 +71,12 @@ const renderMember = (member: { name: string; role: string; image: string }, ind
         <img
             src={member.image}
             alt={member.name}
+            loading="lazy"
+            decoding="async"
             className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-x-0 bottom-0 h-20 bg-white/90 backdrop-blur-sm border-t border-black/[0.04]" />
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-[#f2eee2]/90 backdrop-blur-sm border-t border-black/[0.04]" />
 
         <div className="absolute inset-x-0 bottom-0 h-20 flex flex-col items-center justify-center px-3 text-center overflow-hidden">
             <div className="text-gray-800 font-semibold text-[11px] md:text-lg leading-tight max-w-full break-words">
@@ -129,11 +131,13 @@ const About = () => {
                                         <img
                                             src="/assets/images/about/man.png"
                                             alt="Experts"
+                                            loading="lazy"
+                                            decoding="async"
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-6"
                                         />
-                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold text-[#8e8e8e] leading-none ml-2">
                                             <AnimatedCounter value={200} />
-                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
                                     <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
@@ -147,11 +151,13 @@ const About = () => {
                                         <img
                                             src="/assets/images/about/projects.png"
                                             alt="Projects Delivered"
+                                            loading="lazy"
+                                            decoding="async"
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-7"
                                         />
-                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] tracking-tight leading-none ml-2">
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold text-[#8e8e8e] tracking-tight leading-none ml-2">
                                             <AnimatedCounter value={1000} />
-                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
                                     <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
@@ -165,11 +171,13 @@ const About = () => {
                                         <img
                                             src="/assets/images/about/globe.png"
                                             alt="Countries"
+                                            loading="lazy"
+                                            decoding="async"
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-6"
                                         />
-                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold text-[#8e8e8e] leading-none ml-2">
                                             <AnimatedCounter value={20} />
-                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
                                     <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
@@ -183,11 +191,13 @@ const About = () => {
                                         <img
                                             src="/assets/images/about/2016.png"
                                             alt="Years"
+                                            loading="lazy"
+                                            decoding="async"
                                             className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain filter brightness-0 opacity-40 shrink-0 -mr-3 sm:-mr-4 md:-mr-5 lg:-mr-6 xl:-mr-7"
                                         />
-                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-light text-[#8e8e8e] leading-none ml-2">
+                                        <span className="relative inline-block text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold text-[#8e8e8e] leading-none ml-2">
                                             <AnimatedCounter value={10} />
-                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-light text-[#8e8e8e] leading-none">+</span>
+                                            <span className="absolute -top-1 md:-top-2 lg:-top-3 -right-6 md:-right-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#8e8e8e] leading-none">+</span>
                                         </span>
                                     </div>
                                     <p className="text-[#58595b] text-sm md:text-base lg:text-lg font-sans font-bold tracking-wide">
@@ -293,6 +303,8 @@ const About = () => {
                             <img
                                 src="/assets/images/team/team-1.png"
                                 alt="Team member"
+                                loading="lazy"
+                                decoding="async"
                                 className="relative z-30 w-[220px] sm:w-[260px] md:w-[420px] lg:w-[500px] object-contain grayscale contrast-125 brightness-95"
                             />
 
@@ -300,6 +312,8 @@ const About = () => {
                             <img
                                 src="/assets/images/team/team-2.png"
                                 alt="Team member"
+                                loading="lazy"
+                                decoding="async"
                                 className="absolute bottom-0 right-[-15%] md:right-[-20%] z-40 w-[190px] sm:w-[230px] md:w-[360px] lg:w-[440px] object-contain grayscale contrast-125 brightness-95"
                             />
                         </div>

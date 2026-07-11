@@ -64,6 +64,7 @@ const Header = () => {
             src="/assets/images/RDL_logo.png"
             alt="Resonance"
             className="h-14 md:h-16"
+            decoding="async"
           />
         </Link>
 

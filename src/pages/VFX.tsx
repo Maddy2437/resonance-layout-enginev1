@@ -830,7 +830,7 @@ const VFX = () => {
 
             {/* Hero Section */}
             {!expandedSection && (
-                <section className="relative w-full min-h-screen bg-[#15171e] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
+                <section className="relative w-full min-h-screen bg-[#010000] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
                     <div className="w-full max-w-[85%] mt-20">
                         <h1 className="font-display text-[35px] md:text-[95px] lg:text-[105px] xl:text-[115px] 2xl:text-[130px] font-bold text-theme-primaryText mb-6 leading-tight">
                             VFX: Movies & Ads
@@ -856,6 +856,8 @@ const VFX = () => {
                             src="/assets/images/vfx/movie-background-leg.jpg"
                             alt=""
                             aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
                         {/* Movies */}
@@ -876,6 +878,8 @@ const VFX = () => {
                             <img
                                 src="/assets/images/vfx/movie-background-leg.jpg"
                                 alt="Movies"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                             />
                             <div
@@ -907,6 +911,8 @@ const VFX = () => {
                             <img
                                 src="/assets/images/vfx/ads-showreel.jpg"
                                 alt="Ads"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 pointer-events-none bg-black/45 transition-all duration-500 group-hover:bg-black/25" />
@@ -925,6 +931,8 @@ const VFX = () => {
                             src="/assets/images/vfx/movie-background-leg.jpg"
                             alt=""
                             aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
 
@@ -938,6 +946,8 @@ const VFX = () => {
                             <img
                                 src="/assets/images/vfx/movie-background-leg.jpg"
                                 alt="Movies"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover"
                             />
                             <h2 className="absolute z-10 left-5 top-1/3 -translate-y-1/2 font-display text-[13vw] font-bold text-theme-primaryText">
@@ -955,6 +965,8 @@ const VFX = () => {
                             <img
                                 src="/assets/images/vfx/ads-showreel.jpg"
                                 alt="Ads"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover"
                             />
                             <h2 className="absolute z-10 right-5 bottom-1/3 translate-y-1/2 font-display text-[13vw] font-bold text-theme-primaryText">
@@ -1149,7 +1161,7 @@ const VFX = () => {
                                 {/* Showreel Display */}
                                 {selectedMovieShowreel && (
                                     <div className="w-full">
-                                        <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-[#f2eee2]/10">
+                                        <div className="relative aspect-video bg-black overflow-hidden shadow-2xl border border-[#f2eee2]/10">
                                             {selectedMovieShowreel.youtubeEmbedUrl.endsWith(
                                                 ".webm",
                                             ) ? (
@@ -1210,6 +1222,8 @@ const VFX = () => {
                                         <img
                                             src="/assets/images/vfx/Security-Certification.png"
                                             alt="Company Logos - TPN, Warner Bros, Amazon Studios, Lionsgate, Netflix, Universal"
+                                            loading="lazy"
+                                            decoding="async"
                                             className="relative lg:absolute top-0 right-0 w-full lg:w-auto h-auto lg:h-full object-contain lg:object-cover object-right"
                                         />
                                     </div>
@@ -1230,6 +1244,8 @@ const VFX = () => {
                                         <img
                                             src="/assets/images/vfx/Films-and-episodic-client.png"
                                             alt="Films & Episodic Clients Logos"
+                                            loading="lazy"
+                                            decoding="async"
                                             className="w-full max-w-[1200px] h-auto rounded-2xl scale-110 origin-right"
                                         />
                                     </div>
@@ -1313,7 +1329,7 @@ const VFX = () => {
 
                             {adShowreels[selectedAdCategory as keyof typeof adShowreels] && (
                                 <div className="w-full">
-                                    <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-white/10">
+                                    <div className="relative aspect-video bg-black overflow-hidden shadow-2xl border border-white/10">
                                         {adShowreels[
                                             selectedAdCategory as keyof typeof adShowreels
                                         ].embedUrl.endsWith(".webm") ? (
@@ -1509,6 +1525,7 @@ const VFX = () => {
                     <img
                         src={activeCgiImage}
                         alt="CGI Still"
+                        decoding="async"
                         className="max-w-[95vw] max-h-[95vh] object-contain rounded-lg"
                         onClick={(e) => e.stopPropagation()}
                     />

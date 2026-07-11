@@ -96,6 +96,7 @@ const MotionPictures = () => {
                                     alt={`Motion Pictures Showcase ${index + 1}`}
                                     className="block w-full h-auto object-cover"
                                     loading="lazy"
+                                    decoding="async"
                                 />
 
                                 <div className="absolute bottom-6 left-6 md:bottom-10 md:right-10 text-left text-white pointer-events-none">

@@ -1087,6 +1087,8 @@ const BrandSolutions = () => {
                                                 <img
                                                     src="/RDL_logo.png"
                                                     alt="Resonance Digital"
+                                                    loading="lazy"
+                                                    decoding="async"
                                                     className="h-10 w-auto object-contain"
                                                 />
                                                     <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400">

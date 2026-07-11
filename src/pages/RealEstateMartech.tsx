@@ -256,15 +256,17 @@ const RealEstateMartech = () => {
         return () => window.removeEventListener("resize", check);
     }, []);
 
-    // Derived from reactive state — stable per render
-    const EXPERTISE_PER_PAGE = isMobileViewport ? 1 : 3;
-    const AUTO_ROTATE_MS = 4000;
-
     const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
     const filteredExpertiseItems = expertiseShowcase.filter(
         (item) => item.category === selectedExpertiseCategory,
     );
+
+    // Derived from reactive state — stable per render
+    const EXPERTISE_PER_PAGE = isMobileViewport
+        ? 1
+        : Math.min(3, filteredExpertiseItems.length || 3);
+    const AUTO_ROTATE_MS = 4000;
     const totalExpertisePages = Math.ceil(
         filteredExpertiseItems.length / EXPERTISE_PER_PAGE,
     );
@@ -326,6 +328,25 @@ const RealEstateMartech = () => {
         selectedExpertiseCategory,
         autoRotatePausedUntil,
     ]);
+
+    useEffect(() => {
+        const videos = document.querySelectorAll("video[data-autopause='true']");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const video = entry.target as HTMLVideoElement;
+                    if (entry.isIntersecting) {
+                        video.play().catch(() => {});
+                    } else {
+                        video.pause();
+                    }
+                });
+            },
+            { threshold: 0.1, rootMargin: "100px 0px" }
+        );
+        videos.forEach((v) => observer.observe(v));
+        return () => observer.disconnect();
+    }, []);
 
     const expertiseStartIndex = currentExpertisePage * EXPERTISE_PER_PAGE;
     const expertisePageItems = filteredExpertiseItems.slice(
@@ -504,7 +525,7 @@ const RealEstateMartech = () => {
                     </button>
 
                     <div
-                        className={`relative overflow-hidden px-4 md:px-6 pt-4 ${EXPERTISE_PER_PAGE === 1 ? "pb-16" : "pb-4"
+                        className={`relative overflow-hidden px-4 md:px-6 pt-4 ${isMobileViewport ? "pb-16" : "pb-4"
                             }`}
                     >
                         <AnimatePresence initial={false} custom={expertiseDirection} mode="wait">
@@ -515,10 +536,13 @@ const RealEstateMartech = () => {
                                 animate={{ x: 0, opacity: 1 }}
                                 exit={{ x: expertiseDirection > 0 ? "-100%" : "100%", opacity: 0 }}
                                 transition={{ duration: 0.45, ease: "easeInOut" }}
-                                className={`grid gap-8 ${EXPERTISE_PER_PAGE === 1
-                                    ? "grid-cols-1"
-                                    : "grid-cols-1 md:grid-cols-3"
-                                    }`}
+                                className={`grid gap-8 mx-auto w-full ${
+                                    EXPERTISE_PER_PAGE === 1
+                                        ? "grid-cols-1 md:max-w-[32%]"
+                                        : EXPERTISE_PER_PAGE === 2
+                                        ? "grid-cols-1 md:grid-cols-2 md:max-w-[65%]"
+                                        : "grid-cols-1 md:grid-cols-3"
+                                }`}
                             >
                                 {expertisePageItems.map((item, index) => (
                                     <div
@@ -580,7 +604,7 @@ const RealEstateMartech = () => {
                                     <div
                                         key={`placeholder-${index}`}
                                         className={
-                                            EXPERTISE_PER_PAGE === 1
+                                            isMobileViewport
                                                 ? "aspect-[16/10] min-h-[320px] md:min-h-[520px]"
                                                 : "aspect-[16/10]"
                                         }
@@ -629,6 +653,8 @@ const RealEstateMartech = () => {
                                             loop
                                             playsInline
                                             controls
+                                            preload="none"
+                                            data-autopause="true"
                                         />
                                     ) : (
                                         <iframe
@@ -670,7 +696,8 @@ const RealEstateMartech = () => {
                     <img
                         src={activeImage.image}
                         alt={activeImage.title}
-                        className="max-w-[95vw] max-h-[95vh] object-contain"
+                        className="max-w-[80vw] max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                        decoding="async"
                         onClick={(e) => e.stopPropagation()}
                     />
                     <button

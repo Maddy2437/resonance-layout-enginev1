@@ -46,6 +46,7 @@ const Awards = () => {
                                 <img
                                     src="/assets/images/awards/Awards-01.png"
                                     alt="Awards"
+                                    decoding="async"
                                     className="w-full h-full object-contain scale-125 lg:scale-140 opacity-90"
                                 />
                             </div>
@@ -72,6 +73,8 @@ const Awards = () => {
                     <img
                         src="/assets/images/awards/awardshowcase.png"
                         alt="Awards Showcase"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-auto block"
                     />
                 </picture>
