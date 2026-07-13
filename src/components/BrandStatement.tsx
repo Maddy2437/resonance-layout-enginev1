@@ -102,7 +102,7 @@ const BrandStatement = () => {
     }, [isInView]);
 
     const statementText =
-        "India’s most diversified Creative Technology Company combining VFX, Brand Solutions, Real Estate Prop-Tech, Content Production, AI and Government Contracts.";
+        "India’s most diversified creative technology company, uniting VFX, brand solutions, real estate PropTech, content production, AI, and government initiatives under one integrated ecosystem.";
 
     const visibleCharacters = isMobile
         ? statementText.length

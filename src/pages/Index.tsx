@@ -138,6 +138,7 @@ const Index = () => {
                 />
                 <meta name="keywords" content="VFX, visual effects, animation, creative studio, brand content, real estate visualization" />
                 <link rel="canonical" href="https://resonancedigital.in" />
+                <link rel="preload" href="/assets/videos/hero-showreel.webm" as="video" type="video/webm" {...({ fetchpriority: "high" } as any)} />
             </Helmet>
 
             <div className="min-h-screen bg-background">
@@ -209,8 +210,8 @@ const Index = () => {
                             {/* Divider and Text Statement */}
                             <div className="w-full border-t border-black/[0.15] pt-12">
                                 <p className="font-display text-[32px] sm:text-[40px] md:text-[54px] lg:text-[68px] xl:text-[76px] font-bold text-[#58595b] leading-[1.08] tracking-tighter max-w-[1400px]">
-                                    Where creativity, technology,<br className="hidden md:block" />
-                                    and transformation come together.
+                                    Where creativity, technology, and transformation come together. <br className="hidden md:block" />
+                                    Creativity and technology, working together to transform what’s possible.
                                 </p>
                             </div>
                         </div>

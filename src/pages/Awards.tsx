@@ -12,6 +12,7 @@ const Awards = () => {
                     name="description"
                     content="Resonance Digital's awards and achievements in VFX, creative technology, and digital innovation."
                 />
+                <link rel="preload" href="/assets/images/awards/Awards-01.png" as="image" {...({ fetchpriority: "high" } as any)} />
             </Helmet>
 
             <Header />
@@ -46,7 +47,9 @@ const Awards = () => {
                                 <img
                                     src="/assets/images/awards/Awards-01.png"
                                     alt="Awards"
-                                    decoding="async"
+                                    loading="eager"
+                                    {...({ fetchPriority: "high" } as any)}
+                                    decoding="sync"
                                     className="w-full h-full object-contain scale-125 lg:scale-140 opacity-90"
                                 />
                             </div>

@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 type FixedHeroProps = {
     backgroundImage: string;
@@ -46,13 +47,25 @@ const FixedHero = ({
     }, []);
 
     return (
-        <section
-            ref={heroRef}
-            className="relative"
-            style={{
-                height: heroHeight,
-            }}
-        >
+        <>
+            <Helmet>
+                <link rel="preload" href={backgroundImage} as="image" {...({ fetchpriority: "high" } as any)} />
+            </Helmet>
+            <img
+                src={backgroundImage}
+                alt=""
+                className="hidden"
+                loading="eager"
+                {...({ fetchPriority: "high" } as any)}
+                decoding="sync"
+            />
+            <section
+                ref={heroRef}
+                className="relative"
+                style={{
+                    height: heroHeight,
+                }}
+            >
             {/* Fixed Background */}
             <div
                 className="fixed inset-0 -z-10"
@@ -90,6 +103,7 @@ const FixedHero = ({
                 </div>
             </div>
         </section>
+        </>
     );
 };
 

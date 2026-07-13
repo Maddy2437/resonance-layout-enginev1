@@ -150,18 +150,13 @@ const CaseStudyPage = () => {
 
     const pages = caseStudyPages[study.slug] || [];
     const currentIndex = caseStudies.findIndex((item) => item.slug === study.slug);
-
-    const scrollToNextSlide = () => {
-        const sections = document.querySelectorAll("main section");
-        if (sections.length > 1) {
-            sections[1].scrollIntoView({ behavior: "smooth" });
-        }
-    };
+    const coverImgSrc = `/assets/images/CaseStudies/Cover_Images/${currentIndex + 1}.webp`;
 
     return (
         <>
             <Helmet>
                 <meta name="description" content={study.summary} />
+                <link rel="preload" href={coverImgSrc} as="image" {...({ fetchpriority: "high" } as any)} />
             </Helmet>
 
             <div className="min-h-screen bg-theme-secondaryBg2 text-[#58595b]">
@@ -196,7 +191,6 @@ const CaseStudyPage = () => {
                             const bgColor = isCream ? "bg-[#f2eee2]" : "bg-[#f7f5ee]";
 
                             if (idx === 0) {
-                                const coverImgSrc = `/assets/images/CaseStudies/Cover_Images/${currentIndex + 1}.webp`;
                                 const clientVal = study.pdfClient || study.client;
                                 const serviceVal = study.pdfService || study.service;
                                 const yearVal = study.pdfYear || study.year;
@@ -213,7 +207,8 @@ const CaseStudyPage = () => {
                                                             src={coverImgSrc}
                                                             alt={`${study.title} Cover`}
                                                             loading="eager"
-                                                            decoding="async"
+                                                            {...({ fetchPriority: "high" } as any)}
+                                                            decoding="sync"
                                                             className="w-full h-full object-cover block"
                                                         />
                                                     </div>
