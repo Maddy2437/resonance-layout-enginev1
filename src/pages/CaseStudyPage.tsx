@@ -248,13 +248,6 @@ const CaseStudyPage = () => {
                             }
 
                             let responsiveClass = "w-full";
-                            if (study.slug === "vraj-meridian") {
-                                if ([2, 3, 4].includes(slide.page)) {
-                                    responsiveClass = "w-full hidden md:block";
-                                } else if ([5, 6, 7].includes(slide.page)) {
-                                    responsiveClass = "w-full block md:hidden";
-                                }
-                            }
 
                             return (
                                 <section key={slide.page} className={`${responsiveClass} ${bgColor} py-0 flex items-center justify-center border-b border-black/[0.04]`}>
