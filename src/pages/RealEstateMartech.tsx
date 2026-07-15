@@ -293,7 +293,7 @@ const experienceCenterItems = [
             "Creates emotional resonance",
             "Provides immersive experience",
         ],
-        videoSrc: "/assets/videos/Mahindra.mp4",
+        videoSrc: "/assets/videos/Mahindra-LScreen.webm",
     },
     {
         id: "brigade-projection",
@@ -305,7 +305,7 @@ const experienceCenterItems = [
             "Flexible content playback",
             "Realistic visualization",
         ],
-        videoSrc: "/assets/videos/Brigade.mp4",
+        videoSrc: "/assets/videos/Brigade.webm",
     },
 ];
 
