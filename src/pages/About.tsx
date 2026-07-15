@@ -120,7 +120,7 @@ const About = () => {
             </section>
 
             {/* Stats and Services Section */}
-                                <section className="w-full bg-[#f2eee2] px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center py-20">
+                                <section className="w-full bg-[#f7f5ee] px-6 md:px-12 lg:px-24 border-b border-black/[0.06] flex items-center py-20">
                                     <div className="w-full max-w-[1700px] mx-auto flex flex-col justify-center">
             
                                         {/* Stats Grid */}
