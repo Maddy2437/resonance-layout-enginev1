@@ -758,16 +758,17 @@ const RealEstateMartech = () => {
                                                 <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10">
                                                     <video
                                                         key={item.id}
-                                                        src={item.videoSrc}
                                                         className="absolute inset-0 w-full h-full"
                                                         autoPlay
                                                         muted
                                                         loop
                                                         playsInline
                                                         controls
-                                                        preload="none"
+                                                        preload="metadata"
                                                         data-autopause="true"
-                                                    />
+                                                    >
+                                                        <source src={item.videoSrc} type={item.videoSrc.endsWith(".mp4") ? "video/mp4" : "video/webm"} />
+                                                    </video>
                                                 </div>
                                             </div>
                                         ))}
@@ -802,16 +803,17 @@ const RealEstateMartech = () => {
                                             {tab.videoSrc.startsWith("/assets/") || tab.videoSrc.startsWith("/") ? (
                                                 <video
                                                     key={tab.id}
-                                                    src={tab.videoSrc}
                                                     className="absolute inset-0 w-full h-full"
                                                     autoPlay
                                                     muted
                                                     loop
                                                     playsInline
                                                     controls
-                                                    preload="none"
+                                                    preload="metadata"
                                                     data-autopause="true"
-                                                />
+                                                >
+                                                    <source src={tab.videoSrc} type={tab.videoSrc.endsWith(".mp4") ? "video/mp4" : "video/webm"} />
+                                                </video>
                                             ) : (
                                                 <iframe
                                                     key={tab.id}
