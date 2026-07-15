@@ -171,11 +171,11 @@ const VerticalSelector = () => {
 
                             {/* Title */}
                             <div className="translate-y-10 my-auto relative z-10">
-                                <h3 className="font-gotham-bold text-3xl md:text-4xl lg:text-5xl text-[#a6a8ab] group-hover:text-[#f2eee2] transition-colors duration-300">
+                                <h3 className="font-gotham-bold text-3xl md:text-4xl lg:text-5xl text-[#f2eee2] group-hover:text-[#f2eee2] transition-colors duration-300">
                                     {vertical.title}
                                 </h3>
                                 {vertical.subtitle && (
-                                    <span className="block font-bold text-lg md:text-xl text-[#a6a8ab] group-hover:text-[#f2eee2] mt-1 transition-colors duration-300">
+                                    <span className="block font-bold text-lg md:text-xl text-[#f2eee2] group-hover:text-[#f2eee2] mt-1 transition-colors duration-300">
                                         {vertical.subtitle}
                                     </span>
                                 )}
