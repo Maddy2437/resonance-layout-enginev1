@@ -149,33 +149,33 @@ const expertiseShowcase: ExpertiseShowcaseItem[] = [
         category: "3D Renders",
     },
 
-    //3D WALKTHROUGHS
+    //WALKTHROUGH FILMS
     {
         title: "Kalpataru Park Revera",
         subtitle: "",
         image: "/assets/images/martech/Walkthroughs/Kalpataru-Park-Revera.png",
-        category: "3D Walkthroughs",
+        category: "Walkthrough Films",
         videoSrc: "/assets/videos/Kalpataru.webm",
     },
     {
         title: "Mahindra Vista",
         subtitle: "",
         image: "/assets/images/martech/Walkthroughs/Mahindra-Vista.png",
-        category: "3D Walkthroughs",
+        category: "Walkthrough Films",
         videoSrc: "/assets/videos/Mahindra3D.webm",
     },
     {
         title: "Prestige Bellanza",
         subtitle: "",
         image: "/assets/images/martech/Walkthroughs/Prestige-Bellanza.png",
-        category: "3D Walkthroughs",
+        category: "Walkthrough Films",
         videoSrc: "/assets/videos/Prestige.webm",
     },
     {
         title: "Zira",
         subtitle: "",
         image: "/assets/images/martech/Walkthroughs/Zira.png",
-        category: "3D Walkthroughs",
+        category: "Walkthrough Films",
         videoSrc: "/assets/videos/Zira.webm",
     },
     {
