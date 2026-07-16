@@ -51,14 +51,6 @@ const FixedHero = ({
             <Helmet>
                 <link rel="preload" href={backgroundImage} as="image" {...({ fetchpriority: "high" } as any)} />
             </Helmet>
-            <img
-                src={backgroundImage}
-                alt=""
-                className="hidden"
-                loading="eager"
-                {...({ fetchPriority: "high" } as any)}
-                decoding="sync"
-            />
             <section
                 ref={heroRef}
                 className="relative"
@@ -67,15 +59,16 @@ const FixedHero = ({
                 }}
             >
             {/* Fixed Background */}
-            <div
-                className="fixed inset-0 -z-10"
+            <img
+                src={backgroundImage}
+                alt=""
+                className="fixed inset-0 w-full h-full object-cover -z-10"
                 style={{
-                    backgroundImage: `url(${backgroundImage})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
                     transform: mirrored ? "scaleX(-1)" : undefined,
                 }}
+                loading="eager"
+                {...({ fetchPriority: "high" } as any)}
+                decoding="sync"
             />
 
             {/* Overlay */}

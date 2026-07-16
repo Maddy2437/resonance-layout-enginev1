@@ -445,7 +445,7 @@ const VFX = () => {
         },
         {
             title: "Shantaram",
-            image: "/assets/images/vfx/showcase/Shantaram.jpeg",
+            image: "/assets/images/vfx/showcase/shantaram.jpeg",
             platform: "",
             year: "",
             category: "",
@@ -1052,13 +1052,13 @@ const VFX = () => {
                                                 {pageItems.map((movie, index) => (
                                                     <div
                                                         key={`${movie.title}-${pageIndex}-${index}`}
-                                                        className="group relative aspect-[2/3] rounded-lg overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/40 hover:z-10"
+                                                        className="group relative aspect-[2/3] rounded-lg overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl hover:shadow-black/40 hover:z-10"
                                                     >
                                                         {/* Movie Poster */}
                                                         <img
                                                             src={movie.image}
                                                             alt={movie.title}
-                                                            className="absolute inset-0 w-full h-full object-cover"
+                                                            className="absolute inset-0 w-full h-full object-cover scale-[1.01]"
                                                             loading="lazy"
                                                             decoding="async"
                                                         />
