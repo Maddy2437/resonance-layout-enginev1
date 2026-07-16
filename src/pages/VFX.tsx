@@ -511,13 +511,11 @@ const VFX = () => {
     ];
 
     const cgiStillsShowcase = [
-        "/assets/images/CGI-Stills/CGI1.jpeg",
         "/assets/images/CGI-Stills/CGI2.jpeg",
         "/assets/images/CGI-Stills/CGI3.jpeg",
         "/assets/images/CGI-Stills/CGI4.jpeg",
         "/assets/images/CGI-Stills/CGI5.jpeg",
         "/assets/images/CGI-Stills/CGI6.jpeg",
-        "/assets/images/CGI-Stills/CGI7.jpeg",
         "/assets/images/CGI-Stills/CGI8.jpeg",
         "/assets/images/CGI-Stills/CGI9.jpeg",
         "/assets/images/CGI-Stills/CGI10.jpeg",
@@ -1470,13 +1468,11 @@ const VFX = () => {
                             <div className="w-full columns-2 md:columns-3 gap-2">
                                 {cgiStillsShowcase.map((image, index) => {
                                     const aspects = [
-                                        "aspect-[4/5]",
                                         "aspect-[16/9]",
                                         "aspect-square",
                                         "aspect-[3/4]",
                                         "aspect-[16/10]",
                                         "aspect-[4/3]",
-                                        "aspect-[9/16]",
                                         "aspect-[5/4]",
                                         "aspect-[16/9]",
                                     ];

@@ -85,31 +85,31 @@ const expertiseShowcase: ExpertiseShowcaseItem[] = [
         category: "3D Renders",
     },
     {
-        title: "Mahindra Vista",
-        subtitle: "",
-        image: "/assets/images/martech/Renders/Mahindra Vista.jpg",
-        category: "3D Renders",
-    },
-    {
         title: "Hiranandini Empress Hill",
         subtitle: "",
         image: "/assets/images/martech/Renders/Hiranandini Empress Hill.jpg",
         category: "3D Renders",
     },
     {
-        title: "Mahindra 2",
+        title: "Mahindra Vista",
+        subtitle: "",
+        image: "/assets/images/martech/Renders/Mahindra Vista.jpg",
+        category: "3D Renders",
+    },
+    {
+        title: "Mahindra Vista",
         subtitle: "",
         image: "/assets/images/martech/Renders/Mahindra_2.jpg",
         category: "3D Renders",
     },
     {
-        title: "Mahindra 1",
+        title: "Mahindra Vista",
         subtitle: "",
         image: "/assets/images/martech/Renders/Mahindra_1.jpg",
         category: "3D Renders",
     },
     {
-        title: "Rustomjee",
+        title: "Rustomjee Lavie",
         subtitle: "",
         image: "/assets/images/martech/Renders/Rustomjee.jpg",
         category: "3D Renders",
@@ -121,7 +121,7 @@ const expertiseShowcase: ExpertiseShowcaseItem[] = [
         category: "3D Renders",
     },
     {
-        title: "Larsen & Toubro 1",
+        title: "Larsen & Toubro Gateway",
         subtitle: "",
         image: "/assets/images/martech/Renders/Larsen & Turbo_1.jpg",
         category: "3D Renders",
@@ -172,13 +172,13 @@ const expertiseShowcase: ExpertiseShowcaseItem[] = [
 
     //2D & 3D Isometrics
     {
-        title: "2D Isometric 02",
+        title: "2D Isometric",
         subtitle: "",
         image: "/assets/images/martech/2D-Isometrics/Picture2.png",
         category: "2D & 3D Isometric Views",
     },
     {
-        title: "3D Isometric 01",
+        title: "3D Isometric",
         subtitle: "",
         image: "/assets/images/martech/3D-Isometrics/Picture3.png",
         category: "2D & 3D Isometric Views",
@@ -687,85 +687,90 @@ const RealEstateMartech = () => {
             </section>
 
             {/* ── Section 2: Immersive Technology Solutions ─────────────────── */}
-            {immersiveRows.map((row, rowIdx) => (
-                <section
-                    key={rowIdx}
-                    className={`w-full ${row.bgColor} py-24 px-12 md:px-24 border-b border-black/[0.06] text-gray-800`}
-                >
-                    <div className="w-full max-w-[1700px] mx-auto">
-                        {rowIdx === 0 && (
-                            <h2 className="font-display text-4xl md:text-5xl font-light text-gray-400 mb-20">
-                                <span className="font-bold text-gray-700">Real Estate Mar-Tech</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
-                                <span className="text-gray-400 font-light">Immersive Technology Solutions</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
-                                <span className="text-gray-400 font-light">Showcase</span>
-                            </h2>
-                        )}
+            {immersiveRows.map((row, rowIdx) => {
+                const paddingClass = rowIdx === 0 ? "pt-24 pb-10" : rowIdx === 1 ? "pt-10 pb-10" : "pt-10 pb-24";
+                return (
+                    <section
+                        key={rowIdx}
+                        className={`w-full ${row.bgColor} ${paddingClass} px-12 md:px-24 border-b border-black/[0.06] text-gray-800`}
+                    >
+                        <div className="w-full max-w-[1700px] mx-auto">
+                            {rowIdx === 0 && (
+                                <h2 className="font-display text-4xl md:text-5xl font-light text-gray-400 mb-20">
+                                    <span className="font-bold text-gray-700">Real Estate Mar-Tech</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
+                                    <span className="text-gray-400 font-light">Immersive Technology Solutions</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
+                                    <span className="text-gray-400 font-light">Showcase</span>
+                                </h2>
+                            )}
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-16">
-                            {row.items.map((item) => (
-                                <div key={item.id} className="flex flex-col">
-                                    {/* Title */}
-                                    <div className="mb-2">
-                                        <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-700 tracking-tight leading-tight">
-                                            {item.label}
-                                        </h3>
-                                    </div>
-                                    {/* Video/Iframe Container - First */}
-                                    <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10 mb-6">
-                                        {item.videoSrc.startsWith("/assets/") || item.videoSrc.startsWith("/") ? (
-                                            <video
-                                                key={item.id}
-                                                className="absolute inset-0 w-full h-full"
-                                                autoPlay
-                                                muted
-                                                loop
-                                                playsInline
-                                                controls
-                                                preload="metadata"
-                                                data-autopause="true"
-                                            >
-                                                <source src={item.videoSrc} type={item.videoSrc.endsWith(".mp4") ? "video/mp4" : "video/webm"} />
-                                            </video>
-                                        ) : (
-                                            <iframe
-                                                key={item.id}
-                                                src={item.videoSrc}
-                                                title={item.label}
-                                                className="absolute inset-0 w-full h-full border-0"
-                                                loading="lazy"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowFullScreen
-                                            />
-                                        )}
-                                    </div>
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-20">
+                                {row.items.map((item) => (
+                                    <div key={item.id} className="flex flex-col">
 
-                                    {/* Subtitle */}
-                                    {item.subtitle && (
-                                        <div className="mb-4">
-                                            <p className="font-sans text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                                                {item.subtitle}
-                                            </p>
+                                        {/* Title */}
+                                        <div className={item.subtitle ? "mb-1" : "mb-4"}>
+                                            <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-700 tracking-tight leading-tight">
+                                                {item.label}
+                                            </h3>
                                         </div>
-                                    )}
 
-                                    {/* Text Content (Description + Bullets) */}
-                                    <div className="flex flex-col gap-4 text-gray-700 text-sm md:text-base leading-relaxed">
-                                        <p>{item.description}</p>
-                                        <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-2 text-xs md:text-sm font-semibold">
-                                            {item.bullets.map((bullet, i) => (
-                                                <li key={i} className="flex items-center gap-2">
-                                                    <span className="text-gray-700 font-bold">•</span>
-                                                    <span>{bullet}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        {/* Video/Iframe Container - First */}
+                                        <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10 mb-6">
+                                            {item.videoSrc.startsWith("/assets/") || item.videoSrc.startsWith("/") ? (
+                                                <video
+                                                    key={item.id}
+                                                    className="absolute inset-0 w-full h-full"
+                                                    autoPlay
+                                                    muted
+                                                    loop
+                                                    playsInline
+                                                    controls
+                                                    preload="metadata"
+                                                    data-autopause="true"
+                                                >
+                                                    <source src={item.videoSrc} type={item.videoSrc.endsWith(".mp4") ? "video/mp4" : "video/webm"} />
+                                                </video>
+                                            ) : (
+                                                <iframe
+                                                    key={item.id}
+                                                    src={item.videoSrc}
+                                                    title={item.label}
+                                                    className="absolute inset-0 w-full h-full border-0"
+                                                    loading="lazy"
+                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowFullScreen
+                                                />
+                                            )}
+                                        </div>
+
+                                        {/* Subtitle */}
+                                        {item.subtitle && (
+                                            <div className="mb-4">
+                                                <p className="font-sans text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                                                    {item.subtitle}
+                                                </p>
+                                            </div>
+                                        )}
+
+                                        {/* Text Content (Description + Bullets) */}
+                                        <div className="flex flex-col gap-4 text-gray-700 text-sm md:text-base leading-relaxed">
+                                            <p>{item.description}</p>
+                                            <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 text-xs md:text-sm font-semibold">
+                                                {item.bullets.map((bullet, i) => (
+                                                    <li key={i} className="flex items-center gap-2">
+                                                        <span className="text-gray-700 font-bold">•</span>
+                                                        <span>{bullet}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                </section>
-            ))}
+                    </section>
+                );
+            })}
             {activeImage && (
                 <div
                     className="fixed inset-0 z-[200] bg-black/95 flex items-center justify-center p-4"

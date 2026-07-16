@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { ChevronRight } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AnimatedColorText from "../components/AnimatedColorText";
@@ -12,6 +13,7 @@ const showcaseImages = [
         year: "2025",
         description:
             "Produced by Resonance, Chhatrasal is a Hindi historical drama based on Maharaja Chhatrasal's fight against the Mughal Empire and the establishment of his kingdom in Bundelkhand. The series topped the viewing charts on MX Player, became one of India's most-watched historical web series, and earned a Filmfare OTT nomination.",
+        youtubeUrl: "https://www.youtube.com/watch?v=kYvszK7_77E",
     },
     {
         image: "/assets/images/motionPictures/UHC1.png",
@@ -19,6 +21,7 @@ const showcaseImages = [
         year: "2024",
         description:
             "Produced by us, India's Ultimate Home Chef is a culinary reality series featuring renowned chefs Gary Mehigan, Matt Preston, and George Calombaris. The show celebrates talented home cooks from across India as they compete through creativity, skill, and a shared passion for food.",
+        youtubeUrl: "https://www.youtube.com/watch?v=s5j6l1X0c6o",
     },
     {
         image: "/assets/images/motionPictures/AyodhyaSS3.jpg",
@@ -90,16 +93,33 @@ const MotionPictures = () => {
                             key={item.image}
                             className={`w-full ${index % 2 === 0 ? "bg-theme-primaryBg1" : "bg-theme-secondaryText"} py-0 md:py-0 px-0`}
                         >
-                            <div className="relative w-full flex justify-center">
-                                <img
-                                    src={item.image}
-                                    alt={`Motion Pictures Showcase ${index + 1}`}
-                                    className="block w-full h-auto object-cover"
-                                    loading="lazy"
-                                    decoding="async"
-                                />
+                            <div className="relative w-full flex justify-center overflow-hidden">
+                                {item.youtubeUrl ? (
+                                    <a
+                                        href={item.youtubeUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block w-full cursor-pointer overflow-hidden"
+                                    >
+                                        <img
+                                            src={item.image}
+                                            alt={`Motion Pictures Showcase ${index + 1}`}
+                                            className="block w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.02]"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </a>
+                                ) : (
+                                    <img
+                                        src={item.image}
+                                        alt={`Motion Pictures Showcase ${index + 1}`}
+                                        className="block w-full h-auto object-cover"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                )}
 
-                                <div className="absolute bottom-6 left-6 md:bottom-10 md:right-10 text-left text-white pointer-events-none">
+                                <div className="absolute bottom-6 left-6 md:bottom-10 md:right-10 text-left text-white">
                                     <div className="inline-block max-w-2xl bg-black/55 backdrop-blur-sm rounded-md px-5 py-4">
                                         <div className="flex items-baseline gap-2 font-display leading-none">
                                             <span className="text-xl md:text-3xl font-bold text-white">
@@ -113,6 +133,19 @@ const MotionPictures = () => {
                                         <p className="mt-3 max-w-xl text-sm md:text-base lg:text-lg leading-relaxed text-[#f2eee2] font-normal">
                                             {item.description}
                                         </p>
+                                        {item.youtubeUrl && (
+                                            <div className="mt-4">
+                                                <a
+                                                    href={item.youtubeUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center gap-1.5 text-xs md:text-sm font-semibold uppercase tracking-wider text-sky-400 hover:text-sky-300 transition-colors cursor-pointer"
+                                                >
+                                                    Watch Trailer
+                                                    <ChevronRight className="w-4 h-4" />
+                                                </a>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
