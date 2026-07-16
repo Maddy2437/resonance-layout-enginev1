@@ -189,7 +189,6 @@ type ImmersiveTabData = {
     id: string;
     label: string;
     videoSrc: string;
-    number: string;
     subtitle: string;
     description: string;
     bullets: string[];
@@ -201,7 +200,6 @@ const immersiveRows = [
         items: [
             {
                 id: "interactive-sales-tour",
-                number: "1.",
                 label: "Interactive Sales Tour",
                 subtitle: "",
                 description:
@@ -215,7 +213,6 @@ const immersiveRows = [
             },
             {
                 id: "digital-twin",
-                number: "2.",
                 label: "Digital Twin",
                 subtitle: "",
                 description:
@@ -234,7 +231,6 @@ const immersiveRows = [
         items: [
             {
                 id: "experience-center-showcase",
-                number: "3.",
                 label: "Experience Center Showcase",
                 subtitle: "Immersive Technology Showcase",
                 description:
@@ -248,7 +244,6 @@ const immersiveRows = [
             },
             {
                 id: "mahindra-l-screen",
-                number: "4.",
                 label: "L-Screen Video Experience",
                 subtitle: "Mahindra Pink",
                 description:
@@ -267,7 +262,6 @@ const immersiveRows = [
         items: [
             {
                 id: "brigade-projection",
-                number: "5.",
                 label: "Projection Mapping on Real Scale Models",
                 subtitle: "Brigade Valencia",
                 description:
@@ -281,7 +275,6 @@ const immersiveRows = [
             },
             {
                 id: "virtual-reality",
-                number: "6.",
                 label: "Virtual Reality",
                 subtitle: "",
                 description:
@@ -703,7 +696,8 @@ const RealEstateMartech = () => {
                         {rowIdx === 0 && (
                             <h2 className="font-display text-4xl md:text-5xl font-light text-gray-400 mb-20">
                                 <span className="font-bold text-gray-700">Real Estate Mar-Tech</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
-                                <span className="text-gray-400 font-light">Immersive Technology Solutions</span>
+                                <span className="text-gray-400 font-light">Immersive Technology Solutions</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
+                                <span className="text-gray-400 font-light">Showcase</span>
                             </h2>
                         )}
 
@@ -711,36 +705,13 @@ const RealEstateMartech = () => {
                             {row.items.map((item) => (
                                 <div key={item.id} className="flex flex-col">
                                     {/* Title */}
-                                    <div className="mb-4">
-                                        <h3 className="font-display text-3xl md:text-4xl font-bold text-gray-700 tracking-tight leading-tight">
-                                            {item.number} {item.label}
+                                    <div className="mb-2">
+                                        <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-700 tracking-tight leading-tight">
+                                            {item.label}
                                         </h3>
                                     </div>
-
-                                    {/* Subtitle */}
-                                    {item.subtitle && (
-                                        <div className="mb-4">
-                                            <p className="font-sans text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                                                {item.subtitle}
-                                            </p>
-                                        </div>
-                                    )}
-
-                                    {/* Text Content (Description + Bullets) */}
-                                    <div className="flex flex-col gap-4 text-gray-700 text-sm md:text-base leading-relaxed mb-8 max-w-2xl min-h-[140px] lg:min-h-[160px]">
-                                        <p>{item.description}</p>
-                                        <ul className="flex flex-col gap-2">
-                                            {item.bullets.map((bullet, i) => (
-                                                <li key={i} className="flex items-start gap-2 text-xs md:text-sm">
-                                                    <span className="text-gray-700 leading-none font-bold mt-0.5">•</span>
-                                                    <span>{bullet}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-
-                                    {/* Video/Iframe Container */}
-                                    <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10 mt-auto">
+                                    {/* Video/Iframe Container - First */}
+                                    <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10 mb-6">
                                         {item.videoSrc.startsWith("/assets/") || item.videoSrc.startsWith("/") ? (
                                             <video
                                                 key={item.id}
@@ -766,6 +737,28 @@ const RealEstateMartech = () => {
                                                 allowFullScreen
                                             />
                                         )}
+                                    </div>
+
+                                    {/* Subtitle */}
+                                    {item.subtitle && (
+                                        <div className="mb-4">
+                                            <p className="font-sans text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                                                {item.subtitle}
+                                            </p>
+                                        </div>
+                                    )}
+
+                                    {/* Text Content (Description + Bullets) */}
+                                    <div className="flex flex-col gap-4 text-gray-700 text-sm md:text-base leading-relaxed">
+                                        <p>{item.description}</p>
+                                        <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-2 text-xs md:text-sm font-semibold">
+                                            {item.bullets.map((bullet, i) => (
+                                                <li key={i} className="flex items-center gap-2">
+                                                    <span className="text-gray-700 font-bold">•</span>
+                                                    <span>{bullet}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
                             ))}
