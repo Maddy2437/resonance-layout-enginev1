@@ -69,7 +69,7 @@ const expertiseShowcase: ExpertiseShowcaseItem[] = [
         category: "3D Renders",
     },
     {
-        title: "Kalpataru",
+        title: "Kalpataru Avana",
         subtitle: "",
         image: "/assets/images/martech/Renders/Kalpataru.jpg",
         category: "3D Renders",
@@ -745,7 +745,7 @@ const RealEstateMartech = () => {
                                                     title={item.label}
                                                     className="absolute inset-0 w-full h-full border-0"
                                                     loading="lazy"
-                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allow="autoplay 'none'; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowFullScreen
                                                 />
                                             )}

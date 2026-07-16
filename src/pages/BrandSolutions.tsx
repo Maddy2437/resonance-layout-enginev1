@@ -600,7 +600,7 @@ const BrandSolutions = () => {
             <Header />
 
             <FixedHero
-                backgroundImage="/assets/images/BrandStatements/ICICI-lombard2.png"
+                backgroundImage="/assets/images/BrandStatements/brandsolbg.png"
                 title="Brand Solutions"
                 description={
                     <AnimatedColorText
