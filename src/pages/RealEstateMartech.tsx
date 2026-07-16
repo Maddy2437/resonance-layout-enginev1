@@ -24,6 +24,10 @@ const realEstateStatements = [
         body: "Aerial capture for site context, connectivity, and progress highlights across construction phases.",
     },
     {
+        title: "Digital Films",
+        body: "High-impact digital and brand films to showcase project highlights, location advantages, and lifestyle amenities.",
+    },
+    {
         title: "Interactive Sales Tour",
         body: "Touch-friendly sales experiences to present unit layouts, tower views, and project inventories.",
     },
@@ -34,6 +38,10 @@ const realEstateStatements = [
     {
         title: "VR/AR",
         body: "VR-ready environments that let prospects explore interiors and amenities with true depth.AR overlays to bring brochures, models, and sales collateral to life in real-time.",
+    },
+    {
+        title: "Experience Centres",
+        body: "Interactive physical spaces designed to guide potential buyers through a curated, realistic experience of the property.",
     },
 ];
 
@@ -708,7 +716,7 @@ const RealEstateMartech = () => {
                                     <div key={item.id} className="flex flex-col">
 
                                         {/* Title */}
-                                        <div className={item.subtitle ? "mb-1" : "mb-4"}>
+                                        <div className={item.subtitle ? "mb-4" : "mb-4"}>
                                             <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-700 tracking-tight leading-tight">
                                                 {item.label}
                                             </h3>

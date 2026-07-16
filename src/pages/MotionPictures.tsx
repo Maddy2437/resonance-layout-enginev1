@@ -13,7 +13,7 @@ const showcaseImages = [
         year: "2025",
         description:
             "Produced by Resonance, Chhatrasal is a Hindi historical drama based on Maharaja Chhatrasal's fight against the Mughal Empire and the establishment of his kingdom in Bundelkhand. The series topped the viewing charts on MX Player, became one of India's most-watched historical web series, and earned a Filmfare OTT nomination.",
-        youtubeUrl: "https://www.youtube.com/watch?v=kYvszK7_77E",
+        youtubeUrl: "https://www.youtube.com/watch?v=vIj43KhCuro",
     },
     {
         image: "/assets/images/motionPictures/UHC1.png",
@@ -21,7 +21,7 @@ const showcaseImages = [
         year: "2024",
         description:
             "Produced by us, India's Ultimate Home Chef is a culinary reality series featuring renowned chefs Gary Mehigan, Matt Preston, and George Calombaris. The show celebrates talented home cooks from across India as they compete through creativity, skill, and a shared passion for food.",
-        youtubeUrl: "https://www.youtube.com/watch?v=s5j6l1X0c6o",
+        youtubeUrl: "https://www.youtube.com/watch?v=8uoSAdFpA_8",
     },
     {
         image: "/assets/images/motionPictures/AyodhyaSS3.jpg",
