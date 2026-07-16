@@ -185,9 +185,8 @@ const About = () => {
                                             </p>
                                         </div>
                                     </div>
-                                </section>
-            {/* Meet Our Team Section */}
-            <section className="relative w-full overflow-hidden bg-[#f2eee2] py-24 px-6 md:px-12 lg:px-20">
+                                </section>              {/* Meet Our Team Section */}
+            <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#f2eee2] to-[#f7ecdc] pt-24 pb-12 px-6 md:px-12 lg:px-20">
                 {/* Background Glow */}
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top,rgba(0,0,0,0.05),transparent_55%)]" />
 
@@ -203,35 +202,24 @@ const About = () => {
                             <span className="text-theme-secondaryText font-display font-bold"> partner for major creative initiatives in India and beyond.</span>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    {/* Team Visual Composition */}
-                    <div className="relative z-30 mt-2 md:mt-1 min-h-[500px] flex flex-col md:flex-row items-center md:items-end justify-center gap-6 md:gap-0">
-                        {/* Main Team Images */}
-                        <div className="relative z-30 flex items-end justify-center my-4 md:my-0">
-                            {/* Back Person */}
-                            <img
-                                src="/assets/images/team/team-1.png"
-                                alt="Team member"
-                                loading="lazy"
-                                decoding="async"
-                                className="relative z-30 w-[220px] sm:w-[260px] md:w-[420px] lg:w-[500px] object-contain grayscale contrast-125 brightness-95"
-                            />
-
-                            {/* Front Person */}
-                            <img
-                                src="/assets/images/team/team-2.png"
-                                alt="Team member"
-                                loading="lazy"
-                                decoding="async"
-                                className="absolute bottom-0 right-[-15%] md:right-[-20%] z-40 w-[190px] sm:w-[230px] md:w-[360px] lg:w-[440px] object-contain grayscale contrast-125 brightness-95"
-                            />
-                        </div>
-                    </div>
+            {/* Team Visual Composition (Full Width Gallery Style) */}
+            <section className="w-full bg-gradient-to-b from-[#f7ecdc] to-[#fbf1e4]">
+                <div className="w-full aspect-[16/9] md:aspect-[21/9] lg:max-h-[85vh] overflow-hidden bg-black/[0.02]">
+                    <img
+                        src="/assets/images/team/leaders.png"
+                        alt="Resonance Leadership Team"
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
             </section>
 
             {/* Team Members Grid */}
-            <section className="w-full bg-[#f2eee2] px-12 md:px-24 pb-24 pt-24">
+            <section className="w-full bg-gradient-to-b from-[#fbf1e4] to-[#f2eee2] px-12 md:px-24 pb-24 pt-24">
                 <div className="max-w-[1700px] mx-auto flex flex-col gap-[2px]">
                     {/* Row 1 */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-[2px]">
