@@ -24,7 +24,7 @@ const realEstateStatements = [
         body: "Aerial capture for site context, connectivity, and progress highlights across construction phases.",
     },
     {
-        title: "Digital Films",
+        title: "Digital Campaigns",
         body: "High-impact digital and brand films to showcase project highlights, location advantages, and lifestyle amenities.",
     },
     {
