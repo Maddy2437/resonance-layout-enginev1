@@ -12,44 +12,28 @@ const realEstateStatements = [
         body: "Photoreal visuals that help buyers and stakeholders experience the project before completion.",
     },
     {
-        title: "Video Walkthroughs",
+        title: "Walkthrough Films",
         body: "Cinematic property walkthroughs designed for sales, investor presentations, and digital campaigns.",
-    },
-    {
-        title: "Films",
-        body: "Branded short-form and long-form films that showcase project scale, amenities, and lifestyle.",
-    },
-    {
-        title: "Drone Shoots",
-        body: "Aerial capture for site context, connectivity, and progress highlights across construction phases.",
-    },
-    {
-        title: "Interactive Sales Tools",
-        body: "Touch-friendly sales experiences to present unit layouts, tower views, and project inventories.",
-    },
-    {
-        title: "3D Projection Mapping",
-        body: "Immersive projection stories crafted for launch events, investor meets, and marquee activations.",
-    },
-    {
-        title: "Hologram",
-        body: "Holographic presentation formats for premium real estate launches and experiential showcases.",
     },
     {
         title: "2D & 3D Isometrics",
         body: "Detailed isometric plans to communicate spatial flow, zoning, and feature hierarchy clearly.",
     },
     {
-        title: "Virtual Reality",
-        body: "VR-ready environments that let prospects explore interiors and amenities with true depth.",
+        title: "Drone Films",
+        body: "Aerial capture for site context, connectivity, and progress highlights across construction phases.",
     },
     {
-        title: "Augmented Reality",
-        body: "AR overlays to bring brochures, models, and sales collateral to life in real-time.",
+        title: "Interactive Sales Tour",
+        body: "Touch-friendly sales experiences to present unit layouts, tower views, and project inventories.",
     },
     {
         title: "Digital Twin",
         body: "Data-connected digital twins for monitoring, showcasing, and planning across project lifecycles.",
+    },
+    {
+        title: "VR/AR",
+        body: "VR-ready environments that let prospects explore interiors and amenities with true depth.AR overlays to bring brochures, models, and sales collateral to life in real-time.",
     },
 ];
 
@@ -211,101 +195,105 @@ type ImmersiveTabData = {
     bullets: string[];
 };
 
-const immersiveTabs: ImmersiveTabData[] = [
+const immersiveRows = [
     {
-        id: "interactive-sales-tour",
-        label: "Interactive Sales Tour",
-        videoSrc: "https://storage.net-fs.com/hosting/6111279/12/index.html",
-        number: "1.",
-        subtitle: "",
-        description:
-            "A 360° walkthrough of the project and its surroundings, built for buyers to explore at their own pace — from skyline views to clubhouse details, all in one guided, self-navigable experience. Downloadable for offline viewing, anywhere, anytime.",
-        bullets: [
-            "Maximizes visual impact",
-            "Creates emotional resonance",
-            "Provides immersive experience",
+        bgColor: "bg-[#f2eee2]",
+        items: [
+            {
+                id: "interactive-sales-tour",
+                number: "1.",
+                label: "Interactive Sales Tour",
+                subtitle: "",
+                description:
+                    "A 360° walkthrough of the project and its surroundings, built for buyers to explore at their own pace — from skyline views to clubhouse details, all in one guided, self-navigable experience. Downloadable for offline viewing, anywhere, anytime.",
+                bullets: [
+                    "Skyline & clubhouse views",
+                    "Guided self-navigable tours",
+                    "Offline viewing capability",
+                ],
+                videoSrc: "https://storage.net-fs.com/hosting/6111279/12/index.html",
+            },
+            {
+                id: "digital-twin",
+                number: "2.",
+                label: "Digital Twin",
+                subtitle: "",
+                description:
+                    "A living, breathing replica of the project — accurate down to the tower, the unit, and the view. With dynamic weather, time-of-day lighting, and multiple camera angles, buyers don't just see the building. They see exactly what living in it will feel like, at any hour, in any season.",
+                bullets: [
+                    "Tower & unit-level accuracy",
+                    "Dynamic lighting & weather simulation",
+                    "Multiple interior & exterior camera angles",
+                ],
+                videoSrc: "/assets/videos/DigitalTwin.webm",
+            },
         ],
     },
     {
-        id: "digital-twin",
-        label: "Digital Twin",
-        videoSrc: "/assets/videos/DigitalTwin.webm",
-        number: "2.",
-        subtitle: "",
-        description:
-            "A living, breathing replica of the project — accurate down to the tower, the unit, and the view. With dynamic weather, time-of-day lighting, and multiple camera angles, buyers don't just see the building. They see exactly what living in it will feel like, at any hour, in any season.",
-        bullets: [
-            "Tower & unit-level accuracy",
-            "Dynamic lighting & weather simulation",
-            "Multiple interior & exterior camera angles",
+        bgColor: "bg-[#f7f5ee]",
+        items: [
+            {
+                id: "experience-center-showcase",
+                number: "3.",
+                label: "Experience Center Showcase",
+                subtitle: "Immersive Technology Showcase",
+                description:
+                    "A physical space engineered for one moment: certainty. Every material, light, and layout is designed to move a buyer from interest to conviction — the difference between showing a project and letting someone experience it.",
+                bullets: [
+                    "High-impact presentations",
+                    "Flexible content playback",
+                    "Realistic visualization",
+                ],
+                videoSrc: "/assets/videos/ImmersiveTech.webm",
+            },
+            {
+                id: "mahindra-l-screen",
+                number: "4.",
+                label: "L-Screen Video Experience",
+                subtitle: "Mahindra Pink",
+                description:
+                    "A panoramic video setup that helps viewers feel like a part of the project, perfect for experience centres and presentation.",
+                bullets: [
+                    "Maximizes visual impact",
+                    "Creates emotional resonance",
+                    "Provides immersive experience",
+                ],
+                videoSrc: "/assets/videos/Mahindra-LScreen.webm",
+            },
         ],
     },
     {
-        id: "virtual-reality",
-        label: "Virtual Reality",
-        videoSrc: "/assets/videos/ARVR.webm",
-        number: "3.",
-        subtitle: "",
-        description:
-            "Step inside the home before it's built. Room by room, finish by finish — augmented and virtual reality let buyers stand inside their future living room, long before the first brick is laid.",
-        bullets: [
-            "Fully immersive VR walkthroughs",
-            "Interactive scale and space layout exploration",
-            "Realistic material & finish visualization",
+        bgColor: "bg-[#f2eee2]",
+        items: [
+            {
+                id: "brigade-projection",
+                number: "5.",
+                label: "Projection Mapping on Real Scale Models",
+                subtitle: "Brigade Valencia",
+                description:
+                    "A technique that uses high-precision projectors to overlay digital content onto physical scale models, improving project perception.",
+                bullets: [
+                    "High-impact presentations",
+                    "Flexible content playback",
+                    "Realistic visualization",
+                ],
+                videoSrc: "/assets/videos/Brigade.webm",
+            },
+            {
+                id: "virtual-reality",
+                number: "6.",
+                label: "Virtual Reality",
+                subtitle: "",
+                description:
+                    "Step inside the home before it's built. Room by room, finish by finish — augmented and virtual reality let buyers stand inside their future living room, long before the first brick is laid.",
+                bullets: [
+                    "Fully immersive VR walkthroughs",
+                    "Interactive scale and space layout exploration",
+                    "Realistic material & finish visualization",
+                ],
+                videoSrc: "/assets/videos/ARVR.webm",
+            },
         ],
-    },
-    {
-        id: "experience-center",
-        label: "Experience Centers",
-        videoSrc: "/assets/videos/ImmersiveTech.webm",
-        number: "4.",
-        subtitle: "",
-        description:
-            "A physical space engineered for one moment: certainty. Every material, light, and layout is designed to move a buyer from interest to conviction — the difference between showing a project and letting someone experience it.",
-        bullets: [
-            "High-impact presentations",
-            "Flexible content playback",
-            "Realistic visualization",
-        ],
-    },
-];
-
-const experienceCenterItems = [
-    {
-        id: "experience-center-showcase",
-        subtitle: "Experience Center | Immersive Technology Showcase",
-        description:
-            "A physical space engineered for one moment: certainty. Every material, light, and layout is designed to move a buyer from interest to conviction — the difference between showing a project and letting someone experience it.",
-        bullets: [
-            "High-impact presentations",
-            "Flexible content playback",
-            "Realistic visualization",
-        ],
-        videoSrc: "/assets/videos/ImmersiveTech.webm",
-    },
-    {
-        id: "mahindra-l-screen",
-        subtitle: "Mahindra Pink | L-Screen Video Experience",
-        description:
-            "A panoramic video setup that helps viewers feel like a part of the project, perfect for experience centres and presentation.",
-        bullets: [
-            "Maximizes visual impact",
-            "Creates emotional resonance",
-            "Provides immersive experience",
-        ],
-        videoSrc: "/assets/videos/Mahindra-LScreen.webm",
-    },
-    {
-        id: "brigade-projection",
-        subtitle: "Brigade Valencia | Projection Mapping on Real Scale Models",
-        description:
-            "A technique that uses high-precision projectors to overlay digital content onto physical scale models, improving project perception.",
-        bullets: [
-            "High-impact presentations",
-            "Flexible content playback",
-            "Realistic visualization",
-        ],
-        videoSrc: "/assets/videos/Brigade.webm",
     },
 ];
 
@@ -495,7 +483,7 @@ const RealEstateMartech = () => {
                                     onClick={() => toggle(i)}
                                     className="w-full flex items-center justify-between py-4 text-left group"
                                 >
-                                    <span className="font-display text-[18px] md:text-[20px] text-gray-700 group-hover:text-[#4a97d3] transition-colors duration-200 leading-tight">
+                                    <span className="font-display text-[18px] md:text-[20px] text-gray-700 group-hover:text-black transition-colors duration-200 leading-tight">
                                         {item.title}
                                     </span>
                                     <ChevronDown
@@ -706,133 +694,85 @@ const RealEstateMartech = () => {
             </section>
 
             {/* ── Section 2: Immersive Technology Solutions ─────────────────── */}
-            {immersiveTabs.map((tab, idx) => {
-                const bgColor = idx % 2 === 0 ? "bg-[#f2eee2]" : "bg-[#f7f5ee]";
-                return (
-                    <section
-                        key={tab.id}
-                        className={`w-full ${bgColor} py-24 px-12 md:px-24 border-b border-black/[0.06] text-gray-800`}
-                    >
-                        <div className="w-full max-w-[1700px] mx-auto">
-                            {idx === 0 && (
-                                <h2 className="font-display text-4xl md:text-5xl font-light text-gray-400 mb-20">
-                                    <span className="font-bold text-gray-700">Real Estate Mar-Tech</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
-                                    <span className="text-gray-400 font-light">Immersive Technology Solutions</span>
-                                </h2>
-                            )}
+            {immersiveRows.map((row, rowIdx) => (
+                <section
+                    key={rowIdx}
+                    className={`w-full ${row.bgColor} py-24 px-12 md:px-24 border-b border-black/[0.06] text-gray-800`}
+                >
+                    <div className="w-full max-w-[1700px] mx-auto">
+                        {rowIdx === 0 && (
+                            <h2 className="font-display text-4xl md:text-5xl font-light text-gray-400 mb-20">
+                                <span className="font-bold text-gray-700">Real Estate Mar-Tech</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
+                                <span className="text-gray-400 font-light">Immersive Technology Solutions</span>
+                            </h2>
+                        )}
 
-                            <div className="w-full flex flex-col">
-                                {/* Title */}
-                                <div className="mb-8">
-                                    <h3 className="font-display text-4xl md:text-5xl font-bold text-gray-700 tracking-tight leading-none">
-                                        {tab.number} {tab.label === "Experience Centers" ? "Experience Center" : tab.label}
-                                    </h3>
-                                </div>
-
-                                {tab.id === "experience-center" ? (
-                                    /* Experience Center Multi-video stack */
-                                    <div className="flex flex-col gap-24">
-                                        {experienceCenterItems.map((item, itemIdx) => (
-                                            <div key={item.id} className="flex flex-col pt-16 first:pt-0 border-t border-black/10 first:border-t-0">
-                                                {/* Subtitle */}
-                                                <div className="mb-6">
-                                                    <p className="font-sans text-sm md:text-lg font-semibold text-gray-400 uppercase tracking-wider">
-                                                        {item.subtitle}
-                                                    </p>
-                                                </div>
-
-                                                {/* Text Content (Description + Bullets) */}
-                                                <div className="flex flex-col gap-6 text-gray-700 text-base md:text-lg leading-relaxed mb-10 max-w-4xl">
-                                                    <p>{item.description}</p>
-                                                    <ul className="flex flex-col gap-3">
-                                                        {item.bullets.map((bullet, i) => (
-                                                            <li key={i} className="flex items-start gap-3">
-                                                                <span className="text-gray-700 text-xl leading-none font-bold mt-0.5">•</span>
-                                                                <span>{bullet}</span>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
-
-                                                {/* Video Player */}
-                                                <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10">
-                                                    <video
-                                                        key={item.id}
-                                                        className="absolute inset-0 w-full h-full"
-                                                        autoPlay
-                                                        muted
-                                                        loop
-                                                        playsInline
-                                                        controls
-                                                        preload="metadata"
-                                                        data-autopause="true"
-                                                    >
-                                                        <source src={item.videoSrc} type={item.videoSrc.endsWith(".mp4") ? "video/mp4" : "video/webm"} />
-                                                    </video>
-                                                </div>
-                                            </div>
-                                        ))}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-16">
+                            {row.items.map((item) => (
+                                <div key={item.id} className="flex flex-col">
+                                    {/* Title */}
+                                    <div className="mb-4">
+                                        <h3 className="font-display text-3xl md:text-4xl font-bold text-gray-700 tracking-tight leading-tight">
+                                            {item.number} {item.label}
+                                        </h3>
                                     </div>
-                                ) : (
-                                    /* Single video sections (Interactive Sales Tour, Digital Twin, Virtual Reality) */
-                                    <div className="flex flex-col">
-                                        {/* Subtitle */}
-                                        {tab.subtitle && (
-                                            <div className="mb-6">
-                                                <p className="font-sans text-sm md:text-lg font-semibold text-gray-400 uppercase tracking-wider">
-                                                    {tab.subtitle}
-                                                </p>
-                                            </div>
+
+                                    {/* Subtitle */}
+                                    {item.subtitle && (
+                                        <div className="mb-4">
+                                            <p className="font-sans text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                                                {item.subtitle}
+                                            </p>
+                                        </div>
+                                    )}
+
+                                    {/* Text Content (Description + Bullets) */}
+                                    <div className="flex flex-col gap-4 text-gray-700 text-sm md:text-base leading-relaxed mb-8 max-w-2xl min-h-[140px] lg:min-h-[160px]">
+                                        <p>{item.description}</p>
+                                        <ul className="flex flex-col gap-2">
+                                            {item.bullets.map((bullet, i) => (
+                                                <li key={i} className="flex items-start gap-2 text-xs md:text-sm">
+                                                    <span className="text-gray-700 leading-none font-bold mt-0.5">•</span>
+                                                    <span>{bullet}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
+                                    {/* Video/Iframe Container */}
+                                    <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10 mt-auto">
+                                        {item.videoSrc.startsWith("/assets/") || item.videoSrc.startsWith("/") ? (
+                                            <video
+                                                key={item.id}
+                                                className="absolute inset-0 w-full h-full"
+                                                autoPlay
+                                                muted
+                                                loop
+                                                playsInline
+                                                controls
+                                                preload="metadata"
+                                                data-autopause="true"
+                                            >
+                                                <source src={item.videoSrc} type={item.videoSrc.endsWith(".mp4") ? "video/mp4" : "video/webm"} />
+                                            </video>
+                                        ) : (
+                                            <iframe
+                                                key={item.id}
+                                                src={item.videoSrc}
+                                                title={item.label}
+                                                className="absolute inset-0 w-full h-full border-0"
+                                                loading="lazy"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowFullScreen
+                                            />
                                         )}
-
-                                        {/* Text Content (Description + Bullets) */}
-                                        <div className="flex flex-col gap-6 text-gray-700 text-base md:text-lg leading-relaxed mb-10 max-w-4xl">
-                                            <p>{tab.description}</p>
-                                            <ul className="flex flex-col gap-3">
-                                                {tab.bullets.map((bullet, i) => (
-                                                    <li key={i} className="flex items-start gap-3">
-                                                        <span className="text-gray-700 text-xl leading-none font-bold mt-0.5">•</span>
-                                                        <span>{bullet}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-
-                                        {/* Video/Iframe Container */}
-                                        <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10">
-                                            {tab.videoSrc.startsWith("/assets/") || tab.videoSrc.startsWith("/") ? (
-                                                <video
-                                                    key={tab.id}
-                                                    className="absolute inset-0 w-full h-full"
-                                                    autoPlay
-                                                    muted
-                                                    loop
-                                                    playsInline
-                                                    controls
-                                                    preload="metadata"
-                                                    data-autopause="true"
-                                                >
-                                                    <source src={tab.videoSrc} type={tab.videoSrc.endsWith(".mp4") ? "video/mp4" : "video/webm"} />
-                                                </video>
-                                            ) : (
-                                                <iframe
-                                                    key={tab.id}
-                                                    src={tab.videoSrc}
-                                                    title={tab.label}
-                                                    className="absolute inset-0 w-full h-full border-0"
-                                                    loading="lazy"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowFullScreen
-                                                />
-                                            )}
-                                        </div>
                                     </div>
-                                )}
-                            </div>
+                                </div>
+                            ))}
                         </div>
-                    </section>
-                );
-            })}
+                    </div>
+                </section>
+            ))}
             {activeImage && (
                 <div
                     className="fixed inset-0 z-[200] bg-black/95 flex items-center justify-center p-4"

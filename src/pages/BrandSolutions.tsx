@@ -637,7 +637,7 @@ const BrandSolutions = () => {
                                     onClick={() => toggle(i)}
                                     className="w-full flex items-center justify-between py-5 text-left group"
                                 >
-                                    <span className="font-display text-[18px] md:text-[20px] text-gray-700 group-hover:text-[#4a97d3] transition-colors duration-200">
+                                    <span className="font-display text-[18px] md:text-[20px] text-gray-700 group-hover:text-black transition-colors duration-200">
                                         {item.title}
                                     </span>
                                     <ChevronDown
