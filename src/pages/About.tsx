@@ -205,24 +205,9 @@ const About = () => {
                     </div>
 
                     {/* Team Visual Composition */}
-                    <div className="relative z-30 mt-2 md:mt-1 min-h-[700px] md:min-h-[500px] flex flex-col md:flex-row items-center md:items-end justify-center gap-6 md:gap-0">
-                        {/* Left Info Card */}
-                        <div className="relative md:absolute md:left-0 md:bottom-8 z-50 bg-white/90 border border-black/[0.06] backdrop-blur-sm p-6 w-full max-w-[320px] md:w-[280px] text-gray-800 shadow-2xl">
-                            <h3 className="text-gray-500 font-semibold text-lg mb-3">
-                                Abhyuday Grover
-                            </h3>
-
-                            <p className="text-sm leading-relaxed text-gray-600 mb-3">
-                                Multiple campaigns for more than 50 brands/corporates in varied mediums.
-                            </p>
-
-                            <p className="text-sm leading-relaxed text-gray-500">
-                                Branding, Digital Marketing, Mainline advertising, Product photography, TVC production, Audio Visual films and Content creation.
-                            </p>
-                        </div>
-
+                    <div className="relative z-30 mt-2 md:mt-1 min-h-[500px] flex flex-col md:flex-row items-center md:items-end justify-center gap-6 md:gap-0">
                         {/* Main Team Images */}
-                        <div className="relative z-30 flex items-end justify-center my-4 md:my-0 md:translate-y-16">
+                        <div className="relative z-30 flex items-end justify-center my-4 md:my-0">
                             {/* Back Person */}
                             <img
                                 src="/assets/images/team/team-1.png"
@@ -240,21 +225,6 @@ const About = () => {
                                 decoding="async"
                                 className="absolute bottom-0 right-[-15%] md:right-[-20%] z-40 w-[190px] sm:w-[230px] md:w-[360px] lg:w-[440px] object-contain grayscale contrast-125 brightness-95"
                             />
-                        </div>
-
-                        {/* Right Info Card */}
-                        <div className="relative md:absolute md:right-0 md:bottom-0 z-50 bg-white/90 border border-black/[0.06] backdrop-blur-sm p-6 w-full max-w-[320px] md:w-[280px] text-gray-800 shadow-2xl">
-                            <h3 className="text-gray-500 font-semibold text-lg mb-3">
-                                Utsarg Grover
-                            </h3>
-
-                            <p className="text-sm leading-relaxed text-gray-600 mb-3">
-                                Multiple campaigns for more than 50 brands/corporates in varied mediums.
-                            </p>
-
-                            <p className="text-sm leading-relaxed text-gray-500">
-                                Branding, Digital Marketing, Mainline advertising, TVC production, Audio Visual films and Content creation.
-                            </p>
                         </div>
                     </div>
                 </div>

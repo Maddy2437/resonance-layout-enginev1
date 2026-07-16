@@ -78,7 +78,7 @@ export const caseStudies: CaseStudy[] = [
         slug: "killer",
         title: "Killer Jeans",
         client: "KEWAL KIRAN CLOTHING LTD.",
-        service: "SOCIAL MEDIA",
+        service: "Integrated marketing campaign",
         year: "2024",
         heroImage: "/assets/images/CaseStudies/Cover_Images/3.webp",
         thumbnail: "/assets/images/CaseStudies/Cover_Images/3.webp",
@@ -96,7 +96,7 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Killer", "4.png"), alt: "Killer Jeans social and summer campaign collage", variant: "contained" }
         ],
         pdfClient: "KEWAL KIRAN CLOTHING LTD.",
-        pdfService: "SOCIAL MEDIA",
+        pdfService: "Integrated marketing campaign",
         pdfYear: "2024",
         pdfDescription: "Reinforce Killer Jeans’ bold, youthful identity through an integrated campaign, creating high-impact communication across print, social media, and outdoor to strengthen brand recall and style appeal."
     },
@@ -129,7 +129,7 @@ export const caseStudies: CaseStudy[] = [
         slug: "conosh",
         title: "CONOSH",
         client: "CONOSH",
-        service: "IP & Communication Collaterals",
+        service: "brand custodian",
         year: "2024",
         heroImage: "/assets/images/CaseStudies/Cover_Images/5.webp",
         thumbnail: "/assets/images/CaseStudies/Cover_Images/5.webp",
@@ -152,7 +152,7 @@ export const caseStudies: CaseStudy[] = [
             ] }
         ],
         pdfClient: "CONOSH",
-        pdfService: "IP & Communication Collaterals",
+        pdfService: "brand custodian",
         pdfYear: "2024",
         pdfDescription: "Developed IP - India Ultimate Home Chef across mediums to drive culinary curiosity, audience interactions and participation."
     },
@@ -184,7 +184,7 @@ export const caseStudies: CaseStudy[] = [
         slug: "mahindra-xuv-500",
         title: "Mahindra XUV 500",
         client: "Mahindra",
-        service: "3D renders & brand films",
+        service: "product films , demo films , CGI films",
         year: "2018 – 2021",
         heroImage: "/assets/images/CaseStudies/Cover_Images/7.webp",
         thumbnail: "/assets/images/CaseStudies/Cover_Images/7.webp",
@@ -205,7 +205,7 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Mahindra", "6.png"), alt: "Mahindra CGI image film frames", variant: "full" }
         ],
         pdfClient: "Mahindra",
-        pdfService: "3D renders & brand films",
+        pdfService: "product films , demo films , CGI films",
         pdfYear: "2018 – 2021",
         pdfDescription: "Created high-quality CGI visuals for Mahindra Auto, combining advanced technology with photorealistic rendering to showcase vehicle design, performance, and innovation across marketing campaigns with precision, consistency, and visual impact."
     },
@@ -213,7 +213,7 @@ export const caseStudies: CaseStudy[] = [
         slug: "estuary",
         title: "Estuary",
         client: "ESTUARY",
-        service: "Creative Campaign",
+        service: "Branding and digital marketing",
         year: "2022",
         heroImage: "/assets/images/CaseStudies/Cover_Images/8.webp",
         thumbnail: "/assets/images/CaseStudies/Cover_Images/8.webp",
@@ -232,7 +232,7 @@ export const caseStudies: CaseStudy[] = [
             ] }
         ],
         pdfClient: "ESTUARY",
-        pdfService: "Creative Campaign",
+        pdfService: "Branding and digital marketing",
         pdfYear: "2022",
         pdfDescription: "Position Estuary as the finest blending water for premium spirits, creating a cohesive brand ecosystem across film, social media, and website to elevate awareness, desirability, and consumer understanding."
     },
@@ -240,7 +240,7 @@ export const caseStudies: CaseStudy[] = [
         slug: "calamus-one",
         title: "Calamus One - Ultrabike",
         client: "CALAMUS",
-        service: "FILM",
+        service: "branding, indigogo campaign",
         year: "2019",
         heroImage: "/assets/images/CaseStudies/Cover_Images/9.webp",
         thumbnail: "/assets/images/CaseStudies/Cover_Images/9.webp",
@@ -256,7 +256,7 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Calamus", "3.png"), alt: "Calamus One product film frames", variant: "contained" }
         ],
         pdfClient: "CALAMUS",
-        pdfService: "FILM",
+        pdfService: "branding, indigogo campaign",
         pdfYear: "2019",
         pdfDescription: "Establish Calamus One as a pioneering smart e-bike brand through a future-ready identity and compelling storytelling, highlighting its breakthrough technology, intelligent features, and premium urban mobility experience."
     },
@@ -291,7 +291,7 @@ export const caseStudies: CaseStudy[] = [
         slug: "monte-carlo",
         title: "Monte Carlo",
         client: "MONTE CARLO",
-        service: "Creative Campaign",
+        service: "live action and ai productions",
         year: "2026",
         heroImage: "/assets/images/CaseStudies/Cover_Images/11.webp",
         thumbnail: "/assets/images/CaseStudies/Cover_Images/11.webp",
@@ -310,7 +310,7 @@ export const caseStudies: CaseStudy[] = [
             { type: "image", image: caseStudyPath("Elegant", "4.png"), alt: "Monte Carlo project supporting visual", variant: "contained" }
         ],
         pdfClient: "MONTE CARLO",
-        pdfService: "Creative Campaign",
+        pdfService: "live action and ai productions",
         pdfYear: "2026",
         pdfDescription: "Position Monte Carlo SS'26 as the season's definitive summer fashion collection through a hybrid AI-led campaign, showcasing effortless style, contemporary design, and versatile looks for the modern consumer."
     },

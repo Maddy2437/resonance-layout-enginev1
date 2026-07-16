@@ -1282,8 +1282,9 @@ const VFX = () => {
                     {/* Areas of Expertise Section */}
                     <section className="px-12 md:px-24 py-24 bg-theme-primaryBg1">
                         <div className="w-full translate-y-8">
-                            <h2 className="font-display text-4xl md:text-5xl font-bold text-[#f2eee2] mb-4">
-                                VFX: Advertising <span className="text-[#f2eee2]/30  font-light">|</span>{" "}
+                            <h2 className="font-display text-4xl md:text-5xl font-light text-[#f2eee2] mb-4">
+                                <span className="font-bold text-[#f2eee2]">VFX: Advertising</span>{" "}
+                                <span className="text-[#f2eee2]/30">|</span>{" "}
                                 <span className="text-[#f2eee2]/60 font-light">Showreel</span>
                             </h2>
 

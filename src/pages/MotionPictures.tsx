@@ -7,13 +7,6 @@ import FixedHero from "@/components/FixedHero";
 
 const showcaseImages = [
     {
-        image: "/assets/images/motionPictures/AyodhyaSS3.jpg",
-        title: "Deepotsav",
-        year: "2025",
-        description:
-            "We produced this iconic documentary film for Deepotsav Ayodhya 2024, capturing one of India's largest religious celebrations, where two world records were achieved. The film documents the scale, spirit, and cultural significance of this historic event.",
-    },
-    {
         image: "/assets/images/motionPictures/CHHSS1.jpg",
         title: "Chhatrasal",
         year: "2025",
@@ -22,10 +15,17 @@ const showcaseImages = [
     },
     {
         image: "/assets/images/motionPictures/UHC1.png",
-        title: "Conosh",
+        title: "Ultimate Home Chef India",
         year: "2024",
         description:
             "Produced by us, India's Ultimate Home Chef is a culinary reality series featuring renowned chefs Gary Mehigan, Matt Preston, and George Calombaris. The show celebrates talented home cooks from across India as they compete through creativity, skill, and a shared passion for food.",
+    },
+    {
+        image: "/assets/images/motionPictures/AyodhyaSS3.jpg",
+        title: "Deepotsav",
+        year: "2025",
+        description:
+            "We produced this iconic documentary film for Deepotsav Ayodhya 2024, capturing one of India's largest religious celebrations, where two world records were achieved. The film documents the scale, spirit, and cultural significance of this historic event.",
     },
 ];
 

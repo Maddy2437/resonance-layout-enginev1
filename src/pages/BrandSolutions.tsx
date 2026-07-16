@@ -285,7 +285,7 @@ const brandStatements = [
         ],
         client: "KEWAL KIRAN CLOTHING LTD.",
         year: "2024",
-        service: "Original Content & Copywriting",
+        service: "Integrated marketing campaign",
         objective: "Reinforce Killer Jeans’ bold, youthful identity through an integrated campaign, creating high-impact communication across print, social media, and outdoor.",
         approach:
             "Developed a bold, content-first strategy spanning print, social, and OOH, including influencer-led and trend-driven creatives.",
@@ -325,7 +325,7 @@ const brandStatements = [
         ],
         client: "CONOSH",
         year: "2025",
-        service: "IP & Communication Collaterals",
+        service: "brand custodian",
         objective: "Developed IP - India Ultimate Home Chef across mediums to drive culinary curiosity, audience interactions and participation.",
         approach:
             "Created an end-to-end ecosystem—social media, website, video content, and a flagship web series featuring celebrity chefs.",
@@ -361,7 +361,7 @@ const brandStatements = [
         ],
         client: "Mahindra XUV 500",
         year: "2018-2021",
-        service: "3D renders & brand films",
+        service: "product films , demo films , CGI films",
         objective: "Created high-quality CGI visuals for Mahindra Auto, combining advanced technology with photorealistic rendering to showcase vehicle design, performance, and innovation.",
         approach:
             "Delivered high-quality product films and full-CG executions, highlighting design, performance, and features.",
@@ -380,7 +380,7 @@ const brandStatements = [
         ],
         client: "ESTUARY",
         year: "2022",
-        service: "Creative Campaign",
+        service: "Branding and digital marketing",
         objective: "Position Estuary as the finest blending water for premium spirits, creating a cohesive brand ecosystem across film, social media, and website.",
         approach:
             "Built a refined brand language across packaging, digital, website, and films.",
@@ -401,7 +401,7 @@ const brandStatements = [
         ],
         client: "Calamus One - Ultrabike",
         year: "2019",
-        service: "FILM",
+        service: "branding, indigogo campaign",
         objective: "Establish Calamus One as a pioneering smart e-bike brand through a future-ready identity and compelling storytelling.",
         approach:
             "Developed product films and digital storytelling highlighting innovation.",
@@ -440,7 +440,7 @@ const brandStatements = [
         ],
         client: "MONTE CARLO",
         year: "2026",
-        service: "Creative Campaign",
+        service: "live action and ai productions",
         objective: "Position Monte Carlo SS\'26 as the season\'s definitive summer fashion collection through a hybrid AI-led campaign, showcasing effortless style, contemporary design, and versatile looks for the modern consumer.",
         approach: "Crafted a visually compelling campaign blending AI-generated imagery with a hybrid production model, anchored by an extensive Malaysia shoot.",
         impact: "Delivered a scalable asset ecosystem deployed across all consumer touchpoints and media platforms.",
@@ -621,7 +621,7 @@ const BrandSolutions = () => {
                     <div className="w-full lg:w-1/2 flex items-start pt-10 lg:pt-12">
                         {/* FIX 2: lazy-load the large client logo sheet (below the fold) */}
                         <img
-                            src="/assets/images/CaseStudies/Brand-solution-logo.png"
+                            src="/assets/images/martech/Brand-client-logo.png"
                             alt="Brand Solutions Clients"
                             loading="lazy"
                             decoding="async"

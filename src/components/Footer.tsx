@@ -160,9 +160,9 @@ const Footer = ({ theme = "light" }: FooterProps) => {
 
                         <div>
                             <p className={`text-xs uppercase mb-3 ${subtleTextClass}`}>
-                                Phone Number
+                                RDL Office Number
                             </p>
-                            <p className={bodyTextClass}>+91 9769 39 2002</p>
+                            <p className={bodyTextClass}>+91 73041 73066</p>
                         </div>
                     </div>
                 </div>
@@ -246,7 +246,7 @@ const Footer = ({ theme = "light" }: FooterProps) => {
 
                             <div>
                                 <p className="font-medium mb-3">For Hiring Enquiries</p>
-                                <p className={bodyTextClass}>+91-9769-39-2002</p>
+                                <p className={bodyTextClass}>+91 73041 73066</p>
                                 <p className={bodyTextClass}>hr@resonancedigital.in</p>
                             </div>
                         </div>
