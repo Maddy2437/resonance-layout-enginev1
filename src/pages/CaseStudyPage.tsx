@@ -84,43 +84,50 @@ const caseStudyPages: Record<string, { page: number; title: string }[]> = {
 };
 
 const mobilePageMap: Record<number, number> = {
-    // Vraj Meridian (offset +5)
+    // Vraj Meridian
     2: 7,
     3: 8,
     4: 9,
+    5: 10,
     6: 11,
     7: 12,
-    // Killer Jeans (offset +4)
+    // Morde
+    11: 16,
+    // Killer Jeans
     14: 18,
+    15: 19,
     16: 20,
-    // Netflix (offset +4)
+    // Netflix
     18: 22,
     19: 23,
     20: 24,
     21: 25,
-    // Conosh (offset +4)
+    // Conosh
     23: 27,
     24: 28,
     25: 29,
-    // Oppo (offset +4)
+    // Oppo
+    27: 31,
     28: 32,
-    // Mahindra (offset +4 / +5)
+    // Mahindra
     30: 34,
-    31: 36,
-    // Estuary (offset +4)
+    31: 35,
+    32: 36,
+    // Estuary
     34: 38,
     35: 39,
-    // Calamus (offset +4)
+    // Calamus
     37: 41,
     38: 42,
-    // Elegant (offset +5)
+    // Elegant
     40: 45,
     41: 46,
     42: 47,
-    // Monte Carlo (offset +5)
+    // Monte Carlo
+    44: 49,
     45: 50,
     46: 51,
-    // Happy Home (offset +5)
+    // Happy Home
     48: 53
 };
 
@@ -248,6 +255,9 @@ const CaseStudyPage = () => {
                             }
 
                             let responsiveClass = "w-full";
+                            if (mobilePageMap[slide.page] === undefined) {
+                                responsiveClass = "hidden md:block w-full";
+                            }
 
                             return (
                                 <section key={slide.page} className={`${responsiveClass} ${bgColor} py-0 flex items-center justify-center border-b border-black/[0.04]`}>

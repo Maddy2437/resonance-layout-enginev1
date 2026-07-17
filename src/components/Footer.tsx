@@ -143,7 +143,7 @@ const Footer = ({ theme = "light" }: FooterProps) => {
                                 href="https://maps.app.goo.gl/mkXCTnNfDQbu8xVHA"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`block leading-relaxed hover:text-sky-600 transition-colors duration-300 cursor-pointer group ${bodyTextClass}`}
+                                className={`block leading-relaxed transition-colors duration-300 cursor-pointer group ${bodyTextClass}`}
                             >
                                 <span className="group-hover:underline">
                                     F-802, Lotus Corporate Park, W.E.H,
@@ -152,7 +152,7 @@ const Footer = ({ theme = "light" }: FooterProps) => {
                                     <br />
                                     Mumbai, Maharashtra - 400060 (INDIA)
                                 </span>
-                                <span className="block text-xs text-sky-600/80 group-hover:text-sky-600 mt-2">
+                                <span className={`block text-xs mt-2 transition-colors duration-300 ${subtleTextClass} group-hover:text-current`}>
                                     Click for directions →
                                 </span>
                             </a>
@@ -241,13 +241,23 @@ const Footer = ({ theme = "light" }: FooterProps) => {
                             <div>
                                 <p className="font-medium mb-3">For Business Enquiries</p>
                                 <p className={bodyTextClass}>+91-7800-90-8000</p>
-                                <p className={bodyTextClass}>abhyuday@resonancedigital.in</p>
+                                <a
+                                    href="mailto:abhyuday@resonancedigital.in"
+                                    className={`block hover:underline transition-colors duration-300 ${bodyTextClass}`}
+                                >
+                                    abhyuday@resonancedigital.in
+                                </a>
                             </div>
 
                             <div>
                                 <p className="font-medium mb-3">For Hiring Enquiries</p>
                                 <p className={bodyTextClass}>+91 73041 73066</p>
-                                <p className={bodyTextClass}>hr@resonancedigital.in</p>
+                                <a
+                                    href="mailto:hr@resonancedigital.in"
+                                    className={`block hover:underline transition-colors duration-300 ${bodyTextClass}`}
+                                >
+                                    hr@resonancedigital.in
+                                </a>
                             </div>
                         </div>
                     </div>

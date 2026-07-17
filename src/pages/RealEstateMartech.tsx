@@ -239,8 +239,8 @@ const immersiveRows = [
         items: [
             {
                 id: "experience-center-showcase",
-                label: "Experience Center Showcase",
-                subtitle: "Immersive Technology Showcase",
+                label: "Experience Center",
+                subtitle: "Immersive Technology",
                 description:
                     "A physical space engineered for one moment: certainty. Every material, light, and layout is designed to move a buyer from interest to conviction — the difference between showing a project and letting someone experience it.",
                 bullets: [
@@ -704,7 +704,7 @@ const RealEstateMartech = () => {
                     >
                         <div className="w-full max-w-[1700px] mx-auto">
                             {rowIdx === 0 && (
-                                <h2 className="font-display text-4xl md:text-5xl font-light text-gray-400 mb-20">
+                                <h2 className="font-display text-4xl md:text-5xl font-light text-gray-400 mb-10">
                                     <span className="font-bold text-gray-700">Real Estate Mar-Tech</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
                                     <span className="text-gray-400 font-light">Immersive Technology Solutions</span> <span className="text-gray-300 font-light mx-1">|</span>{" "}
                                     <span className="text-gray-400 font-light">Showcase</span>
@@ -715,14 +715,14 @@ const RealEstateMartech = () => {
                                 {row.items.map((item) => (
                                     <div key={item.id} className="flex flex-col">
 
-                                        {/* Title */}
-                                        <div className={item.subtitle ? "mb-4" : "mb-4"}>
+                                        {/* Title (with minimum height on desktop to keep video players aligned) */}
+                                        <div className="mb-4">
                                             <h3 className="font-display text-2xl md:text-3xl font-bold text-gray-700 tracking-tight leading-tight">
                                                 {item.label}
                                             </h3>
                                         </div>
 
-                                        {/* Video/Iframe Container - First */}
+                                        {/* Video/Iframe Container */}
                                         <div className="relative w-full aspect-video bg-black overflow-hidden shadow-2xl border border-black/10 mb-6">
                                             {item.videoSrc.startsWith("/assets/") || item.videoSrc.startsWith("/") ? (
                                                 <video
@@ -751,7 +751,7 @@ const RealEstateMartech = () => {
                                             )}
                                         </div>
 
-                                        {/* Subtitle */}
+                                        {/* Subtitle (Subheading) below the video */}
                                         {item.subtitle && (
                                             <div className="mb-4">
                                                 <p className="font-sans text-xs md:text-sm font-semibold text-gray-400 uppercase tracking-wider">

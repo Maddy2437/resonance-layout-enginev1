@@ -540,20 +540,20 @@ const VFX = () => {
         },
         { src: "/assets/videos/Campa.webm", label: "Campa Energy" },
         { src: "/assets/videos/Black_Dog.webm", label: "Black Dog" },
-        { src: "/assets/videos/Superbet.webm", label: "Superbet" },
+        { src: "/assets/videos/Honda.webm", label: "Honda Amaze" },
         {
             src: "/assets/videos/Fastrack.webm",
             label: "Fastrack Smart",
         },
         { src: "/assets/videos/Bournvita.webm", label: "Bournvita" },
-        { src: "/assets/videos/Honda.webm", label: "Honda Amaze" },
+        { src: "/assets/videos/JK_Cement.webm", label: "JK Cement" },
         { src: "/assets/videos/oreo.webm", label: "Oreo" },
         {
             src: "/assets/videos/Ecolink.webm",
             label: "Ecolink BLDC Fans",
         },
         { src: "/assets/videos/KitKat.webm", label: "Kit Kat" },
-        { src: "/assets/videos/JK_Cement.webm", label: "JK Cement" },
+        { src: "/assets/videos/Superbet.webm", label: "Superbet" },
         {
             src: "/assets/videos/Director_Special.webm",
             label: "Director Special Elaichi",
@@ -679,7 +679,7 @@ const VFX = () => {
                 />
             )}
             <div className="absolute inset-0 bg-black/10 pointer-events-none" />
-            <p className="absolute bottom-6 left-6 text-[#f2eee2] font-display text-xl font-bold pointer-events-none">
+            <p className="absolute bottom-6 left-6 text-[#f2eee2] font-display text-xl md:text-2xl font-bold tracking-wide pointer-events-none">
                 {label}
             </p>
         </div>
@@ -1411,7 +1411,7 @@ const VFX = () => {
                                                 />
                                             )}
                                             <div className="absolute inset-0 bg-black/20" />
-                                            <p className="absolute bottom-8 left-8 text-[#f2eee2] font-display text-2xl font-bold tracking-wide">
+                                            <p className="absolute bottom-6 left-6 text-[#f2eee2] font-display text-xl md:text-2xl font-bold tracking-wide pointer-events-none">
                                                 {v0.label}
                                             </p>
                                         </div>

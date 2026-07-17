@@ -8,7 +8,7 @@ const verticals = [
         title: "VFX",
         subtitle: "Movies & Ads",
         description:
-            "High-end visual effects and motion design for film, advertising, and digital experiences.",
+            "High-end visual effects and cgi services for film, advertising, and digital experiences.",
         href: "/vfx",
         bgImage: "/assets/images/vfxposter.png",
     },
@@ -17,7 +17,7 @@ const verticals = [
         title: "Real Estate",
         subtitle: "Mar-tech",
         description:
-            "Photorealistic renders and immersive virtual tours for architectural projects.",
+            "Photorealistic renders and immersive experiences for architectural projects.",
         href: "/real-estate",
         bgImage:
             "/assets/images/realestposter.png",
@@ -242,7 +242,7 @@ const VerticalSelector = () => {
                                         </p>
                                     </div>
 
-                                    <div className="flex items-center gap-2 text-[#4ab6ff]">
+                                    <div className="flex items-center gap-2 text-white">
                                         <span className="uppercase tracking-widest text-xs">
                                             Tap to visit
                                         </span>

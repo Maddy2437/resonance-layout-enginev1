@@ -89,6 +89,13 @@ const renderMember = (member: { name: string; role: string; image: string }, ind
     </div>
 );
 
+const leadersData = [
+    { name: "Ravindra Grover", role: "Managing Director" },
+    { name: "Udayan Grover", role: "Co-Founder" },
+    { name: "Abhyuday Grover", role: "Co-Founder & CEO" },
+    { name: "Utsarg Grover", role: "Co-Founder & COO" },
+];
+
 const About = () => {
     return (
         <>
@@ -209,8 +216,9 @@ const About = () => {
                         </div>
                     </div>
 
-                    {/* Leaders Image */}
-                    <div className="w-full overflow-hidden flex justify-center -mb-[6px] md:-mb-[10px]">
+                    {/* Leaders Image & Labels */}
+                    {/* Desktop View (4 leaders side-by-side in one image) */}
+                    <div className="hidden md:block w-full relative overflow-hidden -mb-[10px]">
                         <img
                             src="/assets/images/team/leaders.png"
                             alt="Resonance Leadership Team"
@@ -218,6 +226,83 @@ const About = () => {
                             decoding="async"
                             className="w-full h-auto object-contain select-none block"
                         />
+                        {/* Overlay Labels for 4 leaders */}
+                        <div className="absolute inset-x-0 bottom-0 grid grid-cols-4 h-20 pointer-events-none">
+                            {leadersData.map((leader, idx) => (
+                                <div key={idx} className="relative h-full border-r last:border-r-0 border-black/[0.04]">
+                                    <div className="absolute inset-0 bg-[#f2eee2]/90 backdrop-blur-sm" />
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center px-3 text-center overflow-hidden">
+                                        <div className="text-gray-800 font-semibold text-[11px] md:text-lg leading-tight max-w-full break-words">
+                                            {leader.name}
+                                        </div>
+                                        {leader.role && (
+                                            <div className="text-gray-600 text-[9px] md:text-sm mt-1 leading-tight max-w-full break-words">
+                                                {leader.role}
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Mobile View (2 images stacked, each showing 2 leaders side-by-side) */}
+                    <div className="block md:hidden w-full space-y-6 -mb-[6px]">
+                        {/* Image 1: Leaders 1 & 2 */}
+                        <div className="w-full relative overflow-hidden">
+                            <img
+                                src="/assets/images/team/leaders1.png"
+                                alt="Resonance Leadership Team Part 1"
+                                loading="lazy"
+                                decoding="async"
+                                className="w-full h-auto object-contain select-none block"
+                            />
+                            <div className="absolute inset-x-0 bottom-0 grid grid-cols-2 h-20 pointer-events-none">
+                                {leadersData.slice(0, 2).map((leader, idx) => (
+                                    <div key={idx} className="relative h-full border-r last:border-r-0 border-black/[0.04]">
+                                        <div className="absolute inset-0 bg-[#f2eee2]/90 backdrop-blur-sm" />
+                                        <div className="absolute inset-0 flex flex-col items-center justify-center px-3 text-center overflow-hidden">
+                                            <div className="text-gray-800 font-semibold text-[11px] leading-tight max-w-full break-words">
+                                                {leader.name}
+                                            </div>
+                                            {leader.role && (
+                                                <div className="text-gray-600 text-[9px] mt-1 leading-tight max-w-full break-words">
+                                                    {leader.role}
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Image 2: Leaders 3 & 4 */}
+                        <div className="w-full relative overflow-hidden">
+                            <img
+                                src="/assets/images/team/leaders2.png"
+                                alt="Resonance Leadership Team Part 2"
+                                loading="lazy"
+                                decoding="async"
+                                className="w-full h-auto object-contain select-none block"
+                            />
+                            <div className="absolute inset-x-0 bottom-0 grid grid-cols-2 h-20 pointer-events-none">
+                                {leadersData.slice(2, 4).map((leader, idx) => (
+                                    <div key={idx} className="relative h-full border-r last:border-r-0 border-black/[0.04]">
+                                        <div className="absolute inset-0 bg-[#f2eee2]/90 backdrop-blur-sm" />
+                                        <div className="absolute inset-0 flex flex-col items-center justify-center px-3 text-center overflow-hidden">
+                                            <div className="text-gray-800 font-semibold text-[11px] leading-tight max-w-full break-words">
+                                                {leader.name}
+                                            </div>
+                                            {leader.role && (
+                                                <div className="text-gray-600 text-[9px] mt-1 leading-tight max-w-full break-words">
+                                                    {leader.role}
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

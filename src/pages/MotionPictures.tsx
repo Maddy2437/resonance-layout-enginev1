@@ -93,7 +93,7 @@ const MotionPictures = () => {
                             key={item.image}
                             className={`w-full ${index % 2 === 0 ? "bg-theme-primaryBg1" : "bg-theme-secondaryText"} py-0 md:py-0 px-0`}
                         >
-                            <div className="relative w-full flex justify-center overflow-hidden">
+                            <div className="relative w-full flex flex-col md:block overflow-hidden">
                                 {item.youtubeUrl ? (
                                     <a
                                         href={item.youtubeUrl}
@@ -119,8 +119,8 @@ const MotionPictures = () => {
                                     />
                                 )}
 
-                                <div className="absolute bottom-6 left-6 md:bottom-10 md:right-10 text-left text-white">
-                                    <div className="inline-block max-w-2xl bg-black/55 backdrop-blur-sm rounded-md px-5 py-4">
+                                <div className="relative md:absolute bottom-0 left-0 right-0 md:bottom-10 md:left-10 md:left-auto text-left text-white p-5 md:p-0">
+                                    <div className="w-full md:max-w-2xl bg-black/40 md:bg-black/55 backdrop-blur-sm rounded-lg md:rounded-md px-5 py-4">
                                         <div className="flex items-baseline gap-2 font-display leading-none">
                                             <span className="text-xl md:text-3xl font-bold text-white">
                                                 {item.title}
@@ -139,7 +139,7 @@ const MotionPictures = () => {
                                                     href={item.youtubeUrl}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="inline-flex items-center gap-1.5 text-xs md:text-sm font-semibold uppercase tracking-wider text-sky-400 hover:text-sky-300 transition-colors cursor-pointer"
+                                                    className="inline-flex items-center gap-1.5 text-xs md:text-sm font-semibold uppercase tracking-wider text-white hover:text-white/80 transition-colors cursor-pointer"
                                                 >
                                                     Watch Trailer
                                                     <ChevronRight className="w-4 h-4" />
